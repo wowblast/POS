@@ -72,5 +72,36 @@ namespace POS
         {
             System.Diagnostics.Process.Start("osk.exe");
         }
-    }
+
+		private void button13_Click(object sender, EventArgs e)
+		{
+			//metodo testeo
+			AddProduct("1", "vino", "5", "5");
+			UpdateCostTotal();
+
+
+		}
+
+		private void AddProduct(string id ,string name ,string price ,string quantity)
+		{
+			
+			string[] row = {id, name, price,quantity };
+			var listViewItem = new ListViewItem(row);
+			listView1.Items.Add(listViewItem);
+		}
+		private void UpdateCostTotal()
+		{
+			int costTotal = 0;
+		    foreach (ListViewItem row in listView1.Items)
+			{
+				costTotal += Int32.Parse(row.SubItems[2].Text )* Int32.Parse(row.SubItems[3].Text);
+			}
+			txtPrueba.Text = "Total Cost" +costTotal.ToString();
+		}
+
+		private void txtPrueba_TextChanged(object sender, EventArgs e)
+		{
+
+		}
+	}
 }
