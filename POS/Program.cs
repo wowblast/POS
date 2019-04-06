@@ -1,5 +1,9 @@
-﻿using System;
+using System;
 using System.Runtime.InteropServices;
+using paypi;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace POS
@@ -17,7 +21,7 @@ namespace POS
 
             Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new Form1());
+			Application.Run(new FrmInicioSesion());
 		}
         [DllImport("kernel32.dll", SetLastError = true)]
         [return: MarshalAs(UnmanagedType.Bool)]
