@@ -61,6 +61,18 @@
     <Compile Include="FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPurchaseAmount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPurchaseAmount.Designer.cs">
+      <DependentUpon>FrmPurchaseAmount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUpdateProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpdateProduct.Designer.cs">
+      <DependentUpon>FrmUpdateProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="numberpad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +87,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPurchaseAmount.resx">
+      <DependentUpon>FrmPurchaseAmount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpdateProduct.resx">
+      <DependentUpon>FrmUpdateProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="numberpad.resx">
       <DependentUpon>numberpad.cs</DependentUpon>
