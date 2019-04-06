@@ -51,5 +51,26 @@ namespace POS
                 MessageBox.Show("Debe seleccionar una fila", "¡Error!");
             }
         }
+
+        private void numBtn_Click(object sender, EventArgs e)
+        {
+            Button number = (Button)sender;
+           
+            txtPrueba.Text = txtPrueba.Text + number.Text;
+            if (txtPrueba.Text.Equals("0"))
+            {
+                txtPrueba.Clear();
+            }
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            txtPrueba.Clear();
+        }
+
+        private void btnKeyBoard_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("osk.exe");
+        }
     }
 }
