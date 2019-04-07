@@ -12,9 +12,20 @@ namespace POS
 {
     public partial class FrmPrincipal : Form
     {
+        private int width;
+        private int height;
+        private int heightScroll;
+        private int counter;
+
         public FrmPrincipal()
         {
             InitializeComponent();
+            width = 0;
+            counter = 0;
+
+            // Get height scroll 
+            heightScroll = 3 * tableLayoutPanel2.GetColumnWidths()[0];
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -30,7 +41,7 @@ namespace POS
                 DialogResult button = MessageBox.Show("¿Esta seguro que desea eliminar el producto seleccionado?","Alerta", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
                 if (button == DialogResult.OK)
                 {
-                    //Eliminar el producto
+                    //Delete product
                 }
             }
             else
@@ -79,7 +90,6 @@ namespace POS
 			AddProduct("1", "vino", "5", "5");
 			UpdateCostTotal();
 
-
 		}
 
 		private void AddProduct(string id ,string name ,string price ,string quantity)
@@ -103,5 +113,40 @@ namespace POS
 		{
 
 		}
-	}
+
+        private void btnList_Click(object sender, EventArgs e)
+        {
+            counter++;
+
+            // Get size with respect to the percentage            
+            width = tableLayoutPanel2.GetColumnWidths()[0];
+            height = width;
+
+            if (counter > 5)
+            {
+                heightScroll += 2 * height;
+                counter = 0;
+            }
+
+            // Add button in tablelayout 
+            // Please change filename image
+            Button button = CreateButton(height, width, "btn", "texto", @"C:\Users\Adriana Orellana\source\repos\POS\POS\Images\buy.png");
+            tableLayoutPanel2.Controls.Add(button);
+
+            tableLayoutPanel2.AutoScrollMinSize = new Size(tableLayoutPanel2.Width, heightScroll);
+        }
+
+        public Button CreateButton(int height, int width, string name, string text, string filename)
+        {
+            Button button = new Button();
+            button.Height = height;
+            button.Width = width;
+            button.Name = name;
+            button.Text = text;
+            button.BackgroundImage = Image.FromFile(filename);
+            button.BackgroundImageLayout = ImageLayout.Center;
+
+            return button;
+        }
+    }
 }
