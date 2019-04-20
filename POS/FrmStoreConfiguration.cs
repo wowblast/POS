@@ -10,18 +10,18 @@ using System.Windows.Forms;
 
 namespace POS
 {
-	public partial class FrmInicioSesion : Form
-	{
-		public FrmInicioSesion()
-		{
-			InitializeComponent();
-		}
+    public partial class FrmStoreConfiguration : Form
+    {
+        public FrmStoreConfiguration()
+        {
+            InitializeComponent();
+        }
 
-        private void btnIngresar_Click(object sender, EventArgs e)
+        private void btnBack_Click(object sender, EventArgs e)
         {
             FrmMainMenu frmMainMenu = new FrmMainMenu();
             frmMainMenu.Show();
-            Hide();
+            Close();
         }
     }
 }

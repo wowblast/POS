@@ -36,7 +36,7 @@ namespace POS
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.SelectedRows.Count == 1)
+           /* if (dataGridView1.SelectedRows.Count == 1)
             {
                 DialogResult button = MessageBox.Show("¿Esta seguro que desea eliminar el producto seleccionado?","Alerta", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
                 if (button == DialogResult.OK)
@@ -47,12 +47,12 @@ namespace POS
             else
             {
                 MessageBox.Show("Debe seleccionar una fila", "¡Error!");
-            }
+            }*/
         }
 
         private void btnUpdateProductData_Click(object sender, EventArgs e)
         {
-            if (dataGridView2.SelectedRows.Count == 1)
+           /* if (dataGridView2.SelectedRows.Count == 1)
             {
                 FrmUpdateProduct frmUpdateProduct = new FrmUpdateProduct();
                 frmUpdateProduct.Show();
@@ -60,7 +60,7 @@ namespace POS
             else
             {
                 MessageBox.Show("Debe seleccionar una fila", "¡Error!");
-            }
+            }*/
         }
 
         private void numBtn_Click(object sender, EventArgs e)
@@ -130,8 +130,14 @@ namespace POS
 
             // Add button in tablelayout 
             // Please change filename image
-            Button button = CreateButton(height, width, "btn", "texto", @"C:\Users\Adriana Orellana\source\repos\POS\POS\Images\buy.png");
-            tableLayoutPanel2.Controls.Add(button);
+
+            for(int i = 0; i < 10; i++)
+            {
+                Button button = CreateButton(height, width, "btn", "texto", @"C:\Users\Adriana Orellana\source\repos\POS\POS\Images\buy.png");
+                tableLayoutPanel2.Controls.Add(button);
+            }
+
+            
 
             tableLayoutPanel2.AutoScrollMinSize = new Size(tableLayoutPanel2.Width, heightScroll);
         }
@@ -145,8 +151,16 @@ namespace POS
             button.Text = text;
             button.BackgroundImage = Image.FromFile(filename);
             button.BackgroundImageLayout = ImageLayout.Center;
+            //button.Click +=
 
             return button;
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            FrmMainMenu frmMainMenu = new FrmMainMenu();
+            frmMainMenu.Show();
+            Close();
         }
     }
 }
