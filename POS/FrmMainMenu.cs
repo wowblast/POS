@@ -79,5 +79,12 @@ namespace POS
             frmStoreConfiguration.Show();
             Close();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            FrmInicioSesion frmInicioSesion = new FrmInicioSesion();
+            frmInicioSesion.Show();
+            Close();
+        }
     }
 }

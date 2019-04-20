@@ -30,5 +30,11 @@ namespace POS
             frmMainMenu.Show();
             Close();
         }
+
+        private void btnUpdateProduct_Click(object sender, EventArgs e)
+        {
+            FrmUpdateProduct frmUpdateProduct = new FrmUpdateProduct();
+            frmUpdateProduct.Show();
+        }
     }
 }
