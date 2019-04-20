@@ -25,7 +25,6 @@ namespace POS
 
             // Get height scroll 
             heightScroll = 3 * tableLayoutPanel2.GetColumnWidths()[0];
-
         }
 
         private void button1_Click(object sender, EventArgs e)
