@@ -14,16 +14,11 @@ namespace POS
 {
     public partial class FrmUpdateProvider : Form
     {
-        public int idProveedor;
-        public string nombre;
-        public string ubicacion;
+        public Proveedor proveedor;
 
         public FrmUpdateProvider()
         {
             InitializeComponent();
-            idProveedor = 0;
-            nombre = "";
-            ubicacion = "";
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -34,15 +29,20 @@ namespace POS
         private void btnUpdateData_Click(object sender, EventArgs e)
         {
             ProveedorControl proveedorControl = new ProveedorControl();
+
             string nombre = txtName.Text;
             string ubicacion = txtUbication.Text;
-            proveedorControl.ActualizarProveedor(idProveedor, nombre, ubicacion);
+
+            proveedorControl.ActualizarProveedor(proveedor.CodigoProveedor, nombre, ubicacion);
+
+            Close();
         }
 
-        public Proveedor RellenarDatos(int idProveedor, string nombre, string ubicacion)
+        public void RellenarDatos(int idProveedor, string nombre, string ubicacion)
         {
-            Proveedor proveedor = new Proveedor(idProveedor, nombre, ubicacion);
-            return proveedor;
+            this.proveedor =  new Proveedor(idProveedor, nombre, ubicacion);
+            txtName.Text = proveedor.NombreProveedor;
+            txtUbication.Text = proveedor.Ubicacion;
         }
     }
 }
