@@ -1,4 +1,5 @@
-﻿using System;
+﻿using POS.Control;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,7 +16,6 @@ namespace POS
         public FrmProvider()
         {
             InitializeComponent();
-            
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -27,10 +27,47 @@ namespace POS
 
         private void btnRegisterProvider_Click(object sender, EventArgs e)
         {
-            /*ProviderController providerController = new ProviderController();
-            providerController.InsertProvider(txtNameProvider.Text, txtUbicationProvider.Text);
+            ProveedorControl proveedorControl = new ProveedorControl();
+            proveedorControl.InsertarProveedor(txtNameProvider.Text, txtUbicationProvider.Text);
             txtNameProvider.Text = "";
-            txtUbicationProvider.Text = "";*/
+            txtUbicationProvider.Text = "";
+        }
+
+        private void tabControl1_MouseClick_1(object sender, MouseEventArgs e)
+        {
+            Listar();
+        }
+
+        public void Listar()
+        {
+            ProveedorControl proveedorControl = new ProveedorControl();
+            dataGridView1.DataSource = proveedorControl.ListarProveedor();
+            dataGridView2.DataSource = proveedorControl.ListarProveedor();
+        }
+
+        private void btnDeleteProvider_Click_1(object sender, EventArgs e)
+        {
+            if (dataGridView2.SelectedRows.Count == 1)
+            {
+                DialogResult result = MessageBox.Show("¿Esta seguro que desea eliminar el proveedor?", "Importante", MessageBoxButtons.YesNo);
+
+                if (result == DialogResult.Yes)
+                {
+                    int idProveedor = Convert.ToInt32(dataGridView2.SelectedCells[0].Value);
+                    ProveedorControl providerController = new ProveedorControl();
+                    providerController.EliminarProveedor(idProveedor);
+                    Listar();
+                }
+            }
+            else
+            {
+                MessageBox.Show("¡Debe seleccionar a un proveedor!", "Error");
+            }
+        }
+
+        private void btnUpdateProvider_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

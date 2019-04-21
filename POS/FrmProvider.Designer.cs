@@ -32,27 +32,27 @@
             this.btnBack = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtNameProvider = new System.Windows.Forms.TextBox();
-            this.txtUbicationProvider = new System.Windows.Forms.TextBox();
-            this.btnRegisterProvider = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
             this.cbCompany = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnRegisterProvider = new System.Windows.Forms.Button();
+            this.txtUbicationProvider = new System.Windows.Forms.TextBox();
+            this.txtNameProvider = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btnUpdateProvider = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.btnDeleteProvider = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,6 +84,7 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1183, 626);
             this.tabControl1.TabIndex = 10;
+            this.tabControl1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tabControl1_MouseClick_1);
             // 
             // tabPage1
             // 
@@ -102,6 +103,73 @@
             this.tabPage1.Text = "Registrar";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // cbCompany
+            // 
+            this.cbCompany.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbCompany.FormattingEnabled = true;
+            this.cbCompany.Location = new System.Drawing.Point(329, 245);
+            this.cbCompany.Name = "cbCompany";
+            this.cbCompany.Size = new System.Drawing.Size(531, 30);
+            this.cbCompany.TabIndex = 6;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(210, 245);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(91, 24);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Empresa:";
+            // 
+            // btnRegisterProvider
+            // 
+            this.btnRegisterProvider.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnRegisterProvider.Location = new System.Drawing.Point(428, 497);
+            this.btnRegisterProvider.Name = "btnRegisterProvider";
+            this.btnRegisterProvider.Size = new System.Drawing.Size(315, 46);
+            this.btnRegisterProvider.TabIndex = 4;
+            this.btnRegisterProvider.Text = "REGISTRAR PROVEEDOR";
+            this.btnRegisterProvider.UseVisualStyleBackColor = true;
+            this.btnRegisterProvider.Click += new System.EventHandler(this.btnRegisterProvider_Click);
+            // 
+            // txtUbicationProvider
+            // 
+            this.txtUbicationProvider.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtUbicationProvider.Location = new System.Drawing.Point(329, 137);
+            this.txtUbicationProvider.Multiline = true;
+            this.txtUbicationProvider.Name = "txtUbicationProvider";
+            this.txtUbicationProvider.Size = new System.Drawing.Size(531, 73);
+            this.txtUbicationProvider.TabIndex = 3;
+            // 
+            // txtNameProvider
+            // 
+            this.txtNameProvider.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNameProvider.Location = new System.Drawing.Point(329, 80);
+            this.txtNameProvider.Name = "txtNameProvider";
+            this.txtNameProvider.Size = new System.Drawing.Size(531, 28);
+            this.txtNameProvider.TabIndex = 2;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(202, 137);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(99, 24);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Ubicación:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(210, 80);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(84, 24);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Nombre:";
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.btnUpdateProvider);
@@ -115,95 +183,25 @@
             this.tabPage2.Text = "Actualizar";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // btnUpdateProvider
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(527, 47);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(176, 32);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Proveedores";
+            this.btnUpdateProvider.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnUpdateProvider.Location = new System.Drawing.Point(446, 523);
+            this.btnUpdateProvider.Name = "btnUpdateProvider";
+            this.btnUpdateProvider.Size = new System.Drawing.Size(305, 45);
+            this.btnUpdateProvider.TabIndex = 2;
+            this.btnUpdateProvider.Text = "ACTUALIZAR PROVEEDOR";
+            this.btnUpdateProvider.UseVisualStyleBackColor = true;
+            this.btnUpdateProvider.Click += new System.EventHandler(this.btnUpdateProvider_Click);
             // 
-            // tabPage3
+            // label5
             // 
-            this.tabPage3.Controls.Add(this.btnDeleteProvider);
-            this.tabPage3.Controls.Add(this.dataGridView2);
-            this.tabPage3.Controls.Add(this.label6);
-            this.tabPage3.Location = new System.Drawing.Point(4, 31);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1175, 591);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Eliminar";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(210, 80);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 24);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Nombre:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(202, 137);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 24);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Ubicación:";
-            // 
-            // txtNameProvider
-            // 
-            this.txtNameProvider.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNameProvider.Location = new System.Drawing.Point(329, 80);
-            this.txtNameProvider.Name = "txtNameProvider";
-            this.txtNameProvider.Size = new System.Drawing.Size(531, 28);
-            this.txtNameProvider.TabIndex = 2;
-            // 
-            // txtUbicationProvider
-            // 
-            this.txtUbicationProvider.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtUbicationProvider.Location = new System.Drawing.Point(329, 137);
-            this.txtUbicationProvider.Multiline = true;
-            this.txtUbicationProvider.Name = "txtUbicationProvider";
-            this.txtUbicationProvider.Size = new System.Drawing.Size(531, 73);
-            this.txtUbicationProvider.TabIndex = 3;
-            // 
-            // btnRegisterProvider
-            // 
-            this.btnRegisterProvider.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnRegisterProvider.Location = new System.Drawing.Point(428, 497);
-            this.btnRegisterProvider.Name = "btnRegisterProvider";
-            this.btnRegisterProvider.Size = new System.Drawing.Size(315, 46);
-            this.btnRegisterProvider.TabIndex = 4;
-            this.btnRegisterProvider.Text = "REGISTRAR PROVEEDOR";
-            this.btnRegisterProvider.UseVisualStyleBackColor = true;
-            this.btnRegisterProvider.Click += new System.EventHandler(this.btnRegisterProvider_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(210, 245);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 24);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Empresa:";
-            // 
-            // cbCompany
-            // 
-            this.cbCompany.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbCompany.FormattingEnabled = true;
-            this.cbCompany.Location = new System.Drawing.Point(329, 245);
-            this.cbCompany.Name = "cbCompany";
-            this.cbCompany.Size = new System.Drawing.Size(531, 30);
-            this.cbCompany.TabIndex = 6;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(56, 45);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(514, 24);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Seleccione al proveedor del que desea actualizar sus datos:";
             // 
             // dataGridView1
             // 
@@ -217,33 +215,28 @@
             this.dataGridView1.Size = new System.Drawing.Size(686, 395);
             this.dataGridView1.TabIndex = 0;
             // 
-            // label5
+            // tabPage3
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(56, 45);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(514, 24);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Seleccione al proveedor del que desea actualizar sus datos:";
+            this.tabPage3.Controls.Add(this.btnDeleteProvider);
+            this.tabPage3.Controls.Add(this.dataGridView2);
+            this.tabPage3.Controls.Add(this.label6);
+            this.tabPage3.Location = new System.Drawing.Point(4, 31);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(1175, 591);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Eliminar";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // btnUpdateProvider
+            // btnDeleteProvider
             // 
-            this.btnUpdateProvider.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnUpdateProvider.Location = new System.Drawing.Point(446, 523);
-            this.btnUpdateProvider.Name = "btnUpdateProvider";
-            this.btnUpdateProvider.Size = new System.Drawing.Size(305, 45);
-            this.btnUpdateProvider.TabIndex = 2;
-            this.btnUpdateProvider.Text = "ACTUALIZAR PROVEEDOR";
-            this.btnUpdateProvider.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(65, 41);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(387, 24);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Seleccione al proveedor que desea eliminar:";
+            this.btnDeleteProvider.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnDeleteProvider.Location = new System.Drawing.Point(471, 531);
+            this.btnDeleteProvider.Name = "btnDeleteProvider";
+            this.btnDeleteProvider.Size = new System.Drawing.Size(248, 39);
+            this.btnDeleteProvider.TabIndex = 2;
+            this.btnDeleteProvider.Text = "ELIMINAR PROVEEDOR";
+            this.btnDeleteProvider.UseVisualStyleBackColor = true;
+            this.btnDeleteProvider.Click += new System.EventHandler(this.btnDeleteProvider_Click_1);
             // 
             // dataGridView2
             // 
@@ -257,15 +250,25 @@
             this.dataGridView2.Size = new System.Drawing.Size(686, 395);
             this.dataGridView2.TabIndex = 1;
             // 
-            // btnDeleteProvider
+            // label6
             // 
-            this.btnDeleteProvider.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnDeleteProvider.Location = new System.Drawing.Point(471, 531);
-            this.btnDeleteProvider.Name = "btnDeleteProvider";
-            this.btnDeleteProvider.Size = new System.Drawing.Size(248, 39);
-            this.btnDeleteProvider.TabIndex = 2;
-            this.btnDeleteProvider.Text = "ELIMINAR PROVEEDOR";
-            this.btnDeleteProvider.UseVisualStyleBackColor = true;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(65, 41);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(387, 24);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Seleccione al proveedor que desea eliminar:";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(527, 47);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(176, 32);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Proveedores";
             // 
             // FrmProvider
             // 
@@ -285,9 +288,9 @@
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

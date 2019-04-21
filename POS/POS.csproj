@@ -50,7 +50,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Control\EmpleadoControl.cs" />
+    <Compile Include="Control\ProveedorControl.cs" />
     <Compile Include="Database\Connection.cs" />
+    <Compile Include="Entity\Proveedor.cs" />
     <Compile Include="FrmCompany.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -193,8 +195,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Entity\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
