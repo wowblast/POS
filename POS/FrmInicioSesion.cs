@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -19,9 +20,24 @@ namespace POS
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            FrmMainMenu frmMainMenu = new FrmMainMenu();
-            frmMainMenu.Show();
-            Hide();
+            string user = txt_user.Text;
+            string password = txt_password.Text;
+
+            ClienteControl clienteControl = new ClienteControl();
+            bool login = clienteControl.Login(user, password);
+
+            password = "";
+
+            if (login)
+            {
+                FrmMainMenu frmMainMenu = new FrmMainMenu();
+                frmMainMenu.Show();
+                Hide();
+            }
+            else
+            {
+                MessageBox.Show("Usuario o contraseña incorrectos");
+            }
         }
     }
 }
