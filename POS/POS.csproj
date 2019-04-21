@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Control\ProviderController.cs" />
+    <Compile Include="Database\ClienteControl.cs" />
     <Compile Include="Database\Connection.cs" />
     <Compile Include="Entity\Provider.cs" />
     <Compile Include="FrmCompany.cs">
