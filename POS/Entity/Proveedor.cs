@@ -8,6 +8,7 @@ namespace POS.Entity
 {
     class Proveedor
     {
+		//t
         public int CodigoProveedor { get; set; }
         public string NombreProveedor { get; set; }
         public string Ubicacion { get; set; }
