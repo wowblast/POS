@@ -6,10 +6,17 @@ using System.Threading.Tasks;
 
 namespace POS.Entity
 {
-    class Proveedor
+    public class Proveedor
     {
         public int CodigoProveedor { get; set; }
         public string NombreProveedor { get; set; }
         public string Ubicacion { get; set; }
+
+        public Proveedor(int idProveedor, string nombre, string ubicacion)
+        {
+            CodigoProveedor = idProveedor;
+            NombreProveedor = nombre;
+            Ubicacion = ubicacion;
+        }
     }
 }

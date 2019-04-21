@@ -131,6 +131,12 @@
     <Compile Include="FrmUpdateProduct.Designer.cs">
       <DependentUpon>FrmUpdateProduct.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmUpdateProvider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpdateProvider.Designer.cs">
+      <DependentUpon>FrmUpdateProvider.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\Log.cs" />
@@ -172,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmUpdateProduct.resx">
       <DependentUpon>FrmUpdateProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpdateProvider.resx">
+      <DependentUpon>FrmUpdateProvider.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
