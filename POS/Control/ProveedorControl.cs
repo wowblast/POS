@@ -65,16 +65,18 @@ namespace POS.Control
             }
         }
 
-        public void ActualizarProveedor(int codigoProveedor, string nombreProveedor, string ubicacion)
+        public void ActualizarProveedor(int idProveedor, string nombreProveedor, string ubicacion)
         {
-            string sql = "";
+            string sql = "UPDATE PROVEEDORES SET nombre = '" + nombreProveedor + "', ubicacion = '" + ubicacion + "' WHERE idProveedor = " + idProveedor;
             try
             {
                 connection.ExecuteSQL(sql);
+                MessageBox.Show("¡Datos actualizados correctamente!", "Completado");
+                Log.Print(sql);
             }
             catch (Exception e)
             {
-
+                Log.Print("An exception has ocurred. " + e.Message);
             }
         }
 

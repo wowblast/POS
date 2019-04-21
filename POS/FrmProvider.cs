@@ -67,7 +67,20 @@ namespace POS
 
         private void btnUpdateProvider_Click(object sender, EventArgs e)
         {
+            if (dataGridView1.SelectedRows.Count == 1)
+            {
+                int idProveedor = Convert.ToInt32(dataGridView1.SelectedCells[0].Value);
+                string nombre = dataGridView1.SelectedCells[1].Value.ToString();
+                string ubicacion = dataGridView1.SelectedCells[2].Value.ToString();
 
+                FrmUpdateProvider frmUpdateProvider = new FrmUpdateProvider();
+                frmUpdateProvider.Show();
+                frmUpdateProvider.RellenarDatos(idProveedor, nombre, ubicacion);
+            }
+            else
+            {
+                MessageBox.Show("¡Debe seleccionar a un proveedor!", "Error");
+            }
         }
     }
 }
