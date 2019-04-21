@@ -1,5 +1,4 @@
-﻿using POS.Control;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -28,10 +27,10 @@ namespace POS
 
         private void btnRegisterProvider_Click(object sender, EventArgs e)
         {
-            ProviderController providerController = new ProviderController();
+            /*ProviderController providerController = new ProviderController();
             providerController.InsertProvider(txtNameProvider.Text, txtUbicationProvider.Text);
             txtNameProvider.Text = "";
-            txtUbicationProvider.Text = "";
+            txtUbicationProvider.Text = "";*/
         }
     }
 }
