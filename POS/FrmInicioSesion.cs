@@ -23,8 +23,8 @@ namespace POS
             string user = txt_user.Text;
             string password = txt_password.Text;
 
-            ClienteControl clienteControl = new ClienteControl();
-            bool login = clienteControl.Login(user, password);
+            EmpleadoControl empleadoControl = new EmpleadoControl();
+            bool login = empleadoControl.Login(user, password);
 
             password = "";
 

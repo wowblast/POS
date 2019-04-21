@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 
 namespace POS
 {
-    class ClienteControl
+    class EmpleadoControl
     {
 
         private readonly Connection connection;
 
-        public ClienteControl()
+        public EmpleadoControl()
         {
             connection = new Connection();
         }
