@@ -18,7 +18,7 @@ namespace POS.Control
 		}
 		public void InsertarProducto(int idEstante, string nombre, string descripcion , int precionUnitarioVenta, int cantidad)
 		{
-			string sql = "INSERT INTO PRODUCTOS (idEstante, nombre,descripcion,precioUnitarioVenta) VALUES ('" + idEstante + "','" + nombre + "','" + descripcion + "','" + precionUnitarioVenta + "','" + cantidad + "')";
+			string sql = "INSERT INTO PRODUCTOS (idEstante, nombre,descripcion,precioUnitarioVenta,cantidad) VALUES ('" + idEstante + "','" + nombre + "','" + descripcion + "','" + precionUnitarioVenta + "','" + cantidad + "')";
 			try
 			{
 				connection.ExecuteSQL(sql);
@@ -49,7 +49,7 @@ namespace POS.Control
 
 		public DataTable ListarProductos()
 		{
-			string sql = "SELECT idProducto AS 'ID PRODUCTO', idEstante AS 'ID ESTANTE', nombre AS 'NOMBRE DEL PRODUCTO', descripcion AS 'DESCRIPCION', precionUnitarioVenta AS 'PRECIO UNITARIO DE VENTA DEL PRODUCTO', cantidad AS 'CANTIDAD' FROM PRODUCTOS";
+			string sql = "SELECT idProducto AS 'ID PRODUCTO', idEstante AS 'ID ESTANTE', nombre AS 'NOMBRE DEL PRODUCTO', descripcion AS 'DESCRIPCION', precioUnitarioVenta AS 'PRECIO UNITARIO DE VENTA DEL PRODUCTO', cantidad AS 'CANTIDAD' FROM PRODUCTOS";
 
 			try
 			{
@@ -76,6 +76,22 @@ namespace POS.Control
 			catch (Exception e)
 			{
 				Log.Print("An exception has ocurred. " + e.Message);
+			}
+		}
+		public DataTable ListarEstantes()
+		{
+			string sql = "SELECT idEstante ,numero  from ESTANTES";
+
+			try
+			{
+				DataTable estantes = connection.QuerySQL(sql);
+				Log.Print("Successful listing");
+				return estantes;
+			}
+			catch (Exception e)
+			{
+				Log.Print("An exception has ocurred. " + e.Message);
+				return null;
 			}
 		}
 	}
