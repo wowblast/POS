@@ -14,11 +14,13 @@ namespace POS
 {
 	public partial class FrmProducts : Form
 	{
+		
 		public FrmProducts()
 		{
 			InitializeComponent();
 		}
-
+		bool imageAdded = false;
+		byte[] binaryImage;
 		private void btnBack_Click(object sender, EventArgs e)
 		{
 			FrmMainMenu frmMainMenu = new FrmMainMenu();
@@ -49,13 +51,26 @@ namespace POS
 
 		private void RegistrarProducto_Click(object sender, EventArgs e)
 		{
-			ProductoControl productoControl = new ProductoControl();
-			productoControl.InsertarProducto(1, textBox3.Text,textBox4.Text,Convert.ToInt32(textBox5.Text), Convert.ToInt32(textBox6.Text));
-			textBox3.Text = "";
-			textBox4.Text = "";
-			textBox5.Text = "";
-			textBox6.Text = "";
-			Listar();
+			if (imageAdded)
+			{
+
+
+				ProductoControl productoControl = new ProductoControl();
+				string idProducto = productoControl.InsertarProducto(1, textBox3.Text, textBox4.Text, Convert.ToInt32(textBox5.Text), Convert.ToInt32(textBox6.Text));
+				ImagenProducto image = new ImagenProducto();
+				image.InsertarImagen(Convert.ToInt32(idProducto), binaryImage);
+				textBox3.Text = "";
+				textBox4.Text = "";
+				textBox5.Text = "";
+				textBox6.Text = "";
+				Listar();
+				imageAdded = false;
+			}
+			else
+			{
+				MessageBox.Show("seleccione imagen");
+			}
+
 
 
 		}
@@ -104,9 +119,13 @@ namespace POS
 					string imagen = openFileDialog1.FileName;
 					pictureBox1.Image = Image.FromFile(imagen);
 					FileStream fS = new FileStream(imagen, FileMode.Open, FileAccess.Read);
-					byte[] b = new byte[fS.Length];
-					fS.Read(b, 0, (int)fS.Length);
+					binaryImage = new byte[fS.Length];
+					fS.Read(binaryImage, 0, (int)fS.Length);
 					fS.Close();
+					imageAdded = true;
+					//image.InsertarImagen(te)
+					
+					
 					MessageBox.Show("imagen cargada");
 				}
 			}

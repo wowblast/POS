@@ -16,18 +16,25 @@ namespace POS.Control
 		{
 			connection = new Connection();
 		}
-		public void InsertarProducto(int idEstante, string nombre, string descripcion , int precionUnitarioVenta, int cantidad)
+		public string InsertarProducto(int idEstante, string nombre, string descripcion , int precionUnitarioVenta, int cantidad)
 		{
-			string sql = "INSERT INTO PRODUCTOS (idEstante, nombre,descripcion,precioUnitarioVenta,cantidad) VALUES ('" + idEstante + "','" + nombre + "','" + descripcion + "','" + precionUnitarioVenta + "','" + cantidad + "')";
+			string sql = "INSERT INTO PRODUCTOS (idEstante, nombre,descripcion,precioUnitarioVenta,cantidad) VALUES ('" + idEstante + "','" + nombre + "','" + descripcion + "','" + precionUnitarioVenta + "','" + cantidad + "'); SELECT SCOPE_IDENTITY()";
 			try
 			{
-				connection.ExecuteSQL(sql);
+				DataTable Productos = connection.QuerySQL(sql);
+				string[] idProducto = Productos.Rows.OfType<DataRow>().Select(k => k[0].ToString()).ToArray();
+
+				//connection.ExecuteSQL(sql);
 				MessageBox.Show("¡Registro correcto de  producto!", "Completado");
 				Log.Print("Query executed correctly \n" + sql);
+
+				return idProducto[0];
 			}
 			catch (Exception e)
 			{
 				Log.Print("An exception has occurred. " + e.Message);
+				return null;
+
 			}
 		}
 
