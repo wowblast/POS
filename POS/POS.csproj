@@ -53,7 +53,9 @@
     <Compile Include="Control\ImagenProducto.cs" />
     <Compile Include="Control\ProductoControl.cs" />
     <Compile Include="Control\ProveedorControl.cs" />
+    <Compile Include="Control\TiendaControl.cs" />
     <Compile Include="Database\Connection.cs" />
+    <Compile Include="Entity\Estante.cs" />
     <Compile Include="Entity\Producto.cs" />
     <Compile Include="Entity\Proveedor.cs" />
     <Compile Include="FrmCompany.cs">
@@ -140,6 +142,12 @@
     <Compile Include="FrmUpdateProvider.Designer.cs">
       <DependentUpon>FrmUpdateProvider.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmUpdateShelve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpdateShelve.Designer.cs">
+      <DependentUpon>FrmUpdateShelve.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\Log.cs" />
@@ -184,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmUpdateProvider.resx">
       <DependentUpon>FrmUpdateProvider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpdateShelve.resx">
+      <DependentUpon>FrmUpdateShelve.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
