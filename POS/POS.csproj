@@ -50,11 +50,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Control\EmpleadoControl.cs" />
+    <Compile Include="Control\EmpresaControl.cs" />
     <Compile Include="Control\ImagenProducto.cs" />
     <Compile Include="Control\ProductoControl.cs" />
     <Compile Include="Control\ProveedorControl.cs" />
     <Compile Include="Control\TiendaControl.cs" />
     <Compile Include="Database\Connection.cs" />
+    <Compile Include="Entity\Empresa.cs" />
     <Compile Include="Entity\Estante.cs" />
     <Compile Include="Entity\Producto.cs" />
     <Compile Include="Entity\Proveedor.cs" />
@@ -130,6 +132,12 @@
     <Compile Include="FrmStoreConfiguration.Designer.cs">
       <DependentUpon>FrmStoreConfiguration.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmUpdateCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpdateCompany.Designer.cs">
+      <DependentUpon>FrmUpdateCompany.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmUpdateProduct.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmStoreConfiguration.resx">
       <DependentUpon>FrmStoreConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpdateCompany.resx">
+      <DependentUpon>FrmUpdateCompany.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmUpdateProduct.resx">
       <DependentUpon>FrmUpdateProduct.cs</DependentUpon>
