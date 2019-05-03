@@ -17,6 +17,25 @@ namespace POS.Control
             connection = new Connection();
         }
 
+        public int SeleccionarId()
+        {
+            string sql = "SELECT TOP 1 * FROM PROVEEDORES ORDER BY IdProveedor DESC ";
+            try
+            {
+                DataTable provider = connection.QuerySQL(sql);
+                DataRow row = provider.Rows[0];
+
+                int idProveedor = Convert.ToInt32(row["idProveedor"].ToString());
+                Log.Print("Identificador seleccionado correctamente!");
+                return idProveedor;
+            }
+            catch (Exception e)
+            {
+                Log.Print("Ha ocurrido una excepcion al momento de seleccionar el id del proveedor. " + e.Message);
+                return -1;
+            }
+        }
+
         public void InsertarProveedor(string nombre, string ubicacion)
         {
             string sql = "INSERT INTO PROVEEDORES (nombre, ubicacion) VALUES ('" + nombre + "','" + ubicacion + "')";

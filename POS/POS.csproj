@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Control\EmpleadoControl.cs" />
     <Compile Include="Control\EmpresaControl.cs" />
+    <Compile Include="Control\EmpresaProveedorControl.cs" />
     <Compile Include="Control\ImagenProducto.cs" />
     <Compile Include="Control\ProductoControl.cs" />
     <Compile Include="Control\ProveedorControl.cs" />

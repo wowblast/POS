@@ -16,6 +16,7 @@ namespace POS
         public FrmProvider()
         {
             InitializeComponent();
+            CargarDatosEmpresa();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -29,6 +30,13 @@ namespace POS
         {
             ProveedorControl proveedorControl = new ProveedorControl();
             proveedorControl.InsertarProveedor(txtNameProvider.Text, txtUbicationProvider.Text);
+
+            int idProveedor = proveedorControl.SeleccionarId();
+            int idEmpresa = Convert.ToInt32(cbCompany.SelectedValue);
+
+            EmpresaProveedorControl empresaProveedorControl = new EmpresaProveedorControl();
+            empresaProveedorControl.RegistrarEmpresaProveedor(idEmpresa, idProveedor);
+
             txtNameProvider.Text = "";
             txtUbicationProvider.Text = "";
         }
@@ -36,6 +44,15 @@ namespace POS
         private void tabControl1_MouseClick_1(object sender, MouseEventArgs e)
         {
             Listar();
+        }
+
+        public void CargarDatosEmpresa()
+        {
+            EmpresaControl empresaControl = new EmpresaControl();
+            DataTable empresas = empresaControl.ListarEmpresas();
+            cbCompany.DataSource = empresas;
+            cbCompany.ValueMember = "Id Empresa";
+            cbCompany.DisplayMember = "Nombre Empresa";
         }
 
         public void Listar()
