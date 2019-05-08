@@ -18,6 +18,28 @@ namespace POS
             connection = new Connection();
         }
 
+        public DataTable Listar()
+        {
+            string sql = "SELECT * FROM EMPLEADOS";
+
+            try
+            {
+                DataTable listaEmpleados = connection.QuerySQL(sql);
+                Log.Print("Successful listing");
+                return listaEmpleados;
+            }
+            catch (Exception e)
+            {
+                Log.Print("An exception has ocurred. " + e.Message);
+                return null;
+            }
+        }
+
+        public void Insertar()
+        {
+
+        }
+
         /// <summary>
         /// Login into the point of sales
         /// </summary>

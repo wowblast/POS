@@ -86,5 +86,12 @@ namespace POS
             frmInicioSesion.Show();
             Close();
         }
+
+        private void btnEmployee_Click(object sender, EventArgs e)
+        {
+            FrmEmployee frmEmployee = new FrmEmployee();
+            frmEmployee.Show();
+            Close();
+        }
     }
 }

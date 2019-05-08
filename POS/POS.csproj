@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Control\CargoControl.cs" />
     <Compile Include="Control\EmpleadoControl.cs" />
     <Compile Include="Control\EmpresaControl.cs" />
     <Compile Include="Control\EmpresaProveedorControl.cs" />
@@ -66,6 +67,12 @@
     </Compile>
     <Compile Include="FrmCompany.Designer.cs">
       <DependentUpon>FrmCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmployee.Designer.cs">
+      <DependentUpon>FrmEmployee.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmInicioSesion.cs">
       <SubType>Form</SubType>
@@ -162,6 +169,9 @@
     <Compile Include="Tools\Log.cs" />
     <EmbeddedResource Include="FrmCompany.resx">
       <DependentUpon>FrmCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmployee.resx">
+      <DependentUpon>FrmEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmInicioSesion.resx">
       <DependentUpon>FrmInicioSesion.cs</DependentUpon>
