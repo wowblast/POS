@@ -16,33 +16,46 @@ namespace POS.Control
 		{
 			connection = new Connection();
 		}
-		public void InsertarImagen(int idProducto,byte [] imagen)
+		public void InsertarImagen(int idProducto, byte[] imagen)
 		{
 			try
 			{
-				using (SqlConnection cn = new SqlConnection("Data Source=.;Initial Catalog=POS_BBDD;Integrated Security=True"))
-				{
-					cn.Open();
-					using (SqlCommand cmd = new SqlCommand("insert into IMAGENES_PRODUCTO (idProducto,imagen) VALUES (@idProducto,@data)", cn))
-					{
-						cmd.Parameters.AddWithValue("@idProducto", idProducto);
-						cmd.Parameters.AddWithValue("@data", imagen);
-						cmd.ExecuteNonQuery();
-					}
-				}
-
-
+				connection.UploadImage(idProducto, imagen);
 				MessageBox.Show("¡Registro correcto de  imagen!", "Completado");
-				Log.Print("Query executed correctly image added \n" );
+				Log.Print("Query executed correctly image added \n");
 			}
 			catch (Exception e)
 			{
 				Log.Print("An exception has occurred. " + e.Message);
 			}
 		}
-		public void BorrarImagen()
+		public void BorrarImagen(int idProducto)
 		{
+			string sql = "DELETE FROM IMAGENES_PRODUCTO WHERE idProducto = " + idProducto;
 
+			try
+			{
+				connection.ExecuteSQL(sql);
+				MessageBox.Show("¡imagen eliminado exitosamente!", "Completado");
+				Log.Print(sql);
+			}
+			catch (Exception e)
+			{
+				Log.Print("An exception has ocurred. " + e.Message);
+			}
+		}
+		public void UpdateImage(int idProducto, byte[] image)
+		{
+			try
+			{
+				connection.UpdateImage(idProducto, image);
+				MessageBox.Show("¡Actualizado  correcto de  imagen!", "Completado");
+				Log.Print("Query executed correctly image added \n");
+			}
+			catch (Exception e)
+			{
+				Log.Print("An exception has occurred. " + e.Message);
+			}
 		}
 	}
 }
