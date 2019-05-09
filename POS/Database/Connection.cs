@@ -32,7 +32,12 @@ namespace POS
             }
         }
 
-        public DataTable QuerySQL(string sql)
+		internal void UploadImage(int idProducto, byte[] imagen)
+		{
+			throw new NotImplementedException();
+		}
+
+		public DataTable QuerySQL(string sql)
         {
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
@@ -52,6 +57,10 @@ namespace POS
                 }
             }
         }
-		
-    }
+
+		internal void UpdateImage(int idProducto, byte[] image)
+		{
+			throw new NotImplementedException();
+		}
+	}
 }

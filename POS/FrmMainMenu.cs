@@ -86,5 +86,10 @@ namespace POS
             frmInicioSesion.Show();
             Close();
         }
-    }
+
+		private void button11_Click(object sender, EventArgs e)
+		{
+
+		}
+	}
 }
