@@ -16,7 +16,7 @@ namespace POS
         public FrmProvider()
         {
             InitializeComponent();
-            CargarDatosEmpresa();
+            //CargarDatosEmpresa();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -26,73 +26,62 @@ namespace POS
             Close();
         }
 
-        private void btnRegisterProvider_Click(object sender, EventArgs e)
+        private void btnMenuPrincipal_Click(object sender, EventArgs e)
         {
-            ProveedorControl proveedorControl = new ProveedorControl();
-            proveedorControl.InsertarProveedor(txtNameProvider.Text, txtUbicationProvider.Text);
-
-            int idProveedor = proveedorControl.SeleccionarId();
-            int idEmpresa = Convert.ToInt32(cbCompany.SelectedValue);
-
-            EmpresaProveedorControl empresaProveedorControl = new EmpresaProveedorControl();
-            empresaProveedorControl.RegistrarEmpresaProveedor(idEmpresa, idProveedor);
-
-            txtNameProvider.Text = "";
-            txtUbicationProvider.Text = "";
+            FrmMainMenu frmMainMenu = new FrmMainMenu();
+            frmMainMenu.Show();
+            Close();
         }
 
-        private void tabControl1_MouseClick_1(object sender, MouseEventArgs e)
+        private void btnRegistrar_Click_1(object sender, EventArgs e)
         {
-            Listar();
+            FrmRegisterProvider frmRegisterProvider = new FrmRegisterProvider();
+            frmRegisterProvider.Show();
         }
 
-        public void CargarDatosEmpresa()
+        private void btnActualizar_Click_1(object sender, EventArgs e)
         {
-            EmpresaControl empresaControl = new EmpresaControl();
-            DataTable empresas = empresaControl.ListarEmpresas();
-            cbCompany.DataSource = empresas;
-            cbCompany.ValueMember = "Id Empresa";
-            cbCompany.DisplayMember = "Nombre Empresa";
-        }
-
-        public void Listar()
-        {
-            ProveedorControl proveedorControl = new ProveedorControl();
-            dataGridView1.DataSource = proveedorControl.ListarProveedor();
-            dataGridView2.DataSource = proveedorControl.ListarProveedor();
-        }
-
-        private void btnDeleteProvider_Click_1(object sender, EventArgs e)
-        {
-            if (dataGridView2.SelectedRows.Count == 1)
+            if (dataGridView3.SelectedRows.Count == 1)
             {
-                DialogResult result = MessageBox.Show("¿Esta seguro que desea eliminar el proveedor?", "Importante", MessageBoxButtons.YesNo);
+                int idProveedor = Convert.ToInt32(dataGridView3.SelectedCells[0].Value);
+                string nombre = dataGridView3.SelectedCells[1].Value.ToString();
+                string ubicacion = dataGridView3.SelectedCells[2].Value.ToString();
 
-                if (result == DialogResult.Yes)
-                {
-                    int idProveedor = Convert.ToInt32(dataGridView2.SelectedCells[0].Value);
-                    ProveedorControl providerController = new ProveedorControl();
-                    providerController.EliminarProveedor(idProveedor);
-                    Listar();
-                }
+                FrmUpdateProvider frmUpdateProvider = new FrmUpdateProvider();
+                frmUpdateProvider.Show();
+                frmUpdateProvider.RellenarDatos(idProveedor, nombre, ubicacion);
             }
             else
             {
                 MessageBox.Show("¡Debe seleccionar a un proveedor!", "Error");
             }
+
         }
 
-        private void btnUpdateProvider_Click(object sender, EventArgs e)
+        private void FrmProvider_Load(object sender, EventArgs e)
         {
-            if (dataGridView1.SelectedRows.Count == 1)
-            {
-                int idProveedor = Convert.ToInt32(dataGridView1.SelectedCells[0].Value);
-                string nombre = dataGridView1.SelectedCells[1].Value.ToString();
-                string ubicacion = dataGridView1.SelectedCells[2].Value.ToString();
+            Listar();
+        }
 
-                FrmUpdateProvider frmUpdateProvider = new FrmUpdateProvider();
-                frmUpdateProvider.Show();
-                frmUpdateProvider.RellenarDatos(idProveedor, nombre, ubicacion);
+        public void Listar()
+        {
+            ProveedorControl proveedorControl = new ProveedorControl();
+            dataGridView3.DataSource = proveedorControl.ListarProveedor();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (dataGridView3.SelectedRows.Count == 1)
+            {
+                DialogResult result = MessageBox.Show("¿Esta seguro que desea eliminar el proveedor?", "Importante", MessageBoxButtons.YesNo);
+
+                if (result == DialogResult.Yes)
+                {
+                    int idProveedor = Convert.ToInt32(dataGridView3.SelectedCells[0].Value);
+                    ProveedorControl providerController = new ProveedorControl();
+                    providerController.EliminarProveedor(idProveedor);
+                    Listar();
+                }
             }
             else
             {
