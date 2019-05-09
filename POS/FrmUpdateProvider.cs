@@ -30,8 +30,8 @@ namespace POS
         {
             ProveedorControl proveedorControl = new ProveedorControl();
 
-            string nombre = txtName.Text;
-            string ubicacion = txtUbication.Text;
+            string nombre = txtNombre.Text;
+            string ubicacion = txtUbicacion.Text;
 
             proveedorControl.ActualizarProveedor(proveedor.CodigoProveedor, nombre, ubicacion);
 
@@ -41,8 +41,8 @@ namespace POS
         public void RellenarDatos(int idProveedor, string nombre, string ubicacion)
         {
             this.proveedor =  new Proveedor(idProveedor, nombre, ubicacion);
-            txtName.Text = proveedor.NombreProveedor;
-            txtUbication.Text = proveedor.Ubicacion;
+            txtNombre.Text = proveedor.NombreProveedor;
+            txtUbicacion.Text = proveedor.Ubicacion;
         }
     }
 }

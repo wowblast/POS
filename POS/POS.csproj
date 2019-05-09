@@ -115,6 +115,12 @@
     <Compile Include="FrmPurchases.Designer.cs">
       <DependentUpon>FrmPurchases.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmRegisterProvider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegisterProvider.Designer.cs">
+      <DependentUpon>FrmRegisterProvider.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmReport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPurchases.resx">
       <DependentUpon>FrmPurchases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegisterProvider.resx">
+      <DependentUpon>FrmRegisterProvider.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmReport.resx">
       <DependentUpon>FrmReport.cs</DependentUpon>

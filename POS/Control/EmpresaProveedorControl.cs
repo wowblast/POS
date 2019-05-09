@@ -28,5 +28,19 @@ namespace POS.Control
                 Log.Print("Ha ocurrido un error. " + e.Message);
             }
         }
+
+        public void ActualizarEmpresaProveedor(int idEmpresaProveedor, int idEmpresa, int idProveedor)
+        {
+            string sql = "UPDATE EMPRESA_PROVEEDOR SET idEmpresa = " + idEmpresa +  ", idProveedor = " + idProveedor + " WHERE idEmpresaProveedor =" + idEmpresaProveedor;
+            try
+            {
+                conexion.ExecuteSQL(sql);
+                Log.Print("¡Actualizado correctamente! " + sql);
+            }
+            catch (Exception e)
+            {
+                Log.Print("Ha ocurrido un error. " + e.Message);
+            }
+        }
     }
 }
