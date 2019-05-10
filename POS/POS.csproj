@@ -58,6 +58,7 @@
     <Compile Include="Control\ProveedorControl.cs" />
     <Compile Include="Control\TiendaControl.cs" />
     <Compile Include="Database\Connection.cs" />
+    <Compile Include="Entity\Empleado.cs" />
     <Compile Include="Entity\Empresa.cs" />
     <Compile Include="Entity\Estante.cs" />
     <Compile Include="Entity\Producto.cs" />
