@@ -216,6 +216,7 @@
 			this.btnActualizar.TabIndex = 1;
 			this.btnActualizar.Text = "Actualizar proveedor";
 			this.btnActualizar.UseVisualStyleBackColor = false;
+			this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
 			// 
 			// btnBack
 			// 
@@ -262,6 +263,7 @@
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "FrmCategoryMainMenu";
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+			this.Load += new System.EventHandler(this.FrmCategoryMainMenu_Load);
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
 			this.groupBox2.ResumeLayout(false);
 			this.groupBox2.PerformLayout();

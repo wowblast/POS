@@ -17,13 +17,13 @@ namespace POS.Control
 			connection = new Connection();
 		}
 
-		public void AñadirEstantería(string nombre, string niveles)
+		public void AñadirEstantería(string nombre, string descripcion, string subcategoria)
 		{
-			string sql = "INSERT INTO ESTANTES (numero, nivel) VALUES ('" + nombre + "', '" + niveles + "')";
+			string sql = "INSERT INTO CATEGORIAS (nombre, descripcion, subcategoria) VALUES ('" + nombre + "', '" + descripcion + "',' "+ subcategoria +"')";
 			try
 			{
 				connection.ExecuteSQL(sql);
-				MessageBox.Show("¡Estantería añadida exitosamente!", "Completado");
+				MessageBox.Show("¡Categoria añadida exitosamente!", "Completado");
 				Log.Print("Query executed correctly \n" + sql);
 			}
 			catch (Exception e)
@@ -31,14 +31,14 @@ namespace POS.Control
 				Log.Print("An exception has occurred. " + e.Message);
 			}
 		}
-		public void EliminarEstantería(int idEstante)
+		public void EliminarEstantería(int idCategoria)
 		{
-			string sql = "DELETE FROM ESTANTES WHERE idEstante = " + idEstante;
+			string sql = "DELETE FROM CATEGORIAS WHERE idCategoria = " + idCategoria;
 
 			try
 			{
 				connection.ExecuteSQL(sql);
-				MessageBox.Show("¡Estantería eliminada exitosamente!", "Completado");
+				MessageBox.Show("¡categoria eliminada exitosamente!", "Completado");
 				Log.Print(sql);
 			}
 			catch (Exception e)
@@ -60,9 +60,9 @@ namespace POS.Control
 				Log.Print("An exception has ocurred. " + e.Message);
 			}
 		}
-		public DataTable ListarEstantes()
+		public DataTable ListarCateogorias()
 		{
-			string sql = "SELECT idEstante AS 'ID ESTANTE', numero AS 'ESTANTE', nivel AS 'NIVELES' FROM ESTANTES";
+			string sql = "SELECT idCategoria AS 'ID CATEGORIAS', nombre AS 'NOMBRE CATEGORIA', descripcion AS 'DESCRIPCIÓN', subcategoria as 'SUBCATEGORIA FROM CATEGORIAS";
 
 			try
 			{

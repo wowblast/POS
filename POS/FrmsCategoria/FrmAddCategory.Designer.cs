@@ -32,8 +32,8 @@
 			this.btnCancelar = new System.Windows.Forms.Button();
 			this.btnRegistrar = new System.Windows.Forms.Button();
 			this.cbcategoria = new System.Windows.Forms.ComboBox();
-			this.label4 = new System.Windows.Forms.Label();
-			this.txtUbicacion = new System.Windows.Forms.TextBox();
+			this.txtSubcategoria = new System.Windows.Forms.Label();
+			this.txtDescripcion = new System.Windows.Forms.TextBox();
 			this.txtNombre = new System.Windows.Forms.TextBox();
 			this.label3 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
@@ -79,6 +79,7 @@
 			this.btnRegistrar.TabIndex = 21;
 			this.btnRegistrar.Text = "REGISTRAR";
 			this.btnRegistrar.UseVisualStyleBackColor = false;
+			this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
 			// 
 			// cbcategoria
 			// 
@@ -91,26 +92,26 @@
 			this.cbcategoria.Size = new System.Drawing.Size(423, 21);
 			this.cbcategoria.TabIndex = 20;
 			// 
-			// label4
+			// txtSubcategoria
 			// 
-			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(256, 376);
-			this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(77, 13);
-			this.label4.TabIndex = 19;
-			this.label4.Text = "SubCategoria :";
+			this.txtSubcategoria.AutoSize = true;
+			this.txtSubcategoria.Location = new System.Drawing.Point(256, 376);
+			this.txtSubcategoria.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.txtSubcategoria.Name = "txtSubcategoria";
+			this.txtSubcategoria.Size = new System.Drawing.Size(77, 13);
+			this.txtSubcategoria.TabIndex = 19;
+			this.txtSubcategoria.Text = "SubCategoria :";
 			// 
-			// txtUbicacion
+			// txtDescripcion
 			// 
-			this.txtUbicacion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			this.txtDescripcion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.txtUbicacion.Location = new System.Drawing.Point(404, 221);
-			this.txtUbicacion.Margin = new System.Windows.Forms.Padding(4);
-			this.txtUbicacion.Multiline = true;
-			this.txtUbicacion.Name = "txtUbicacion";
-			this.txtUbicacion.Size = new System.Drawing.Size(423, 120);
-			this.txtUbicacion.TabIndex = 18;
+			this.txtDescripcion.Location = new System.Drawing.Point(404, 221);
+			this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4);
+			this.txtDescripcion.Multiline = true;
+			this.txtDescripcion.Name = "txtDescripcion";
+			this.txtDescripcion.Size = new System.Drawing.Size(423, 120);
+			this.txtDescripcion.TabIndex = 18;
 			// 
 			// txtNombre
 			// 
@@ -150,8 +151,8 @@
 			this.Controls.Add(this.btnCancelar);
 			this.Controls.Add(this.btnRegistrar);
 			this.Controls.Add(this.cbcategoria);
-			this.Controls.Add(this.label4);
-			this.Controls.Add(this.txtUbicacion);
+			this.Controls.Add(this.txtSubcategoria);
+			this.Controls.Add(this.txtDescripcion);
 			this.Controls.Add(this.txtNombre);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label2);
@@ -170,8 +171,8 @@
 		private System.Windows.Forms.Button btnCancelar;
 		private System.Windows.Forms.Button btnRegistrar;
 		private System.Windows.Forms.ComboBox cbcategoria;
-		private System.Windows.Forms.Label label4;
-		private System.Windows.Forms.TextBox txtUbicacion;
+		private System.Windows.Forms.Label txtSubcategoria;
+		private System.Windows.Forms.TextBox txtDescripcion;
 		private System.Windows.Forms.TextBox txtNombre;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label label2;
