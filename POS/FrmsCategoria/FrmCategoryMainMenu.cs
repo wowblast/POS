@@ -10,14 +10,20 @@ using System.Windows.Forms;
 
 namespace POS.FrmsCategoria
 {
-	public partial class FrmAddCategory : Form
+	public partial class FrmCategoryMainMenu : Form
 	{
-		public FrmAddCategory()
+		public FrmCategoryMainMenu()
 		{
 			InitializeComponent();
 		}
 
-		private void btnCancelar_Click(object sender, EventArgs e)
+		private void btnRegistrar_Click(object sender, EventArgs e)
+		{
+			FrmAddCategory frmaddCategory = new FrmAddCategory();
+				frmaddCategory.Show();
+		}
+
+		private void btnBack_Click(object sender, EventArgs e)
 		{
 			this.Close();
 		}

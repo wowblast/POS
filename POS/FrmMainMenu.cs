@@ -1,4 +1,5 @@
-﻿using System;
+﻿using POS.FrmsCategoria;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -89,7 +90,8 @@ namespace POS
 
 		private void button11_Click(object sender, EventArgs e)
 		{
-
+			FrmCategoryMainMenu frmCategoy = new FrmCategoryMainMenu();
+			frmCategoy.Show();
 		}
 	}
 }

@@ -67,7 +67,7 @@
 			this.tableLayoutPanel1.Controls.Add(this.button11, 1, 2);
 			this.tableLayoutPanel1.Controls.Add(this.btnExit, 2, 2);
 			this.tableLayoutPanel1.Location = new System.Drawing.Point(115, 76);
-			this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
 			this.tableLayoutPanel1.Name = "tableLayoutPanel1";
 			this.tableLayoutPanel1.RowCount = 3;
 			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -83,7 +83,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.button1.Location = new System.Drawing.Point(179, 234);
-			this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.button1.Margin = new System.Windows.Forms.Padding(2);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(173, 112);
 			this.button1.TabIndex = 11;
@@ -98,7 +98,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.btnStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnStock.Location = new System.Drawing.Point(533, 118);
-			this.btnStock.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.btnStock.Margin = new System.Windows.Forms.Padding(2);
 			this.btnStock.Name = "btnStock";
 			this.btnStock.Size = new System.Drawing.Size(174, 112);
 			this.btnStock.TabIndex = 7;
@@ -114,7 +114,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.btnProvider.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnProvider.Location = new System.Drawing.Point(356, 118);
-			this.btnProvider.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.btnProvider.Margin = new System.Windows.Forms.Padding(2);
 			this.btnProvider.Name = "btnProvider";
 			this.btnProvider.Size = new System.Drawing.Size(173, 112);
 			this.btnProvider.TabIndex = 6;
@@ -130,7 +130,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.btnCompany.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnCompany.Location = new System.Drawing.Point(179, 118);
-			this.btnCompany.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.btnCompany.Margin = new System.Windows.Forms.Padding(2);
 			this.btnCompany.Name = "btnCompany";
 			this.btnCompany.Size = new System.Drawing.Size(173, 112);
 			this.btnCompany.TabIndex = 5;
@@ -146,7 +146,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.btnPurchases.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnPurchases.Location = new System.Drawing.Point(2, 118);
-			this.btnPurchases.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.btnPurchases.Margin = new System.Windows.Forms.Padding(2);
 			this.btnPurchases.Name = "btnPurchases";
 			this.btnPurchases.Size = new System.Drawing.Size(173, 112);
 			this.btnPurchases.TabIndex = 4;
@@ -162,7 +162,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.btnInvoice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnInvoice.Location = new System.Drawing.Point(533, 2);
-			this.btnInvoice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.btnInvoice.Margin = new System.Windows.Forms.Padding(2);
 			this.btnInvoice.Name = "btnInvoice";
 			this.btnInvoice.Size = new System.Drawing.Size(174, 112);
 			this.btnInvoice.TabIndex = 3;
@@ -178,7 +178,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.btnReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnReport.Location = new System.Drawing.Point(356, 2);
-			this.btnReport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.btnReport.Margin = new System.Windows.Forms.Padding(2);
 			this.btnReport.Name = "btnReport";
 			this.btnReport.Size = new System.Drawing.Size(173, 112);
 			this.btnReport.TabIndex = 2;
@@ -194,7 +194,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.btnProducts.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnProducts.Location = new System.Drawing.Point(179, 2);
-			this.btnProducts.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.btnProducts.Margin = new System.Windows.Forms.Padding(2);
 			this.btnProducts.Name = "btnProducts";
 			this.btnProducts.Size = new System.Drawing.Size(173, 112);
 			this.btnProducts.TabIndex = 1;
@@ -210,7 +210,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.btnSales.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnSales.Location = new System.Drawing.Point(2, 2);
-			this.btnSales.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.btnSales.Margin = new System.Windows.Forms.Padding(2);
 			this.btnSales.Name = "btnSales";
 			this.btnSales.Size = new System.Drawing.Size(173, 112);
 			this.btnSales.TabIndex = 0;
@@ -226,7 +226,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.btnStoreConfiguration.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnStoreConfiguration.Location = new System.Drawing.Point(2, 234);
-			this.btnStoreConfiguration.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.btnStoreConfiguration.Margin = new System.Windows.Forms.Padding(2);
 			this.btnStoreConfiguration.Name = "btnStoreConfiguration";
 			this.btnStoreConfiguration.Size = new System.Drawing.Size(173, 112);
 			this.btnStoreConfiguration.TabIndex = 9;
@@ -242,11 +242,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.button11.Location = new System.Drawing.Point(356, 234);
-			this.button11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.button11.Margin = new System.Windows.Forms.Padding(2);
 			this.button11.Name = "button11";
 			this.button11.Size = new System.Drawing.Size(173, 112);
 			this.button11.TabIndex = 10;
 			this.button11.Text = "CATEGORIA";
+			this.button11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			this.button11.UseVisualStyleBackColor = true;
 			this.button11.Click += new System.EventHandler(this.button11_Click);
 			// 
@@ -257,7 +258,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnExit.Location = new System.Drawing.Point(533, 234);
-			this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.btnExit.Margin = new System.Windows.Forms.Padding(2);
 			this.btnExit.Name = "btnExit";
 			this.btnExit.Size = new System.Drawing.Size(174, 112);
 			this.btnExit.TabIndex = 8;
@@ -273,7 +274,7 @@
 			this.ClientSize = new System.Drawing.Size(929, 533);
 			this.Controls.Add(this.tableLayoutPanel1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-			this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.Margin = new System.Windows.Forms.Padding(2);
 			this.Name = "FrmMainMenu";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "FrmMainMenu";
