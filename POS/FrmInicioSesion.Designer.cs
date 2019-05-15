@@ -72,13 +72,13 @@
             // btnIngresar
             // 
             this.btnIngresar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnIngresar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnIngresar.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIngresar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnIngresar.Location = new System.Drawing.Point(335, 383);
             this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(402, 49);
+            this.btnIngresar.Size = new System.Drawing.Size(402, 65);
             this.btnIngresar.TabIndex = 12;
             this.btnIngresar.Text = "INGRESAR";
             this.btnIngresar.UseVisualStyleBackColor = false;
@@ -88,10 +88,10 @@
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(293, 255);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(111, 24);
+            this.label3.Size = new System.Drawing.Size(131, 25);
             this.label3.TabIndex = 11;
             this.label3.Text = "Contraseña:";
             // 
@@ -99,42 +99,42 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(293, 137);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 24);
+            this.label2.Size = new System.Drawing.Size(93, 25);
             this.label2.TabIndex = 10;
             this.label2.Text = "Usuario:";
             // 
             // txt_password
             // 
             this.txt_password.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txt_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_password.Location = new System.Drawing.Point(297, 297);
             this.txt_password.Multiline = true;
             this.txt_password.Name = "txt_password";
             this.txt_password.PasswordChar = '*';
-            this.txt_password.Size = new System.Drawing.Size(468, 31);
+            this.txt_password.Size = new System.Drawing.Size(468, 47);
             this.txt_password.TabIndex = 9;
             // 
             // txt_user
             // 
             this.txt_user.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txt_user.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_user.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_user.Location = new System.Drawing.Point(297, 178);
             this.txt_user.Multiline = true;
             this.txt_user.Name = "txt_user";
-            this.txt_user.Size = new System.Drawing.Size(468, 31);
+            this.txt_user.Size = new System.Drawing.Size(468, 47);
             this.txt_user.TabIndex = 8;
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(420, 66);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(257, 32);
+            this.label1.Size = new System.Drawing.Size(289, 36);
             this.label1.TabIndex = 7;
             this.label1.Text = "INICIO DE SESIÓN";
             // 
@@ -143,7 +143,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.Color.SteelBlue;
+            this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(1153, 721);
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;

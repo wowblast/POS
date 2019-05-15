@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnBack = new System.Windows.Forms.Button();
             this.txtPrueba = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -57,7 +58,6 @@
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnBack = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -80,6 +80,20 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(377, 863);
             this.panel1.TabIndex = 0;
+            // 
+            // btnBack
+            // 
+            this.btnBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBack.BackgroundImage")));
+            this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBack.FlatAppearance.BorderSize = 0;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Location = new System.Drawing.Point(247, 14);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(49, 53);
+            this.btnBack.TabIndex = 7;
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // txtPrueba
             // 
@@ -128,7 +142,7 @@
             // panel2
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.panel2.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel2.BackColor = System.Drawing.SystemColors.Highlight;
             this.panel2.Controls.Add(this.tableLayoutPanel1);
             this.panel2.Location = new System.Drawing.Point(0, 485);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -216,7 +230,7 @@
             this.btnKeyBoard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnKeyBoard.BackgroundImage")));
             this.btnKeyBoard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnKeyBoard.Location = new System.Drawing.Point(4, 208);
-            this.btnKeyBoard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnKeyBoard.Margin = new System.Windows.Forms.Padding(4);
             this.btnKeyBoard.Name = "btnKeyBoard";
             this.btnKeyBoard.Size = new System.Drawing.Size(76, 129);
             this.btnKeyBoard.TabIndex = 2;
@@ -427,20 +441,6 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.Size = new System.Drawing.Size(727, 92);
             this.tableLayoutPanel2.TabIndex = 7;
-            // 
-            // btnBack
-            // 
-            this.btnBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBack.BackgroundImage")));
-            this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnBack.FlatAppearance.BorderSize = 0;
-            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Location = new System.Drawing.Point(247, 14);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(49, 53);
-            this.btnBack.TabIndex = 7;
-            this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // FrmPrincipal
             // 

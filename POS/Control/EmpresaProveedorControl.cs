@@ -29,6 +29,11 @@ namespace POS.Control
             }
         }
 
+        public void ListarEmpresaProveedor()
+        {
+            string sql = "SELECT * FROM ";
+        }
+
         public void ActualizarEmpresaProveedor(int idEmpresaProveedor, int idEmpresa, int idProveedor)
         {
             string sql = "UPDATE EMPRESA_PROVEEDOR SET idEmpresa = " + idEmpresa +  ", idProveedor = " + idProveedor + " WHERE idEmpresaProveedor =" + idEmpresaProveedor;

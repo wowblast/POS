@@ -44,16 +44,16 @@
             this.cbEmpresa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cbEmpresa.FormattingEnabled = true;
-            this.cbEmpresa.Location = new System.Drawing.Point(307, 344);
+            this.cbEmpresa.Location = new System.Drawing.Point(321, 314);
             this.cbEmpresa.Margin = new System.Windows.Forms.Padding(4);
             this.cbEmpresa.Name = "cbEmpresa";
-            this.cbEmpresa.Size = new System.Drawing.Size(423, 30);
+            this.cbEmpresa.Size = new System.Drawing.Size(510, 30);
             this.cbEmpresa.TabIndex = 12;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(159, 344);
+            this.label4.Location = new System.Drawing.Point(193, 314);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(91, 24);
@@ -64,27 +64,27 @@
             // 
             this.txtUbicacion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtUbicacion.Location = new System.Drawing.Point(307, 189);
+            this.txtUbicacion.Location = new System.Drawing.Point(321, 159);
             this.txtUbicacion.Margin = new System.Windows.Forms.Padding(4);
             this.txtUbicacion.Multiline = true;
             this.txtUbicacion.Name = "txtUbicacion";
-            this.txtUbicacion.Size = new System.Drawing.Size(423, 119);
+            this.txtUbicacion.Size = new System.Drawing.Size(510, 119);
             this.txtUbicacion.TabIndex = 10;
             // 
             // txtNombre
             // 
             this.txtNombre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNombre.Location = new System.Drawing.Point(307, 125);
+            this.txtNombre.Location = new System.Drawing.Point(321, 95);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(423, 28);
+            this.txtNombre.Size = new System.Drawing.Size(510, 28);
             this.txtNombre.TabIndex = 9;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(149, 189);
+            this.label3.Location = new System.Drawing.Point(183, 159);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(99, 24);
@@ -94,7 +94,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(159, 125);
+            this.label2.Location = new System.Drawing.Point(193, 95);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(84, 24);
@@ -108,7 +108,7 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnCancelar.Location = new System.Drawing.Point(155, 432);
+            this.btnCancelar.Location = new System.Drawing.Point(208, 390);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(284, 51);
@@ -124,7 +124,7 @@
             this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnRegistrar.Location = new System.Drawing.Point(471, 432);
+            this.btnRegistrar.Location = new System.Drawing.Point(524, 390);
             this.btnRegistrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(284, 51);
@@ -137,7 +137,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(317, 63);
+            this.label1.Location = new System.Drawing.Point(364, 38);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(297, 25);
@@ -149,7 +149,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(920, 536);
+            this.ClientSize = new System.Drawing.Size(1022, 489);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnRegistrar);
