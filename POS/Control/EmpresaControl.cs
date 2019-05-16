@@ -36,7 +36,7 @@ namespace POS.Control
 
        public DataTable ListarEmpresas()
        {
-            string sql = "SELECT idEmpresa AS 'Id Empresa', nombre AS 'NOMBRE EMPRESA', ubicacion AS 'UBICACION', descripcion AS 'DESCRIPCION' FROM EMPRESAS";
+            string sql = "SELECT idEmpresa AS 'Id empresa', nombre AS 'Nombre empresa', ubicacion AS 'Ubicacion', descripcion AS 'Descripcion' FROM EMPRESAS";
             try
             {
                 Log.Print("¡Listado de empresas exitoso!");

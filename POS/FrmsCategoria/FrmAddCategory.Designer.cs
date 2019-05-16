@@ -160,6 +160,7 @@
 			this.Name = "FrmAddCategory";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Añadir Categoria";
+			this.Load += new System.EventHandler(this.FrmAddCategory_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

@@ -37,12 +37,32 @@ namespace POS.FrmsCategoria
 
 		private void FrmCategoryMainMenu_Load(object sender, EventArgs e)
 		{
-
+			ListarCategoria();
 		}
 		public void ListarCategoria()
 		{
 			CategoriaControl categoria = new CategoriaControl();
-			dataGridView3.DataSource = categoria.ListarCateogorias();
+			dataGridView1.DataSource = categoria.ListarCateogorias();
+		}
+
+		private void btnEliminar_Click(object sender, EventArgs e)
+		{
+			if (dataGridView1.SelectedRows.Count == 1)
+			{
+				DialogResult result = MessageBox.Show("¿Esta seguro que desea eliminar la categoria?", "Importante", MessageBoxButtons.YesNo);
+
+				if (result == DialogResult.Yes)
+				{
+					int idcategoria = Convert.ToInt32(dataGridView1.SelectedCells[0].Value);
+					CategoriaControl categoriactrl = new CategoriaControl();
+					categoriactrl.EliminarCategoria(idcategoria);
+					ListarCategoria();
+				}
+			}
+			else
+			{
+				MessageBox.Show("¡Debe seleccionar a un proveedor!", "Error");
+			}
 		}
 	}
 }

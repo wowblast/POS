@@ -16,7 +16,6 @@ namespace POS
         public FrmProvider()
         {
             InitializeComponent();
-            //CargarDatosEmpresa();
         }
 
         private void btnBack_Click(object sender, EventArgs e)

@@ -69,7 +69,7 @@ namespace POS.Control
 
         public DataTable ListarProveedor()
         {
-            string sql = "SELECT idProveedor AS 'ID PROVEEDOR', nombre AS 'NOMBRE DEL PROVEEDOR', ubicacion AS 'UBICACIÓN' FROM PROVEEDORES";
+            string sql = "SELECT idProveedor AS 'Id proveedor', nombre AS 'Nombre del proveedor', ubicacion AS 'Ubicacion' FROM PROVEEDORES";
 
             try
             {

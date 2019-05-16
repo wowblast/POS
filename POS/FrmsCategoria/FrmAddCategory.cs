@@ -27,9 +27,15 @@ namespace POS.FrmsCategoria
 		{
 			try
 			{
-				CategoriaControl categoriaControl = new CategoriaControl();
-				categoriaControl.AñadirEstantería(txtNombre.Text, txtDescripcion.Text, txtSubcategoria.Text);
-				MessageBox.Show("Se ha registrado al proveedor exitosamente", "Registro exitoso");
+				if (txtNombre.Text != cbcategoria.SelectedText)
+				{
+					CategoriaControl categoriaControl = new CategoriaControl();
+					categoriaControl.AñadirCategoria(txtNombre.Text, txtDescripcion.Text, Convert.ToInt32(cbcategoria.SelectedValue));
+					MessageBox.Show("Se ha registrado al proveedor exitosamente", "Registro exitoso");
+				} else
+				{
+					MessageBox.Show("La subategoria no puede ser la misma que la categoria ");
+				}
 
 			}
 			catch (Exception )
@@ -37,6 +43,19 @@ namespace POS.FrmsCategoria
 				MessageBox.Show("Ocurrion un error al registrar");
 			}		
 
+		}
+		public void CargasCategorias()
+		{
+			CategoriaControl categoriaControl = new CategoriaControl();
+			DataTable subcategorias = categoriaControl.ListarCateogorias();
+			cbcategoria.DataSource = subcategorias;
+			cbcategoria.ValueMember = "ID CATEGORIA";
+			cbcategoria.DisplayMember = "NOMBRE CATEGORIA";
+		}
+
+		private void FrmAddCategory_Load(object sender, EventArgs e)
+		{
+			CargasCategorias();
 		}
 	}
 }

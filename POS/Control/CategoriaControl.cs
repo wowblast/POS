@@ -17,7 +17,7 @@ namespace POS.Control
 			connection = new Connection();
 		}
 
-		public void AñadirEstantería(string nombre, string descripcion, string subcategoria)
+		public void AñadirCategoria(string nombre, string descripcion, int subcategoria)
 		{
 			string sql = "INSERT INTO CATEGORIAS (nombre, descripcion, subcategoria) VALUES ('" + nombre + "', '" + descripcion + "',' "+ subcategoria +"')";
 			try
@@ -31,7 +31,7 @@ namespace POS.Control
 				Log.Print("An exception has occurred. " + e.Message);
 			}
 		}
-		public void EliminarEstantería(int idCategoria)
+		public void EliminarCategoria(int idCategoria)
 		{
 			string sql = "DELETE FROM CATEGORIAS WHERE idCategoria = " + idCategoria;
 
@@ -46,7 +46,7 @@ namespace POS.Control
 				Log.Print("An exception has ocurred. " + e.Message);
 			}
 		}
-		public void ModificarEstante(int idEstante, string nombre, string niveles)
+		public void ModificarCategoria(int idEstante, string nombre, string niveles)
 		{
 			string sql = "UPDATE ESTANTES SET numero = '" + nombre + "', nivel = '" + niveles + "' WHERE idEstante = " + idEstante;
 			try
@@ -62,7 +62,7 @@ namespace POS.Control
 		}
 		public DataTable ListarCateogorias()
 		{
-			string sql = "SELECT idCategoria AS 'ID CATEGORIAS', nombre AS 'NOMBRE CATEGORIA', descripcion AS 'DESCRIPCIÓN', subcategoria as 'SUBCATEGORIA FROM CATEGORIAS";
+			string sql = "SELECT idCategoria AS 'ID CATEGORIA', nombre AS 'NOMBRE CATEGORIA', descripcion AS 'DESCRIPCIÓN', subcategoria as 'SUBCATEGORIA' FROM CATEGORIAS";
 
 			try
 			{

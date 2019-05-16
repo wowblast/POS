@@ -17,7 +17,7 @@ namespace POS
             InitializeComponent();
         }
 
-        private void btnBack_Click(object sender, EventArgs e)
+        private void btnAtras_Click(object sender, EventArgs e)
         {
             FrmMainMenu frmMainMenu = new FrmMainMenu();
             frmMainMenu.Show();

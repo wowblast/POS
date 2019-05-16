@@ -200,6 +200,7 @@
 			this.btnEliminar.TabIndex = 3;
 			this.btnEliminar.Text = "Eliminar proveedor";
 			this.btnEliminar.UseVisualStyleBackColor = false;
+			this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
 			// 
 			// btnActualizar
 			// 
