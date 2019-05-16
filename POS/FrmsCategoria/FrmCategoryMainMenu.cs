@@ -31,8 +31,22 @@ namespace POS.FrmsCategoria
 
 		private void btnActualizar_Click(object sender, EventArgs e)
 		{
-			FrmUpdateCategory frmupdate = new FrmUpdateCategory();
-				frmupdate.Show();
+			if (dataGridView1.SelectedRows.Count == 1)
+			{
+				int idCategoria = Convert.ToInt32(dataGridView1.SelectedCells[0].Value);
+				string nombre = dataGridView1.SelectedCells[1].Value.ToString();
+				string descripcion = dataGridView1.SelectedCells[2].Value.ToString();
+				
+
+				FrmUpdateCategory frmupdatecategory = new FrmUpdateCategory();
+				frmupdatecategory.Show();
+				frmupdatecategory.RellenarDatos(idCategoria, nombre, descripcion);
+			}
+			else
+			{
+				MessageBox.Show("¡Debe seleccionar a un proveedor!", "Error");
+			}
+			
 		}
 
 		private void FrmCategoryMainMenu_Load(object sender, EventArgs e)

@@ -46,9 +46,9 @@ namespace POS.Control
 				Log.Print("An exception has ocurred. " + e.Message);
 			}
 		}
-		public void ModificarCategoria(int idEstante, string nombre, string niveles)
+		public void ModificarCategoria(int idCategoria, string nombre, string descripcion, int subcategoria)
 		{
-			string sql = "UPDATE ESTANTES SET numero = '" + nombre + "', nivel = '" + niveles + "' WHERE idEstante = " + idEstante;
+			string sql = "UPDATE CATEGORIAS SET nombre = '" + nombre + "', descripcion = '" + descripcion + "', subcategoria = '" + subcategoria +"' WHERE idCategoria = " + idCategoria;
 			try
 			{
 				connection.ExecuteSQL(sql);

@@ -28,26 +28,26 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.cbEmpresa = new System.Windows.Forms.ComboBox();
+			this.cbCategoria = new System.Windows.Forms.ComboBox();
 			this.label4 = new System.Windows.Forms.Label();
 			this.btnCancelar = new System.Windows.Forms.Button();
 			this.btnActualizarDatos = new System.Windows.Forms.Button();
-			this.txtUbicacion = new System.Windows.Forms.TextBox();
+			this.txtDescripcion = new System.Windows.Forms.TextBox();
 			this.txtNombre = new System.Windows.Forms.TextBox();
 			this.label3 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
-			// cbEmpresa
+			// cbCategoria
 			// 
-			this.cbEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.cbEmpresa.FormattingEnabled = true;
-			this.cbEmpresa.Location = new System.Drawing.Point(362, 355);
-			this.cbEmpresa.Margin = new System.Windows.Forms.Padding(2);
-			this.cbEmpresa.Name = "cbEmpresa";
-			this.cbEmpresa.Size = new System.Drawing.Size(318, 25);
-			this.cbEmpresa.TabIndex = 17;
+			this.cbCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cbCategoria.FormattingEnabled = true;
+			this.cbCategoria.Location = new System.Drawing.Point(362, 355);
+			this.cbCategoria.Margin = new System.Windows.Forms.Padding(2);
+			this.cbCategoria.Name = "cbCategoria";
+			this.cbCategoria.Size = new System.Drawing.Size(318, 25);
+			this.cbCategoria.TabIndex = 17;
 			// 
 			// label4
 			// 
@@ -89,16 +89,17 @@
 			this.btnActualizarDatos.TabIndex = 14;
 			this.btnActualizarDatos.Text = "ACTUALIZAR DATOS";
 			this.btnActualizarDatos.UseVisualStyleBackColor = false;
+			this.btnActualizarDatos.Click += new System.EventHandler(this.btnActualizarDatos_Click);
 			// 
-			// txtUbicacion
+			// txtDescripcion
 			// 
-			this.txtUbicacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtUbicacion.Location = new System.Drawing.Point(362, 229);
-			this.txtUbicacion.Margin = new System.Windows.Forms.Padding(2);
-			this.txtUbicacion.Multiline = true;
-			this.txtUbicacion.Name = "txtUbicacion";
-			this.txtUbicacion.Size = new System.Drawing.Size(318, 97);
-			this.txtUbicacion.TabIndex = 13;
+			this.txtDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtDescripcion.Location = new System.Drawing.Point(362, 229);
+			this.txtDescripcion.Margin = new System.Windows.Forms.Padding(2);
+			this.txtDescripcion.Multiline = true;
+			this.txtDescripcion.Name = "txtDescripcion";
+			this.txtDescripcion.Size = new System.Drawing.Size(318, 97);
+			this.txtDescripcion.TabIndex = 13;
 			// 
 			// txtNombre
 			// 
@@ -148,17 +149,18 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(947, 602);
-			this.Controls.Add(this.cbEmpresa);
+			this.Controls.Add(this.cbCategoria);
 			this.Controls.Add(this.label4);
 			this.Controls.Add(this.btnCancelar);
 			this.Controls.Add(this.btnActualizarDatos);
-			this.Controls.Add(this.txtUbicacion);
+			this.Controls.Add(this.txtDescripcion);
 			this.Controls.Add(this.txtNombre);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
 			this.Name = "FrmUpdateCategory";
 			this.Text = "FrmUpdateCategory";
+			this.Load += new System.EventHandler(this.FrmUpdateCategory_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -166,11 +168,11 @@
 
 		#endregion
 
-		private System.Windows.Forms.ComboBox cbEmpresa;
+		private System.Windows.Forms.ComboBox cbCategoria;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Button btnCancelar;
 		private System.Windows.Forms.Button btnActualizarDatos;
-		private System.Windows.Forms.TextBox txtUbicacion;
+		private System.Windows.Forms.TextBox txtDescripcion;
 		private System.Windows.Forms.TextBox txtNombre;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label label2;
