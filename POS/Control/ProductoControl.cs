@@ -56,7 +56,8 @@ namespace POS.Control
 
 		public DataTable ListarProductos()
 		{
-			string sql = "SELECT idProducto AS 'ID PRODUCTO', idEstante AS 'ID ESTANTE', nombre AS 'NOMBRE DEL PRODUCTO', descripcion AS 'DESCRIPCION', precioUnitarioVenta AS 'PRECIO UNITARIO DE VENTA DEL PRODUCTO', cantidad AS 'CANTIDAD' FROM PRODUCTOS";
+			string innerjoin = "INNER JOIN PRODUCTO_CATEGORIA ON PRODUCTOS.idProducto = PRODUCTO_CATEGORIA.idProducto)  INNER JOIN CATEGORIAS ON CATEGORIAS.idCategoria = PRODUCTO_CATEGORIA.idCategoria);";
+			string sql = "SELECT PRODUCTOS.idProducto AS 'ID PRODUCTO', PRODUCTOS.idEstante AS 'ID ESTANTE', PRODUCTOS.nombre AS 'NOMBRE DEL PRODUCTO', PRODUCTOS.descripcion AS 'DESCRIPCION', PRODUCTOS.precioUnitarioVenta AS 'PRECIO UNITARIO DE VENTA DEL PRODUCTO', PRODUCTOS.cantidad AS 'CANTIDAD'  FROM PRODUCTOS ";
 
 			try
 			{

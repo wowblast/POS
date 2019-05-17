@@ -1,4 +1,5 @@
-﻿using POS.FrmsCategoria;
+﻿using POS.FmsProductsCategory;
+using POS.FrmsCategoria;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -34,7 +35,7 @@ namespace POS
 
         private void btnProducts_Click_1(object sender, EventArgs e)
         {
-            FrmProducts frmProducts = new FrmProducts();
+			FrmProductCategoryMainMenu frmProducts = new FrmProductCategoryMainMenu();
             frmProducts.Show();
             Close();
         }
