@@ -23,5 +23,13 @@ namespace POS
             frmMainMenu.Show();
             Close();
         }
+
+        private void btnMenuPrincipal_Click(object sender, EventArgs e)
+        {
+            FrmMainMenu frmMainMenu = new FrmMainMenu();
+            frmMainMenu.Show();
+            Close();
+        }
+
     }
 }
