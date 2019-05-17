@@ -23,9 +23,9 @@ namespace POS
             Listar();
 
             CargoControl cargoControl = new CargoControl();
-            cbCargo.DataSource = cargoControl.Listar();
+            /*cbCargo.DataSource = cargoControl.Listar();
             cbCargo.DisplayMember = "nombre";
-            cbCargo.ValueMember = "idCargo";
+            cbCargo.ValueMember = "idCargo";*/
         }
 
         private void btnListar_Click(object sender, EventArgs e)
@@ -41,7 +41,7 @@ namespace POS
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            string nombres = tbNombres.Text;
+            /*string nombres = tbNombres.Text;
             string apellidoPaterno = tbApellidoPaterno.Text;
             string apellidoMaterno = tbApellidoMaterno.Text;
             string usuario = tbUsuario.Text;
@@ -51,8 +51,13 @@ namespace POS
             DateTime fechaNacimiento = dtpNacimiento.Value;
             DateTime fechaContratacion = dtpContratacion.Value;
 
-            int x = 3;
+            int x = 3;*/
         }
-        
+
+        private void BtnInsertar_Click(object sender, EventArgs e)
+        {
+            FrmEmployeeRegister frmEmployeeRegister = new FrmEmployeeRegister();
+            frmEmployeeRegister.Show();
+        }
     }
 }
