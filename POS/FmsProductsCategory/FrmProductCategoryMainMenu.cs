@@ -27,5 +27,10 @@ namespace POS.FmsProductsCategory
 			ProductoControl productoControl = new ProductoControl();
 			dataGridView1.DataSource = productoControl.ListarProductos();			
 		}
+
+		private void pictureBox1_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

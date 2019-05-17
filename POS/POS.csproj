@@ -68,6 +68,12 @@
     <Compile Include="FmsProductsCategory\FrmProductCategoryMainMenu.Designer.cs">
       <DependentUpon>FrmProductCategoryMainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="FmsProductsCategory\FrmProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmsProductsCategory\FrmProducts.Designer.cs">
+      <DependentUpon>FrmProducts.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCompany.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +205,9 @@
     <Compile Include="Tools\Log.cs" />
     <EmbeddedResource Include="FmsProductsCategory\FrmProductCategoryMainMenu.resx">
       <DependentUpon>FrmProductCategoryMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmsProductsCategory\FrmProducts.resx">
+      <DependentUpon>FrmProducts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCompany.resx">
       <DependentUpon>FrmCompany.cs</DependentUpon>

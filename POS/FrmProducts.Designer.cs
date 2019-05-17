@@ -312,7 +312,6 @@
 			// 
 			// tabPage2
 			// 
-			this.tabPage2.Controls.Add(this.btnUpdateProduct);
 			this.tabPage2.Controls.Add(this.dataGridView1);
 			this.tabPage2.Controls.Add(this.menuStrip1);
 			this.tabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -329,7 +328,7 @@
 			// 
 			this.btnUpdateProduct.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
 			this.btnUpdateProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnUpdateProduct.Location = new System.Drawing.Point(321, 461);
+			this.btnUpdateProduct.Location = new System.Drawing.Point(144, 26);
 			this.btnUpdateProduct.Margin = new System.Windows.Forms.Padding(2);
 			this.btnUpdateProduct.Name = "btnUpdateProduct";
 			this.btnUpdateProduct.Size = new System.Drawing.Size(178, 32);
@@ -389,7 +388,6 @@
 			// tabPage3
 			// 
 			this.tabPage3.Controls.Add(this.label2);
-			this.tabPage3.Controls.Add(this.EliminarProducto);
 			this.tabPage3.Controls.Add(this.dataGridView2);
 			this.tabPage3.Controls.Add(this.menuStrip3);
 			this.tabPage3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -414,7 +412,7 @@
 			// EliminarProducto
 			// 
 			this.EliminarProducto.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-			this.EliminarProducto.Location = new System.Drawing.Point(313, 459);
+			this.EliminarProducto.Location = new System.Drawing.Point(544, 48);
 			this.EliminarProducto.Margin = new System.Windows.Forms.Padding(2);
 			this.EliminarProducto.Name = "EliminarProducto";
 			this.EliminarProducto.Size = new System.Drawing.Size(191, 39);
@@ -502,6 +500,8 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(878, 673);
+			this.Controls.Add(this.btnUpdateProduct);
+			this.Controls.Add(this.EliminarProducto);
 			this.Controls.Add(this.tabControl1);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.btnBack);

@@ -40,10 +40,8 @@
 			this.btnBack = new System.Windows.Forms.Button();
 			this.btnRegistrar = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
-			this.button1 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
-			this.button3 = new System.Windows.Forms.Button();
 			this.label2 = new System.Windows.Forms.Label();
+			this.btnVerproductocategoria = new System.Windows.Forms.Button();
 			this.groupBox2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.groupBox1.SuspendLayout();
@@ -63,7 +61,7 @@
 			this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
 			this.groupBox2.Name = "groupBox2";
 			this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-			this.groupBox2.Size = new System.Drawing.Size(738, 461);
+			this.groupBox2.Size = new System.Drawing.Size(593, 414);
 			this.groupBox2.TabIndex = 18;
 			this.groupBox2.TabStop = false;
 			// 
@@ -79,7 +77,7 @@
 			this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.RowTemplate.Height = 24;
-			this.dataGridView1.Size = new System.Drawing.Size(612, 294);
+			this.dataGridView1.Size = new System.Drawing.Size(467, 247);
 			this.dataGridView1.TabIndex = 1;
 			// 
 			// label3
@@ -96,10 +94,8 @@
 			// 
 			this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
+			this.groupBox1.Controls.Add(this.btnVerproductocategoria);
 			this.groupBox1.Controls.Add(this.label2);
-			this.groupBox1.Controls.Add(this.button1);
-			this.groupBox1.Controls.Add(this.button2);
-			this.groupBox1.Controls.Add(this.button3);
 			this.groupBox1.Controls.Add(this.pictureBox1);
 			this.groupBox1.Controls.Add(this.btnMenuPrincipal);
 			this.groupBox1.Controls.Add(this.btnEliminar);
@@ -107,11 +103,11 @@
 			this.groupBox1.Controls.Add(this.btnBack);
 			this.groupBox1.Controls.Add(this.btnRegistrar);
 			this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.groupBox1.Location = new System.Drawing.Point(830, 127);
+			this.groupBox1.Location = new System.Drawing.Point(685, 127);
 			this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
 			this.groupBox1.Name = "groupBox1";
 			this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-			this.groupBox1.Size = new System.Drawing.Size(313, 534);
+			this.groupBox1.Size = new System.Drawing.Size(313, 487);
 			this.groupBox1.TabIndex = 17;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Opciones";
@@ -121,13 +117,14 @@
 			this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-			this.pictureBox1.Location = new System.Drawing.Point(92, 458);
+			this.pictureBox1.Location = new System.Drawing.Point(100, 392);
 			this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
 			this.pictureBox1.Name = "pictureBox1";
 			this.pictureBox1.Size = new System.Drawing.Size(116, 55);
 			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pictureBox1.TabIndex = 11;
 			this.pictureBox1.TabStop = false;
+			this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
 			// 
 			// btnMenuPrincipal
 			// 
@@ -137,7 +134,7 @@
 			this.btnMenuPrincipal.FlatAppearance.BorderSize = 0;
 			this.btnMenuPrincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnMenuPrincipal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.btnMenuPrincipal.Location = new System.Drawing.Point(26, 398);
+			this.btnMenuPrincipal.Location = new System.Drawing.Point(26, 318);
 			this.btnMenuPrincipal.Margin = new System.Windows.Forms.Padding(2);
 			this.btnMenuPrincipal.Name = "btnMenuPrincipal";
 			this.btnMenuPrincipal.Size = new System.Drawing.Size(262, 46);
@@ -184,7 +181,7 @@
 			this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
 			this.btnBack.FlatAppearance.BorderSize = 0;
 			this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnBack.Location = new System.Drawing.Point(8, 501);
+			this.btnBack.Location = new System.Drawing.Point(8, 416);
 			this.btnBack.Margin = new System.Windows.Forms.Padding(2);
 			this.btnBack.Name = "btnBack";
 			this.btnBack.Size = new System.Drawing.Size(26, 33);
@@ -217,54 +214,6 @@
 			this.label1.TabIndex = 19;
 			this.label1.Text = "PRODUCTOS";
 			// 
-			// button1
-			// 
-			this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.button1.BackColor = System.Drawing.SystemColors.Highlight;
-			this.button1.FlatAppearance.BorderSize = 0;
-			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.button1.Location = new System.Drawing.Point(26, 319);
-			this.button1.Margin = new System.Windows.Forms.Padding(2);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(262, 46);
-			this.button1.TabIndex = 14;
-			this.button1.Text = "Eliminar categoria de producto";
-			this.button1.UseVisualStyleBackColor = false;
-			// 
-			// button2
-			// 
-			this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.button2.BackColor = System.Drawing.SystemColors.Highlight;
-			this.button2.FlatAppearance.BorderSize = 0;
-			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.button2.Location = new System.Drawing.Point(26, 269);
-			this.button2.Margin = new System.Windows.Forms.Padding(2);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(262, 46);
-			this.button2.TabIndex = 13;
-			this.button2.Text = "Actualizar categoria de producto";
-			this.button2.UseVisualStyleBackColor = false;
-			// 
-			// button3
-			// 
-			this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.button3.BackColor = System.Drawing.SystemColors.Highlight;
-			this.button3.FlatAppearance.BorderSize = 0;
-			this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.button3.Location = new System.Drawing.Point(26, 219);
-			this.button3.Margin = new System.Windows.Forms.Padding(2);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(262, 46);
-			this.button3.TabIndex = 12;
-			this.button3.Text = "Registrar categoria de producto";
-			this.button3.UseVisualStyleBackColor = false;
-			// 
 			// label2
 			// 
 			this.label2.AutoSize = true;
@@ -274,11 +223,27 @@
 			this.label2.TabIndex = 15;
 			this.label2.Text = "Opciones con categoria";
 			// 
+			// btnVerproductocategoria
+			// 
+			this.btnVerproductocategoria.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.btnVerproductocategoria.BackColor = System.Drawing.SystemColors.Highlight;
+			this.btnVerproductocategoria.FlatAppearance.BorderSize = 0;
+			this.btnVerproductocategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnVerproductocategoria.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.btnVerproductocategoria.Location = new System.Drawing.Point(26, 226);
+			this.btnVerproductocategoria.Margin = new System.Windows.Forms.Padding(2);
+			this.btnVerproductocategoria.Name = "btnVerproductocategoria";
+			this.btnVerproductocategoria.Size = new System.Drawing.Size(262, 46);
+			this.btnVerproductocategoria.TabIndex = 16;
+			this.btnVerproductocategoria.Text = "Ver categorias de producto";
+			this.btnVerproductocategoria.UseVisualStyleBackColor = false;
+			// 
 			// FrmProductCategoryMainMenu
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1209, 714);
+			this.ClientSize = new System.Drawing.Size(1064, 667);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.groupBox2);
 			this.Controls.Add(this.groupBox1);
@@ -311,9 +276,7 @@
 		private System.Windows.Forms.Button btnBack;
 		private System.Windows.Forms.Button btnRegistrar;
 		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.Button button2;
-		private System.Windows.Forms.Button button3;
 		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.Button btnVerproductocategoria;
 	}
 }
