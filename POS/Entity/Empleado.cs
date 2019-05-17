@@ -33,5 +33,18 @@ namespace POS.Entity
             FechaContratacion = fechaContratacion;
         }
 
+        public Empleado(int iDCargo, string usuario, string clave, string nombres, string apellidoPaterno, string apellidoMaterno, string direccion, DateTime fechaNacimiento, DateTime fechaContratacion)
+        {
+            IDCargo = iDCargo;
+            Usuario = usuario;
+            Clave = clave;
+            Nombres = nombres;
+            ApellidoPaterno = apellidoPaterno;
+            ApellidoMaterno = apellidoMaterno;
+            Direccion = direccion;
+            FechaNacimiento = fechaNacimiento;
+            FechaContratacion = fechaContratacion;
+        }
+
     }
 }
