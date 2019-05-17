@@ -88,8 +88,10 @@
             // 
             // btnActualizarDatos
             // 
-            this.btnActualizarDatos.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnActualizarDatos.FlatAppearance.BorderSize = 0;
+            this.btnActualizarDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(112)))), ((int)(((byte)(100)))));
+            this.btnActualizarDatos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(112)))), ((int)(((byte)(100)))));
+            this.btnActualizarDatos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SeaGreen;
+            this.btnActualizarDatos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SeaGreen;
             this.btnActualizarDatos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActualizarDatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizarDatos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -103,8 +105,10 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnCancelar.FlatAppearance.BorderSize = 0;
+            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(112)))), ((int)(((byte)(100)))));
+            this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(112)))), ((int)(((byte)(100)))));
+            this.btnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SeaGreen;
+            this.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SeaGreen;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
