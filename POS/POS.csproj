@@ -68,11 +68,23 @@
     <Compile Include="FmsProductsCategory\FrmProductCategoryMainMenu.Designer.cs">
       <DependentUpon>FrmProductCategoryMainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="FmsProductsCategory\FrmProducts.cs">
+    <Compile Include="FmsProductsCategory\FrmProductMainmenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FmsProductsCategory\FrmProducts.Designer.cs">
-      <DependentUpon>FrmProducts.cs</DependentUpon>
+    <Compile Include="FmsProductsCategory\FrmProductMainmenu.Designer.cs">
+      <DependentUpon>FrmProductMainmenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmsProductsCategory\FrmUpdateCategoryProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmsProductsCategory\FrmUpdateCategoryProduct.Designer.cs">
+      <DependentUpon>FrmUpdateCategoryProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmsProductsCategory\FrmUpdateProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmsProductsCategory\FrmUpdateProduct.Designer.cs">
+      <DependentUpon>FrmUpdateProduct.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmCompany.cs">
       <SubType>Form</SubType>
@@ -206,8 +218,14 @@
     <EmbeddedResource Include="FmsProductsCategory\FrmProductCategoryMainMenu.resx">
       <DependentUpon>FrmProductCategoryMainMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FmsProductsCategory\FrmProducts.resx">
-      <DependentUpon>FrmProducts.cs</DependentUpon>
+    <EmbeddedResource Include="FmsProductsCategory\FrmProductMainmenu.resx">
+      <DependentUpon>FrmProductMainmenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmsProductsCategory\FrmUpdateCategoryProduct.resx">
+      <DependentUpon>FrmUpdateCategoryProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmsProductsCategory\FrmUpdateProduct.resx">
+      <DependentUpon>FrmUpdateProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCompany.resx">
       <DependentUpon>FrmCompany.cs</DependentUpon>

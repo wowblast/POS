@@ -1,6 +1,6 @@
 ﻿namespace POS.FmsProductsCategory
 {
-	partial class FrmProducts
+	partial class FrmProductMainmenu
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProducts));
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProductMainmenu));
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.label7 = new System.Windows.Forms.Label();
@@ -55,12 +55,12 @@
 			this.groupBox2.Controls.Add(this.dataGridView1);
 			this.groupBox2.Controls.Add(this.label7);
 			this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.groupBox2.Location = new System.Drawing.Point(19, 53);
+			this.groupBox2.Location = new System.Drawing.Point(16, 41);
 			this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
 			this.groupBox2.Name = "groupBox2";
 			this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-			this.groupBox2.Size = new System.Drawing.Size(573, 528);
-			this.groupBox2.TabIndex = 16;
+			this.groupBox2.Size = new System.Drawing.Size(627, 556);
+			this.groupBox2.TabIndex = 19;
 			this.groupBox2.TabStop = false;
 			// 
 			// dataGridView1
@@ -75,7 +75,7 @@
 			this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.RowTemplate.Height = 24;
-			this.dataGridView1.Size = new System.Drawing.Size(447, 361);
+			this.dataGridView1.Size = new System.Drawing.Size(501, 389);
 			this.dataGridView1.TabIndex = 1;
 			// 
 			// label7
@@ -99,12 +99,12 @@
 			this.groupBox1.Controls.Add(this.btnBack);
 			this.groupBox1.Controls.Add(this.btnRegistrar);
 			this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.groupBox1.Location = new System.Drawing.Point(617, 53);
+			this.groupBox1.Location = new System.Drawing.Point(668, 41);
 			this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
 			this.groupBox1.Name = "groupBox1";
 			this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-			this.groupBox1.Size = new System.Drawing.Size(313, 528);
-			this.groupBox1.TabIndex = 15;
+			this.groupBox1.Size = new System.Drawing.Size(313, 556);
+			this.groupBox1.TabIndex = 18;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Opciones";
 			// 
@@ -168,6 +168,7 @@
 			this.btnActualizar.TabIndex = 1;
 			this.btnActualizar.Text = "Actualizar categoria de producto";
 			this.btnActualizar.UseVisualStyleBackColor = false;
+			this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
 			// 
 			// btnBack
 			// 
@@ -176,7 +177,7 @@
 			this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
 			this.btnBack.FlatAppearance.BorderSize = 0;
 			this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnBack.Location = new System.Drawing.Point(8, 495);
+			this.btnBack.Location = new System.Drawing.Point(16, 504);
 			this.btnBack.Margin = new System.Windows.Forms.Padding(2);
 			this.btnBack.Name = "btnBack";
 			this.btnBack.Size = new System.Drawing.Size(26, 33);
@@ -198,29 +199,32 @@
 			this.btnRegistrar.TabIndex = 0;
 			this.btnRegistrar.Text = "Añadir categoria a producto";
 			this.btnRegistrar.UseVisualStyleBackColor = false;
+			this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
 			// 
 			// label1
 			// 
 			this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(390, 4);
+			this.label1.Location = new System.Drawing.Point(398, 9);
 			this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(269, 26);
-			this.label1.TabIndex = 14;
+			this.label1.TabIndex = 17;
 			this.label1.Text = "Productos con categoria";
 			// 
-			// FrmProducts
+			// FrmProductMainmenu
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(948, 586);
+			this.ClientSize = new System.Drawing.Size(982, 578);
 			this.Controls.Add(this.groupBox2);
 			this.Controls.Add(this.groupBox1);
 			this.Controls.Add(this.label1);
-			this.Name = "FrmProducts";
-			this.Text = "FrmProducts";
+			this.Name = "FrmProductMainmenu";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+			this.Text = "FrmProductMainmenu";
+			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.groupBox2.ResumeLayout(false);
 			this.groupBox2.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

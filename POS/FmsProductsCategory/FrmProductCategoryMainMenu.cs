@@ -32,5 +32,23 @@ namespace POS.FmsProductsCategory
 		{
 
 		}
+
+		private void btnVerproductocategoria_Click(object sender, EventArgs e)
+		{
+			FrmProductMainmenu productocategoryMainMenu = new FrmProductMainmenu();
+			productocategoryMainMenu.Show();
+		}
+
+		private void btnActualizar_Click(object sender, EventArgs e)
+		{
+			FrmUpdateProduct updateproduct = new FrmUpdateProduct();
+			updateproduct.Show();
+		}
+
+		private void btnRegistrar_Click(object sender, EventArgs e)
+		{
+			FrmProducts product = new FrmProducts();
+			product.Show();
+		}
 	}
 }

@@ -45,8 +45,8 @@ namespace POS
 		public void Listar()
 		{
 			ProductoControl productoControl = new ProductoControl();
-			dataGridView1.DataSource = productoControl.ListarProductos();
-			dataGridView2.DataSource = productoControl.ListarProductos();
+			//dataGridView1.DataSource = productoControl.ListarProductos();
+			//dataGridView2.DataSource = productoControl.ListarProductos();
 		}
 
 		private void RegistrarProducto_Click(object sender, EventArgs e)
@@ -56,7 +56,7 @@ namespace POS
 
 
 				ProductoControl productoControl = new ProductoControl();
-				string idProducto = productoControl.InsertarProducto(1, textBox3.Text, textBox4.Text, Convert.ToInt32(textBox5.Text), Convert.ToInt32(textBox6.Text));
+				/*string idProducto = productoControl.InsertarProducto(1, textBox3.Text, textBox4.Text, Convert.ToInt32(textBox5.Text), Convert.ToInt32(textBox6.Text));
 				ImagenProducto image = new ImagenProducto();
 				image.InsertarImagen(Convert.ToInt32(idProducto), binaryImage);
 				textBox3.Text = "";
@@ -64,7 +64,7 @@ namespace POS
 				textBox5.Text = "";
 				textBox6.Text = "";
 				Listar();
-				imageAdded = false;
+				imageAdded = false;*/
 			}
 			else
 			{
@@ -77,7 +77,7 @@ namespace POS
 
 		private void EliminarProducto_Click(object sender, EventArgs e)
 		{
-			if (dataGridView2.SelectedRows.Count == 1)
+			/*if (dataGridView2.SelectedRows.Count == 1)
 			{
 				DialogResult result = MessageBox.Show("¿Esta seguro que desea eliminar el producto?", "Importante", MessageBoxButtons.YesNo);
 
@@ -92,7 +92,7 @@ namespace POS
 			else
 			{
 				MessageBox.Show("¡Debe seleccionar a un proveedor!", "Error");
-			}
+			}*/
 		}
 
 		private void tabPage1_Click(object sender, EventArgs e)
@@ -114,7 +114,7 @@ namespace POS
 		{
 			try
 			{
-				if (openFileDialog1.ShowDialog() == DialogResult.OK)
+				/*if (openFileDialog1.ShowDialog() == DialogResult.OK)
 				{
 					string imagen = openFileDialog1.FileName;
 					pictureBox1.Image = Image.FromFile(imagen);
@@ -127,7 +127,7 @@ namespace POS
 					
 					
 					MessageBox.Show("imagen cargada");
-				}
+				}*/
 			}
 			catch (Exception ex)
 			{

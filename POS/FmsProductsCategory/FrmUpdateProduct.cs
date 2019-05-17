@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace POS.FmsProductsCategory
 {
-	public partial class FrmProducts : Form
+	public partial class FrmUpdateProduct : Form
 	{
-		public FrmProducts()
+		public FrmUpdateProduct()
 		{
 			InitializeComponent();
 		}
