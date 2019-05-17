@@ -1,4 +1,5 @@
 ﻿using POS.Control;
+using POS.Entity;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -46,9 +47,14 @@ namespace POS
                 string nombre = dataGridView3.SelectedCells[1].Value.ToString();
                 string ubicacion = dataGridView3.SelectedCells[2].Value.ToString();
 
+                int idEmpresa = Convert.ToInt32(dataGridView3.SelectedCells[3].Value);
+                int idEmpresaProveedor = Convert.ToInt32(dataGridView3.SelectedCells[6].Value);
+               
+                Proveedor proveedor = new Proveedor(idProveedor, nombre, ubicacion);
+
                 FrmUpdateProvider frmUpdateProvider = new FrmUpdateProvider();
                 frmUpdateProvider.Show();
-                frmUpdateProvider.RellenarDatos(idProveedor, nombre, ubicacion);
+                frmUpdateProvider.RellenarDatos(proveedor, idEmpresa, idEmpresaProveedor);
             }
             else
             {
@@ -64,8 +70,8 @@ namespace POS
 
         public void Listar()
         {
-            ProveedorControl proveedorControl = new ProveedorControl();
-            dataGridView3.DataSource = proveedorControl.ListarProveedor();
+            EmpresaProveedorControl empresaProveedorControl = new EmpresaProveedorControl(); 
+            dataGridView3.DataSource = empresaProveedorControl.ListarEmpresaProveedor();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)

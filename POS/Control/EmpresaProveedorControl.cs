@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,9 +30,21 @@ namespace POS.Control
             }
         }
 
-        public void ListarEmpresaProveedor()
+        public DataTable ListarEmpresaProveedor()
         {
-            string sql = "SELECT * FROM ";
+            string sql = @"SELECT PROVEEDORES.idProveedor AS 'Id Proveedor', PROVEEDORES.nombre AS 'Nombre del proveedor', PROVEEDORES.ubicacion AS 'Ubicacion', EMPRESAS.idEmpresa AS 'Id Empresa', EMPRESAS.nombre AS 'Nombre de la empresa', EMPRESAS.descripcion AS 'Descripcion de la empresa', EMPRESA_PROVEEDOR.idEmpresaProveedor AS 'Id Empresa Proveedor' FROM EMPRESAS 
+                           INNER JOIN EMPRESA_PROVEEDOR ON EMPRESAS.idEmpresa = EMPRESA_PROVEEDOR.idEmpresa
+                           INNER JOIN PROVEEDORES ON EMPRESA_PROVEEDOR.idProveedor = PROVEEDORES.idProveedor";
+            try
+            {
+                Log.Print("¡Listado de empresas proveedores exitoso!");
+                return (conexion.QuerySQL(sql));
+            }
+            catch (Exception e)
+            {
+                Log.Print("Ha ocurrido un error. " + e.Message);
+            }
+            return null;
         }
 
         public void ActualizarEmpresaProveedor(int idEmpresaProveedor, int idEmpresa, int idProveedor)

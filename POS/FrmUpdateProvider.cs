@@ -14,11 +14,16 @@ namespace POS
 {
     public partial class FrmUpdateProvider : Form
     {
-        public Proveedor proveedor;
+        private Proveedor proveedor;
+        private int idEmpresa;
+        private int idEmpresaProveedor;
 
         public FrmUpdateProvider()
         {
             InitializeComponent();
+            idEmpresa = 0;
+            idEmpresaProveedor = 0;
+            CargarDatosEmpresa();
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -28,21 +33,47 @@ namespace POS
 
         private void btnUpdateData_Click(object sender, EventArgs e)
         {
-            ProveedorControl proveedorControl = new ProveedorControl();
+            if (cbEmpresa.Text != "Elige una opcion")
+            {
+                ProveedorControl proveedorControl = new ProveedorControl();
 
-            string nombre = txtNombre.Text;
-            string ubicacion = txtUbicacion.Text;
+                string nombre = txtNombre.Text;
+                string ubicacion = txtUbicacion.Text;
 
-            proveedorControl.ActualizarProveedor(proveedor.CodigoProveedor, nombre, ubicacion);
+                proveedorControl.ActualizarProveedor(proveedor.CodigoProveedor, nombre, ubicacion);
 
-            Close();
+                int idEmpresaProveedorSeleccionada = Convert.ToInt32(cbEmpresa.SelectedValue);
+
+                EmpresaProveedorControl empresaProveedor = new EmpresaProveedorControl();
+                empresaProveedor.ActualizarEmpresaProveedor(idEmpresaProveedor, idEmpresaProveedorSeleccionada, proveedor.CodigoProveedor);
+
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("Por favor selecciona una empresa", "¡Error!");
+            }
+
+        }
+        public void CargarDatosEmpresa()
+        {
+            EmpresaControl empresaControl = new EmpresaControl();
+            DataTable empresas = empresaControl.ListarEmpresas();
+            cbEmpresa.DataSource = empresas;
+            cbEmpresa.ValueMember = "Id Empresa";
+            cbEmpresa.DisplayMember = "Nombre Empresa";
         }
 
-        public void RellenarDatos(int idProveedor, string nombre, string ubicacion)
+        public void RellenarDatos(Proveedor proveedorSeleccionado, int idEmpresa, int idEmpresaProveedor)
         {
-            this.proveedor =  new Proveedor(idProveedor, nombre, ubicacion);
+            this.proveedor = proveedorSeleccionado;
             txtNombre.Text = proveedor.NombreProveedor;
             txtUbicacion.Text = proveedor.Ubicacion;
+
+            this.idEmpresa = idEmpresa;
+            this.idEmpresaProveedor = idEmpresaProveedor;
+
+            cbEmpresa.Text = "Elige una opcion";
         }
     }
 }

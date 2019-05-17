@@ -42,7 +42,6 @@ namespace POS.Control
             try
             {
                 connection.ExecuteSQL(sql);
-                MessageBox.Show("¡Registro exitoso del proveedor!", "Completado");
                 Log.Print("Query executed correctly \n" + sql);
             }
             catch (Exception e)
@@ -90,7 +89,6 @@ namespace POS.Control
             try
             {
                 connection.ExecuteSQL(sql);
-                MessageBox.Show("¡Datos actualizados correctamente!", "Completado");
                 Log.Print(sql);
             }
             catch (Exception e)
