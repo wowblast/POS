@@ -93,5 +93,12 @@ namespace POS
 			FrmCategoryMainMenu category = new FrmCategoryMainMenu();
 			category.Show();
 		}
-	}
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            FrmEmployee frmEmployee = new FrmEmployee();
+            frmEmployee.Show();
+            Close();
+        }
+    }
 }
