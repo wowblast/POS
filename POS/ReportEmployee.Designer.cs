@@ -1,6 +1,6 @@
 ﻿namespace POS
 {
-    partial class FrmReport
+    partial class ReportEmployee
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmReport));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReportEmployee));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -37,15 +37,13 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.lbTexto = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnMenuPrincipal = new System.Windows.Forms.Button();
             this.btnReporteGeneralProductos = new System.Windows.Forms.Button();
             this.btnAtras = new System.Windows.Forms.Button();
-            this.btnReportePorEmpleado = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnReporteGeneral = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -65,12 +63,12 @@
             this.groupBox2.Controls.Add(this.textBox1);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.dataGridView3);
-            this.groupBox2.Controls.Add(this.lbTexto);
+            this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(86, 118);
+            this.groupBox2.Location = new System.Drawing.Point(77, 94);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(641, 563);
-            this.groupBox2.TabIndex = 16;
+            this.groupBox2.TabIndex = 19;
             this.groupBox2.TabStop = false;
             // 
             // label8
@@ -143,30 +141,28 @@
             this.dataGridView3.Size = new System.Drawing.Size(543, 302);
             this.dataGridView3.TabIndex = 1;
             // 
-            // lbTexto
+            // label7
             // 
-            this.lbTexto.AutoSize = true;
-            this.lbTexto.Location = new System.Drawing.Point(40, 91);
-            this.lbTexto.Name = "lbTexto";
-            this.lbTexto.Size = new System.Drawing.Size(15, 24);
-            this.lbTexto.TabIndex = 0;
-            this.lbTexto.Text = ":";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(53, 99);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(266, 24);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Ventas realizada el dia de hoy:";
             // 
             // groupBox1
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.btnReporteGeneral);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.btnMenuPrincipal);
             this.groupBox1.Controls.Add(this.btnReporteGeneralProductos);
             this.groupBox1.Controls.Add(this.btnAtras);
-            this.groupBox1.Controls.Add(this.btnReportePorEmpleado);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(761, 118);
+            this.groupBox1.Location = new System.Drawing.Point(752, 94);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(417, 563);
-            this.groupBox1.TabIndex = 15;
+            this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Opciones";
             // 
@@ -192,7 +188,7 @@
             this.btnMenuPrincipal.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
             this.btnMenuPrincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenuPrincipal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnMenuPrincipal.Location = new System.Drawing.Point(73, 325);
+            this.btnMenuPrincipal.Location = new System.Drawing.Point(67, 138);
             this.btnMenuPrincipal.Name = "btnMenuPrincipal";
             this.btnMenuPrincipal.Size = new System.Drawing.Size(288, 56);
             this.btnMenuPrincipal.TabIndex = 10;
@@ -210,13 +206,12 @@
             this.btnReporteGeneralProductos.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
             this.btnReporteGeneralProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReporteGeneralProductos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnReporteGeneralProductos.Location = new System.Drawing.Point(73, 138);
+            this.btnReporteGeneralProductos.Location = new System.Drawing.Point(67, 54);
             this.btnReporteGeneralProductos.Name = "btnReporteGeneralProductos";
             this.btnReporteGeneralProductos.Size = new System.Drawing.Size(288, 69);
             this.btnReporteGeneralProductos.TabIndex = 1;
-            this.btnReporteGeneralProductos.Text = "Reporte de ventas de productos del dia";
+            this.btnReporteGeneralProductos.Text = "Reporte general de ventas diario";
             this.btnReporteGeneralProductos.UseVisualStyleBackColor = false;
-            this.btnReporteGeneralProductos.Click += new System.EventHandler(this.btnReporteGeneralProductos_Click);
             // 
             // btnAtras
             // 
@@ -232,65 +227,29 @@
             this.btnAtras.UseVisualStyleBackColor = true;
             this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
             // 
-            // btnReportePorEmpleado
-            // 
-            this.btnReportePorEmpleado.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnReportePorEmpleado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(112)))), ((int)(((byte)(156)))));
-            this.btnReportePorEmpleado.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(112)))), ((int)(((byte)(156)))));
-            this.btnReportePorEmpleado.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
-            this.btnReportePorEmpleado.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
-            this.btnReportePorEmpleado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReportePorEmpleado.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnReportePorEmpleado.Location = new System.Drawing.Point(73, 50);
-            this.btnReportePorEmpleado.Name = "btnReportePorEmpleado";
-            this.btnReportePorEmpleado.Size = new System.Drawing.Size(288, 71);
-            this.btnReportePorEmpleado.TabIndex = 0;
-            this.btnReportePorEmpleado.Text = "Reporte de ventas por empleado del dia";
-            this.btnReportePorEmpleado.UseVisualStyleBackColor = false;
-            this.btnReportePorEmpleado.Click += new System.EventHandler(this.btnReportePorEmpleado_Click);
-            // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(520, 58);
+            this.label1.Location = new System.Drawing.Point(555, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 32);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Reportes";
+            this.label1.Size = new System.Drawing.Size(123, 32);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Reporte";
             // 
-            // btnReporteGeneral
-            // 
-            this.btnReporteGeneral.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnReporteGeneral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(112)))), ((int)(((byte)(156)))));
-            this.btnReporteGeneral.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(112)))), ((int)(((byte)(156)))));
-            this.btnReporteGeneral.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
-            this.btnReporteGeneral.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
-            this.btnReporteGeneral.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReporteGeneral.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnReporteGeneral.Location = new System.Drawing.Point(73, 231);
-            this.btnReporteGeneral.Name = "btnReporteGeneral";
-            this.btnReporteGeneral.Size = new System.Drawing.Size(288, 69);
-            this.btnReporteGeneral.TabIndex = 12;
-            this.btnReporteGeneral.Text = "Reporte general de ventas diario";
-            this.btnReporteGeneral.UseVisualStyleBackColor = false;
-            this.btnReporteGeneral.Click += new System.EventHandler(this.btnReporteGeneral_Click);
-            // 
-            // FrmReport
+            // ReportEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 738);
+            this.ClientSize = new System.Drawing.Size(1246, 691);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmReport";
+            this.Name = "ReportEmployee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmReport";
+            this.Text = "ReportEmployee";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -305,21 +264,19 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.Label lbTexto;
+        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnMenuPrincipal;
         private System.Windows.Forms.Button btnReporteGeneralProductos;
         private System.Windows.Forms.Button btnAtras;
-        private System.Windows.Forms.Button btnReportePorEmpleado;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button btnReporteGeneral;
     }
 }
