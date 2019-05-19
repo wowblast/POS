@@ -84,5 +84,29 @@ namespace POS.Control
         {
             return DateTime.Now.ToString("yyyy/MM/dd");
         }
+
+        public string ObtenerMontoTotal()
+        {
+            string sql = @"SELECT SUM(PRODUCTOS.precioUnitarioVenta * DETALLE_VENTA.cantidad) AS 'Monto total' FROM PRODUCTOS
+                           INNER JOIN DETALLE_VENTA ON PRODUCTOS.idProducto = DETALLE_VENTA.idProducto
+                           INNER JOIN VENTAS ON DETALLE_VENTA.idVenta = VENTAS.idVenta
+                           INNER JOIN EMPLEADOS ON VENTAS.idEmpleado = EMPLEADOS.idEmpleado
+                           WHERE " + ObtenerCondicionDeFecha() + " GROUP BY EMPLEADOS.idEmpleado";
+            try
+            {
+                Log.Print("¡Monto total obtenido correctamente!");
+                
+                DataTable tablaMontoTotal = conexion.QuerySQL(sql);
+                if (tablaMontoTotal.Rows.Count > 0)
+                    return tablaMontoTotal.Rows[0]["Monto total"].ToString();
+
+            }
+            catch (Exception e)
+            {
+                Log.Print("Ha ocurrido un error: " + e.Message);
+            }
+
+            return "0";
+        }
     }
 }
