@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmReport));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lbFecha = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -58,7 +58,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.lbFecha);
             this.groupBox2.Controls.Add(this.textBox2);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label3);
@@ -73,15 +73,14 @@
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
             // 
-            // label8
+            // lbFecha
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(452, 38);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(164, 24);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "Fecha: 17/02/2019";
+            this.lbFecha.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbFecha.AutoSize = true;
+            this.lbFecha.Location = new System.Drawing.Point(328, 50);
+            this.lbFecha.Name = "lbFecha";
+            this.lbFecha.Size = new System.Drawing.Size(0, 24);
+            this.lbFecha.TabIndex = 8;
             // 
             // textBox2
             // 
@@ -148,9 +147,8 @@
             this.lbTexto.AutoSize = true;
             this.lbTexto.Location = new System.Drawing.Point(40, 91);
             this.lbTexto.Name = "lbTexto";
-            this.lbTexto.Size = new System.Drawing.Size(15, 24);
+            this.lbTexto.Size = new System.Drawing.Size(0, 24);
             this.lbTexto.TabIndex = 0;
-            this.lbTexto.Text = ":";
             // 
             // groupBox1
             // 
@@ -192,7 +190,7 @@
             this.btnMenuPrincipal.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
             this.btnMenuPrincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenuPrincipal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnMenuPrincipal.Location = new System.Drawing.Point(73, 325);
+            this.btnMenuPrincipal.Location = new System.Drawing.Point(73, 316);
             this.btnMenuPrincipal.Name = "btnMenuPrincipal";
             this.btnMenuPrincipal.Size = new System.Drawing.Size(288, 56);
             this.btnMenuPrincipal.TabIndex = 10;
@@ -271,7 +269,7 @@
             this.btnReporteGeneral.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
             this.btnReporteGeneral.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReporteGeneral.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnReporteGeneral.Location = new System.Drawing.Point(73, 231);
+            this.btnReporteGeneral.Location = new System.Drawing.Point(73, 226);
             this.btnReporteGeneral.Name = "btnReporteGeneral";
             this.btnReporteGeneral.Size = new System.Drawing.Size(288, 69);
             this.btnReporteGeneral.TabIndex = 12;
@@ -319,7 +317,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lbFecha;
         private System.Windows.Forms.Button btnReporteGeneral;
     }
 }

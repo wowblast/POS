@@ -76,10 +76,13 @@ namespace POS.Control
 
         private string ObtenerCondicionDeFecha()
         {
-            DateTime fechaActualCompleta = DateTime.Now;
-            string diaActual = fechaActualCompleta.ToString("yyyy/MM/dd");
             // CONVERT(VARCHAR(8), VENTAS.fecha, 112) = CONVERT(VARCHAR(8), GETDATE(), 112)(opcion mala para el rendimiento, pero mas legible)
-            return "VENTAS.fecha BETWEEN DATEADD(dd, DATEDIFF(dd,0,'" + diaActual + "'), 0) AND DATEADD(ss,-1,DATEADD(dd, DATEDIFF(dd,0,'" + diaActual + "'), 1))";
+            return "VENTAS.fecha BETWEEN DATEADD(dd, DATEDIFF(dd,0,'" + ObtenerFechaActual() + "'), 0) AND DATEADD(ss,-1,DATEADD(dd, DATEDIFF(dd,0,'" + ObtenerFechaActual() + "'), 1))";
+        }
+
+        private string ObtenerFechaActual()
+        {
+            return DateTime.Now.ToString("yyyy/MM/dd");
         }
     }
 }

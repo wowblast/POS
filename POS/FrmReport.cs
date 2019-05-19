@@ -17,6 +17,7 @@ namespace POS
         {
             InitializeComponent();
             lbTexto.Text = "";
+            lbFecha.Text = "Fecha actual: " + DateTime.Now.ToString("dd/MM/yyyy");
         }
 
         private void btnAtras_Click(object sender, EventArgs e)
@@ -49,7 +50,7 @@ namespace POS
 
         private void btnReporteGeneral_Click(object sender, EventArgs e)
         {
-            lbTexto.Text = "Reporte general de ventas";
+            lbTexto.Text = "Reporte general de ventas: ";
             DetalleVentaControl detalleVentaControl = new DetalleVentaControl();
             dataGridView3.DataSource = detalleVentaControl.ReporteGeneral();
         }
