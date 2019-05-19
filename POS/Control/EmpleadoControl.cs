@@ -1,4 +1,5 @@
-﻿using System;
+﻿using POS.Entity;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -16,6 +17,38 @@ namespace POS
         public EmpleadoControl()
         {
             connection = new Connection();
+        }
+
+        public DataTable Listar()
+        {
+            string sql = "SELECT * FROM EMPLEADOS";
+
+            try
+            {
+                DataTable listaEmpleados = connection.QuerySQL(sql);
+                Log.Print("Successful listing");
+                return listaEmpleados;
+            }
+            catch (Exception e)
+            {
+                Log.Print("An exception has ocurred. " + e.Message);
+                return null;
+            }
+        }
+
+        public void Insertar(Empleado empleado)
+        {
+            string sql = "INSERT INTO EMPLEADOS (idCargo,usuario,clave,nombres,apellidoPaterno,apellidoMaterno,direccion,fechaNacimiento,fechaContratacion) VALUES(" + empleado.IDCargo + ",'" + empleado.Usuario + "','" + empleado.Clave + "','" + empleado.Nombres + "','" + empleado.ApellidoPaterno + "','" + empleado.ApellidoMaterno + "','" + empleado.Direccion + "','" + empleado.FechaNacimiento.ToString("s") + "','" + empleado.FechaContratacion.ToString("s") + "')";
+
+            try
+            {
+                connection.ExecuteSQL(sql);
+                Log.Print("Successful insert");
+            }
+            catch (Exception e)
+            {
+                Log.Print("An exception has ocurred. " + e.Message);
+            }
         }
 
         /// <summary>
