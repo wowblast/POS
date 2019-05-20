@@ -1,6 +1,6 @@
 ﻿namespace POS
 {
-    partial class ReportEmployee
+    partial class FrmReportEmployee
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReportEmployee));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmReportEmployee));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.lbFecha = new System.Windows.Forms.Label();
+            this.txtNombreUsuario = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtMontoTotal = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lbTexto = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnMenuPrincipal = new System.Windows.Forms.Button();
-            this.btnReporteGeneralProductos = new System.Windows.Forms.Button();
+            this.btnReporteGeneralEmpleado = new System.Windows.Forms.Button();
             this.btnAtras = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
@@ -56,14 +56,14 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.lbFecha);
+            this.groupBox2.Controls.Add(this.txtNombreUsuario);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.txtMontoTotal);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.dataGridView3);
-            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.lbTexto);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(77, 94);
             this.groupBox2.Name = "groupBox2";
@@ -71,29 +71,29 @@
             this.groupBox2.TabIndex = 19;
             this.groupBox2.TabStop = false;
             // 
-            // label8
+            // lbFecha
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(452, 38);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(164, 24);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "Fecha: 17/02/2019";
+            this.lbFecha.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbFecha.AutoSize = true;
+            this.lbFecha.Location = new System.Drawing.Point(370, 39);
+            this.lbFecha.Name = "lbFecha";
+            this.lbFecha.Size = new System.Drawing.Size(0, 24);
+            this.lbFecha.TabIndex = 8;
             // 
-            // textBox2
+            // txtNombreUsuario
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(440, 469);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(160, 28);
-            this.textBox2.TabIndex = 6;
+            this.txtNombreUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNombreUsuario.Enabled = false;
+            this.txtNombreUsuario.Location = new System.Drawing.Point(395, 469);
+            this.txtNombreUsuario.Name = "txtNombreUsuario";
+            this.txtNombreUsuario.Size = new System.Drawing.Size(205, 28);
+            this.txtNombreUsuario.TabIndex = 6;
             // 
             // label5
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(315, 469);
+            this.label5.Location = new System.Drawing.Point(280, 469);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(84, 24);
             this.label5.TabIndex = 5;
@@ -109,19 +109,20 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Bs.";
             // 
-            // textBox1
+            // txtMontoTotal
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(440, 513);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(118, 28);
-            this.textBox1.TabIndex = 3;
+            this.txtMontoTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtMontoTotal.Enabled = false;
+            this.txtMontoTotal.Location = new System.Drawing.Point(395, 513);
+            this.txtMontoTotal.Name = "txtMontoTotal";
+            this.txtMontoTotal.Size = new System.Drawing.Size(163, 28);
+            this.txtMontoTotal.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(315, 513);
+            this.label2.Location = new System.Drawing.Point(280, 513);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(106, 24);
             this.label2.TabIndex = 2;
@@ -141,14 +142,13 @@
             this.dataGridView3.Size = new System.Drawing.Size(543, 302);
             this.dataGridView3.TabIndex = 1;
             // 
-            // label7
+            // lbTexto
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(53, 99);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(266, 24);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Ventas realizada el dia de hoy:";
+            this.lbTexto.AutoSize = true;
+            this.lbTexto.Location = new System.Drawing.Point(53, 99);
+            this.lbTexto.Name = "lbTexto";
+            this.lbTexto.Size = new System.Drawing.Size(0, 24);
+            this.lbTexto.TabIndex = 0;
             // 
             // groupBox1
             // 
@@ -156,7 +156,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.btnMenuPrincipal);
-            this.groupBox1.Controls.Add(this.btnReporteGeneralProductos);
+            this.groupBox1.Controls.Add(this.btnReporteGeneralEmpleado);
             this.groupBox1.Controls.Add(this.btnAtras);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(752, 94);
@@ -196,22 +196,23 @@
             this.btnMenuPrincipal.UseVisualStyleBackColor = false;
             this.btnMenuPrincipal.Click += new System.EventHandler(this.btnMenuPrincipal_Click);
             // 
-            // btnReporteGeneralProductos
+            // btnReporteGeneralEmpleado
             // 
-            this.btnReporteGeneralProductos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnReporteGeneralEmpleado.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnReporteGeneralProductos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(112)))), ((int)(((byte)(156)))));
-            this.btnReporteGeneralProductos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(112)))), ((int)(((byte)(156)))));
-            this.btnReporteGeneralProductos.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
-            this.btnReporteGeneralProductos.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
-            this.btnReporteGeneralProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReporteGeneralProductos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnReporteGeneralProductos.Location = new System.Drawing.Point(67, 54);
-            this.btnReporteGeneralProductos.Name = "btnReporteGeneralProductos";
-            this.btnReporteGeneralProductos.Size = new System.Drawing.Size(288, 69);
-            this.btnReporteGeneralProductos.TabIndex = 1;
-            this.btnReporteGeneralProductos.Text = "Reporte general de ventas diario";
-            this.btnReporteGeneralProductos.UseVisualStyleBackColor = false;
+            this.btnReporteGeneralEmpleado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(112)))), ((int)(((byte)(156)))));
+            this.btnReporteGeneralEmpleado.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(112)))), ((int)(((byte)(156)))));
+            this.btnReporteGeneralEmpleado.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
+            this.btnReporteGeneralEmpleado.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
+            this.btnReporteGeneralEmpleado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReporteGeneralEmpleado.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnReporteGeneralEmpleado.Location = new System.Drawing.Point(67, 54);
+            this.btnReporteGeneralEmpleado.Name = "btnReporteGeneralEmpleado";
+            this.btnReporteGeneralEmpleado.Size = new System.Drawing.Size(288, 69);
+            this.btnReporteGeneralEmpleado.TabIndex = 1;
+            this.btnReporteGeneralEmpleado.Text = "Reporte general de ventas diario";
+            this.btnReporteGeneralEmpleado.UseVisualStyleBackColor = false;
+            this.btnReporteGeneralEmpleado.Click += new System.EventHandler(this.btnReporteGeneralEmpleado_Click);
             // 
             // btnAtras
             // 
@@ -238,7 +239,7 @@
             this.label1.TabIndex = 17;
             this.label1.Text = "Reporte";
             // 
-            // ReportEmployee
+            // FrmReportEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -247,7 +248,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "ReportEmployee";
+            this.Name = "FrmReportEmployee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ReportEmployee";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -264,18 +265,18 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label lbFecha;
+        private System.Windows.Forms.TextBox txtNombreUsuario;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtMontoTotal;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lbTexto;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnMenuPrincipal;
-        private System.Windows.Forms.Button btnReporteGeneralProductos;
+        private System.Windows.Forms.Button btnReporteGeneralEmpleado;
         private System.Windows.Forms.Button btnAtras;
         private System.Windows.Forms.Label label1;
     }

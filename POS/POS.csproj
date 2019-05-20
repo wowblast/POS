@@ -206,11 +206,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReportEmployee.cs">
+    <Compile Include="FrmReportEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReportEmployee.Designer.cs">
-      <DependentUpon>ReportEmployee.cs</DependentUpon>
+    <Compile Include="FrmReportEmployee.Designer.cs">
+      <DependentUpon>FrmReportEmployee.cs</DependentUpon>
     </Compile>
     <Compile Include="Tools\Log.cs" />
     <EmbeddedResource Include="FrmCompany.resx">
@@ -292,8 +292,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="ReportEmployee.resx">
-      <DependentUpon>ReportEmployee.cs</DependentUpon>
+    <EmbeddedResource Include="FrmReportEmployee.resx">
+      <DependentUpon>FrmReportEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="bin\Debug\POS.exe.config" />
     <None Include="Properties\Settings.settings">

@@ -74,6 +74,25 @@ namespace POS.Control
             return null;
         }
 
+        public DataTable ReporteVentasPorEmpleado(int idEmpleado)
+        {
+            string sql = @"SELECT EMPLEADOS.idEmpleado AS 'Id empleado', EMPLEADOS.nombres AS 'Nombres del empleado', EMPLEADOS.apellidoPaterno AS 'Apellido paterno', EMPLEADOS.apellidoMaterno AS 'Apellido materno', PRODUCTOS.idProducto AS 'Id producto', PRODUCTOS.nombre AS 'Nombre del producto', PRODUCTOS.precioUnitarioVenta AS 'Precio unitario', DETALLE_VENTA.cantidad AS 'Cantidad vendida', SUM(PRODUCTOS.precioUnitarioVenta * DETALLE_VENTA.cantidad) AS 'Monto obtenido en Bs.'  FROM PRODUCTOS
+                           INNER JOIN DETALLE_VENTA ON PRODUCTOS.idProducto = DETALLE_VENTA.idProducto
+                           INNER JOIN VENTAS ON DETALLE_VENTA.idVenta = VENTAS.idVenta
+                           INNER JOIN EMPLEADOS ON VENTAS.idEmpleado = EMPLEADOS.idEmpleado
+                           WHERE " + ObtenerCondicionDeFecha() + "AND EMPLEADOS.idEmpleado = " + idEmpleado;
+            try
+            {
+                Log.Print("¡Reporte general realizado exitosamente!");
+                return (conexion.QuerySQL(sql));
+            }
+            catch (Exception e)
+            {
+                Log.Print("Ha ocurrido un error: " + e.Message);
+            }
+            return null;
+        }
+
         private string ObtenerCondicionDeFecha()
         {
             // CONVERT(VARCHAR(8), VENTAS.fecha, 112) = CONVERT(VARCHAR(8), GETDATE(), 112)(opcion mala para el rendimiento, pero mas legible)
