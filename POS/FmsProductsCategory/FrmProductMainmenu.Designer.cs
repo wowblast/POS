@@ -62,6 +62,7 @@
 			this.groupBox2.Size = new System.Drawing.Size(627, 556);
 			this.groupBox2.TabIndex = 19;
 			this.groupBox2.TabStop = false;
+			this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
 			// 
 			// dataGridView1
 			// 
@@ -152,6 +153,7 @@
 			this.btnEliminar.TabIndex = 3;
 			this.btnEliminar.Text = "Eliminar categoria de producto";
 			this.btnEliminar.UseVisualStyleBackColor = false;
+			this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
 			// 
 			// btnActualizar
 			// 
@@ -225,6 +227,7 @@
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "FrmProductMainmenu";
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+			this.Load += new System.EventHandler(this.FrmProductMainmenu_Load);
 			this.groupBox2.ResumeLayout(false);
 			this.groupBox2.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

@@ -72,6 +72,7 @@
 			this.btnCancelar.TabIndex = 24;
 			this.btnCancelar.Text = "CANCELAR";
 			this.btnCancelar.UseVisualStyleBackColor = false;
+			this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
 			// 
 			// btnActualizarDatos
 			// 
@@ -87,6 +88,7 @@
 			this.btnActualizarDatos.TabIndex = 23;
 			this.btnActualizarDatos.Text = "ACTUALIZAR DATOS";
 			this.btnActualizarDatos.UseVisualStyleBackColor = false;
+			this.btnActualizarDatos.Click += new System.EventHandler(this.btnActualizarDatos_Click);
 			// 
 			// label2
 			// 
@@ -132,6 +134,7 @@
 			this.Controls.Add(this.label1);
 			this.Name = "FrmUpdateCategoryProduct";
 			this.Text = "FrmUpdateCategoryProduct";
+			this.Load += new System.EventHandler(this.FrmUpdateCategoryProduct_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

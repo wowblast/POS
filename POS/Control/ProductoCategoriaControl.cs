@@ -16,29 +16,36 @@ namespace POS.Control
 		{
 			connection = new Connection();
 		}
-
-		public void AñadirCategoria(string nombre, string descripcion, int subcategoria)
+		public string InsertarProductoCategoria(int idProducto, int idCategoria)
 		{
-			string sql = "INSERT INTO CATEGORIAS (nombre, descripcion, subcategoria) VALUES ('" + nombre + "', '" + descripcion + "',' " + subcategoria + "')";
+			string sql = "INSERT INTO PRODUCTO_CATEGORIA (idProducto,idCategoria) VALUES (" + idProducto + "," + idCategoria + "); SELECT SCOPE_IDENTITY()";
 			try
 			{
-				connection.ExecuteSQL(sql);
-				MessageBox.Show("¡Categoria añadida exitosamente!", "Completado");
+				DataTable Productos = connection.QuerySQL(sql);
+				string[] idProductos = Productos.Rows.OfType<DataRow>().Select(k => k[0].ToString()).ToArray();
+
+				//connection.ExecuteSQL(sql);
+				MessageBox.Show("¡Registro correcto de  producto categoria !", "Completado");
 				Log.Print("Query executed correctly \n" + sql);
+
+				return idProductos[0];
 			}
 			catch (Exception e)
 			{
 				Log.Print("An exception has occurred. " + e.Message);
+				return null;
+
 			}
 		}
-		public void EliminarCategoria(int idCategoria)
+
+		public void EliminarProductoCategoria(int idProductoCategoria)
 		{
-			string sql = "DELETE FROM CATEGORIAS WHERE idCategoria = " + idCategoria;
+			string sql = "DELETE FROM PRODUCTO_CATEGORIA WHERE idProductoCategoria = " + idProductoCategoria;
 
 			try
 			{
 				connection.ExecuteSQL(sql);
-				MessageBox.Show("¡categoria eliminada exitosamente!", "Completado");
+				MessageBox.Show("Producto Categoria eliminado ", "Completado");
 				Log.Print(sql);
 			}
 			catch (Exception e)
@@ -46,9 +53,28 @@ namespace POS.Control
 				Log.Print("An exception has ocurred. " + e.Message);
 			}
 		}
-		public void ModificarCategoria(int idCategoria, string nombre, string descripcion, int subcategoria)
+
+		public DataTable ListarProductosCategoria()
 		{
-			string sql = "UPDATE CATEGORIAS SET nombre = '" + nombre + "', descripcion = '" + descripcion + "', subcategoria = '" + subcategoria + "' WHERE idCategoria = " + idCategoria;
+			string innerjoin = "INNER JOIN PRODUCTO_CATEGORIA ON PRODUCTOS.idProducto = PRODUCTO_CATEGORIA.idProducto)  INNER JOIN CATEGORIAS ON CATEGORIAS.idCategoria = PRODUCTO_CATEGORIA.idCategoria);";
+			string sql = "SELECT PRODUCTO_CATEGORIA.idProductoCategoria AS 'ID PRODUCTO CATEGORIA' ,PRODUCTOS.idProducto AS 'ID PRODUCTO', PRODUCTOS.idEstante AS 'ID ESTANTE', PRODUCTOS.nombre AS 'NOMBRE DEL PRODUCTO', PRODUCTOS.descripcion AS 'DESCRIPCION', PRODUCTOS.precioUnitarioVenta AS 'PRECIO UNITARIO DE VENTA DEL PRODUCTO', PRODUCTOS.cantidad AS 'CANTIDAD',CATEGORIAS.nombre as 'CATEGORIA' FROM  ((PRODUCTOS " + innerjoin;
+
+			try
+			{
+				DataTable products = connection.QuerySQL(sql);
+				Log.Print("Successful listing");
+				return products;
+			}
+			catch (Exception e)
+			{
+				Log.Print("An exception has ocurred. " + e.Message);
+				return null;
+			}
+		}
+
+		public void ActualizarProductoCategoria(int idProductoCateogria, int idCategoria)
+		{
+			string sql = "UPDATE PRODUCTO_CATEGORIA SET idCategoria = " + idCategoria + " WHERE idProductoCategoria = " + idProductoCateogria;
 			try
 			{
 				connection.ExecuteSQL(sql);
@@ -60,21 +86,6 @@ namespace POS.Control
 				Log.Print("An exception has ocurred. " + e.Message);
 			}
 		}
-		public DataTable ListarCateogorias()
-		{
-			string sql = "SELECT idCategoria AS 'ID CATEGORIA', nombre AS 'NOMBRE CATEGORIA', descripcion AS 'DESCRIPCIÓN', subcategoria as 'SUBCATEGORIA' FROM CATEGORIAS";
-
-			try
-			{
-				DataTable listShelve = connection.QuerySQL(sql);
-				Log.Print("Successful listing");
-				return listShelve;
-			}
-			catch (Exception e)
-			{
-				Log.Print("An exception has ocurred. " + e.Message);
-				return null;
-			}
-		}
+		
 	}
 }
