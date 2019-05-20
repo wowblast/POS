@@ -34,7 +34,24 @@ namespace POS
 
 		internal void UploadImage(int idProducto, byte[] imagen)
 		{
-			throw new NotImplementedException();
+			try
+			{
+				using (SqlConnection cn = new SqlConnection("Data Source=.;Initial Catalog=POS_BBDD;Integrated Security=True"))
+				{
+					cn.Open();
+					using (SqlCommand cmd = new SqlCommand("insert into IMAGENES_PRODUCTO (idProducto,imagen) VALUES (@idProducto,@data)", cn))
+					{
+						cmd.Parameters.AddWithValue("@idProducto", idProducto);
+						cmd.Parameters.Add("@data", SqlDbType.VarBinary).Value = imagen;
+						cmd.ExecuteNonQuery();
+					}
+				}
+				Log.Print("Query executed correctly image added \n");
+			}
+			catch (Exception e)
+			{
+				Log.Print("An exception has occurred. " + e.Message);
+			}
 		}
 
 		public DataTable QuerySQL(string sql)

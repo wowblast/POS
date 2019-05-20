@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -55,6 +57,26 @@ namespace POS.Control
 			catch (Exception e)
 			{
 				Log.Print("An exception has occurred. " + e.Message);
+			}
+		}
+		public object SelectImage(int idProducto)
+		{
+			string sql = "SELECT imagen FROM IMAGENES_PRODUCTO WHERE idProducto = " + idProducto;
+			try
+			{
+				DataTable  lista = connection.QuerySQL(sql);
+				object binaryDataResult = null ;
+				foreach (DataRow row in lista.Rows)
+				{
+					binaryDataResult = row["imagen"];
+				}
+				return binaryDataResult;
+				
+			}
+			catch (Exception e)
+			{
+				Log.Print("An exception has ocurred. " + e.Message);
+				return null;
 			}
 		}
 	}

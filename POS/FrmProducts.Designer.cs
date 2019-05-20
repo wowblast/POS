@@ -36,8 +36,7 @@
 			this.menuStrip2 = new System.Windows.Forms.MenuStrip();
 			this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
 			this.comboBox2 = new System.Windows.Forms.ComboBox();
-			this.pictureBox2 = new System.Windows.Forms.PictureBox();
-			this.label11 = new System.Windows.Forms.Label();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.button1 = new System.Windows.Forms.Button();
 			this.label12 = new System.Windows.Forms.Label();
 			this.label13 = new System.Windows.Forms.Label();
@@ -51,7 +50,7 @@
 			this.textBox8 = new System.Windows.Forms.TextBox();
 			this.label17 = new System.Windows.Forms.Label();
 			this.label18 = new System.Windows.Forms.Label();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// btnBack
@@ -129,38 +128,28 @@
 			this.comboBox2.Size = new System.Drawing.Size(278, 21);
 			this.comboBox2.TabIndex = 58;
 			// 
-			// pictureBox2
+			// pictureBox1
 			// 
-			this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-			this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-			this.pictureBox2.Location = new System.Drawing.Point(357, 414);
-			this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-			this.pictureBox2.Name = "pictureBox2";
-			this.pictureBox2.Size = new System.Drawing.Size(200, 133);
-			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox2.TabIndex = 57;
-			this.pictureBox2.TabStop = false;
-			// 
-			// label11
-			// 
-			this.label11.AutoSize = true;
-			this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label11.Location = new System.Drawing.Point(350, 382);
-			this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(253, 17);
-			this.label11.TabIndex = 56;
-			this.label11.Text = "Aún no se ha cargado ninguna imagen";
+			this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+			this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.pictureBox1.Location = new System.Drawing.Point(357, 414);
+			this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(200, 133);
+			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox1.TabIndex = 57;
+			this.pictureBox1.TabStop = false;
 			// 
 			// button1
 			// 
-			this.button1.Location = new System.Drawing.Point(620, 369);
+			this.button1.Location = new System.Drawing.Point(370, 353);
 			this.button1.Margin = new System.Windows.Forms.Padding(2);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(61, 45);
 			this.button1.TabIndex = 55;
 			this.button1.Text = "...";
 			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// label12
 			// 
@@ -193,6 +182,7 @@
 			this.button3.TabIndex = 52;
 			this.button3.Text = "REGISTRAR PRODUCTO";
 			this.button3.UseVisualStyleBackColor = false;
+			this.button3.Click += new System.EventHandler(this.button3_Click);
 			// 
 			// textBox1
 			// 
@@ -283,8 +273,7 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(878, 673);
 			this.Controls.Add(this.comboBox2);
-			this.Controls.Add(this.pictureBox2);
-			this.Controls.Add(this.label11);
+			this.Controls.Add(this.pictureBox1);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.label12);
 			this.Controls.Add(this.label13);
@@ -303,13 +292,13 @@
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.btnBack);
 			this.Controls.Add(this.menuStrip2);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
 			this.Margin = new System.Windows.Forms.Padding(2);
 			this.Name = "FrmProducts";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "FrmProducts";
 			this.Load += new System.EventHandler(this.FrmProducts_Load);
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -324,8 +313,7 @@
         private System.Windows.Forms.Button EliminarProducto;
 		private System.Windows.Forms.OpenFileDialog openFileDialog1;
 		private System.Windows.Forms.ComboBox comboBox2;
-		private System.Windows.Forms.PictureBox pictureBox2;
-		private System.Windows.Forms.Label label11;
+		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.Label label12;
 		private System.Windows.Forms.Label label13;

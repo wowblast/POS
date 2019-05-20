@@ -41,14 +41,58 @@ namespace POS.FmsProductsCategory
 
 		private void btnActualizar_Click(object sender, EventArgs e)
 		{
-			FrmUpdateProduct updateproduct = new FrmUpdateProduct();
-			updateproduct.Show();
+			if (dataGridView1.SelectedRows.Count == 1)
+			{
+				int idProducto = Convert.ToInt32(dataGridView1.SelectedCells[0].Value);
+				string nombre = dataGridView1.SelectedCells[2].Value.ToString();
+				string descripcion = dataGridView1.SelectedCells[3].Value.ToString();
+				float precio = Convert.ToSingle(dataGridView1.SelectedCells[4].Value.ToString());
+				int cantidad = Convert.ToInt32(dataGridView1.SelectedCells[5].Value.ToString());
+
+				FrmUpdateProduct updateproduct = new FrmUpdateProduct(idProducto,descripcion,nombre,precio,cantidad);
+				updateproduct.Show();
+			}
+			else
+			{
+				MessageBox.Show("¡Debe seleccionar a un proveedor!", "Error");
+			}
+			
 		}
 
 		private void btnRegistrar_Click(object sender, EventArgs e)
 		{
 			FrmProducts product = new FrmProducts();
 			product.Show();
+		}
+
+		private void btnEliminar_Click(object sender, EventArgs e)
+		{
+			if (dataGridView1.SelectedRows.Count == 1)
+			{
+				DialogResult result = MessageBox.Show("¿Esta seguro que desea eliminar el producto?", "Importante", MessageBoxButtons.YesNo);
+
+				if (result == DialogResult.Yes)
+				{
+					int idProducto = Convert.ToInt32(dataGridView1.SelectedCells[0].Value);
+					ProductoControl producto = new ProductoControl();
+					producto.EliminarProducto(idProducto);
+					ImagenProducto imagen = new ImagenProducto();
+					imagen.BorrarImagen(idProducto);
+					Listar();
+				}
+			}
+			else
+			{
+				MessageBox.Show("¡Debe seleccionar a un proveedor!", "Error");
+			}
+		}
+
+		private void btnMenuPrincipal_Click(object sender, EventArgs e)
+		{
+
+			FrmMainMenu frmMainMenu = new FrmMainMenu();
+			frmMainMenu.Show();
+			Close();
 		}
 	}
 }

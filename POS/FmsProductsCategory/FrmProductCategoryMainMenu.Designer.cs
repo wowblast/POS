@@ -167,6 +167,7 @@
 			this.btnMenuPrincipal.TabIndex = 10;
 			this.btnMenuPrincipal.Text = "Menú principal";
 			this.btnMenuPrincipal.UseVisualStyleBackColor = false;
+			this.btnMenuPrincipal.Click += new System.EventHandler(this.btnMenuPrincipal_Click);
 			// 
 			// btnEliminar
 			// 
@@ -183,6 +184,7 @@
 			this.btnEliminar.TabIndex = 3;
 			this.btnEliminar.Text = "Eliminar producto";
 			this.btnEliminar.UseVisualStyleBackColor = false;
+			this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
 			// 
 			// btnActualizar
 			// 

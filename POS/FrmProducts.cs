@@ -103,35 +103,68 @@ namespace POS
 		private void FrmProducts_Load(object sender, EventArgs e)
 		{
 			Listar();
+			TiendaControl tienda = new TiendaControl();
+			DataTable estantes = tienda.ListarEstantes();
+			comboBox2.DataSource = estantes;
+			comboBox2.ValueMember = "ID ESTANTE";
+			comboBox2.DisplayMember = "ESTANTE";
 		}
 
 		private void pictureBox1_Click(object sender, EventArgs e)
 		{
 
+		}		
+
+		private void button3_Click(object sender, EventArgs e)
+		{
+			if (imageAdded)
+			{
+				ProductoControl productoControl = new ProductoControl();
+				string idProducto = productoControl.InsertarProducto(Convert.ToInt32(comboBox2.SelectedValue), textBox8.Text, textBox7.Text, Convert.ToInt32(textBox2.Text), Convert.ToInt32(textBox1.Text));
+				ImagenProducto image = new ImagenProducto();
+				image.InsertarImagen(Convert.ToInt32(idProducto), binaryImage);
+				textBox7.Text = "";
+				textBox8.Text = "";
+				textBox2.Text = "";
+				textBox1.Text = "";
+				Listar();
+				imageAdded = false;
+			}
+			else
+			{
+				MessageBox.Show("seleccione imagen");
+			}
 		}
 
-		private void button2_Click(object sender, EventArgs e)
+		private void button1_Click(object sender, EventArgs e)
 		{
 			try
 			{
-				/*if (openFileDialog1.ShowDialog() == DialogResult.OK)
+				if (openFileDialog1.ShowDialog() == DialogResult.OK)
 				{
 					string imagen = openFileDialog1.FileName;
 					pictureBox1.Image = Image.FromFile(imagen);
-					FileStream fS = new FileStream(imagen, FileMode.Open, FileAccess.Read);
-					binaryImage = new byte[fS.Length];
-					fS.Read(binaryImage, 0, (int)fS.Length);
-					fS.Close();
+
+					binaryImage = ImageToByteArray(Image.FromFile(imagen));
+
 					imageAdded = true;
 					//image.InsertarImagen(te)
 					
 					
 					MessageBox.Show("imagen cargada");
-				}*/
+				}
 			}
 			catch (Exception ex)
 			{
 				MessageBox.Show("El archivo seleccionado no es un tipo de imagen válido");
+			}
+		}
+		public byte[] ImageToByteArray(System.Drawing.Image imageIn)
+		{
+			using (var ms = new MemoryStream())
+			{
+				imageIn.Save(ms, imageIn.RawFormat);
+				return ms.ToArray();
 			}
 		}
 	}
