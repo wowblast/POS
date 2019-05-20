@@ -136,10 +136,10 @@
             this.dataGridView3.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dataGridView3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(57, 138);
+            this.dataGridView3.Location = new System.Drawing.Point(57, 130);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(543, 302);
+            this.dataGridView3.Size = new System.Drawing.Size(543, 310);
             this.dataGridView3.TabIndex = 1;
             // 
             // lbTexto
