@@ -32,11 +32,11 @@ namespace POS
             }
         }
 
-		internal void UploadImage(int idProducto, byte[] imagen)
+		public void UploadImage(int idProducto, byte[] imagen)
 		{
 			try
 			{
-				using (SqlConnection cn = new SqlConnection("Data Source=.;Initial Catalog=POS_BBDD;Integrated Security=True"))
+				using (SqlConnection cn = new SqlConnection(connectionString))
 				{
 					cn.Open();
 					using (SqlCommand cmd = new SqlCommand("insert into IMAGENES_PRODUCTO (idProducto,imagen) VALUES (@idProducto,@data)", cn))
@@ -75,9 +75,30 @@ namespace POS
             }
         }
 
-		internal void UpdateImage(int idProducto, byte[] image)
+		public void UpdateImage(int idProducto, byte[] imagen)
 		{
-			throw new NotImplementedException();
+			try
+			{
+				//string sql = "UPDATE CATEGORIAS SET imagen =@data  WHERE idProducto =@idProducto ";
+
+				using (SqlConnection cn = new SqlConnection(connectionString))
+				{
+					cn.Open();
+					using (SqlCommand cmd = new SqlCommand("UPDATE IMAGENES_PRODUCTO SET imagen = @data  WHERE idProducto = @idProducto ", cn))
+					{
+						cmd.Parameters.AddWithValue("@idProducto", idProducto);
+						cmd.Parameters.Add("@data", SqlDbType.VarBinary).Value = imagen;
+						cmd.ExecuteNonQuery();
+					}
+					cn.Close();
+				}
+			
+				Log.Print("Query executed correctly image added \n");
+			}
+			catch (Exception e)
+			{
+				Log.Print("An exception has occurred. " + e.Message);
+			}
 		}
 	}
 }

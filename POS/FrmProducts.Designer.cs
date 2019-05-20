@@ -30,8 +30,6 @@
         {
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProducts));
 			this.btnBack = new System.Windows.Forms.Button();
-			this.btnUpdateProduct = new System.Windows.Forms.Button();
-			this.EliminarProducto = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
 			this.menuStrip2 = new System.Windows.Forms.MenuStrip();
 			this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
@@ -67,31 +65,6 @@
 			this.btnBack.TabIndex = 8;
 			this.btnBack.UseVisualStyleBackColor = true;
 			this.btnBack.Click += new System.EventHandler(this.btnBack_Click_1);
-			// 
-			// btnUpdateProduct
-			// 
-			this.btnUpdateProduct.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-			this.btnUpdateProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnUpdateProduct.Location = new System.Drawing.Point(144, 26);
-			this.btnUpdateProduct.Margin = new System.Windows.Forms.Padding(2);
-			this.btnUpdateProduct.Name = "btnUpdateProduct";
-			this.btnUpdateProduct.Size = new System.Drawing.Size(178, 32);
-			this.btnUpdateProduct.TabIndex = 2;
-			this.btnUpdateProduct.Text = "Actualizar producto";
-			this.btnUpdateProduct.UseVisualStyleBackColor = true;
-			this.btnUpdateProduct.Click += new System.EventHandler(this.btnUpdateProduct_Click);
-			// 
-			// EliminarProducto
-			// 
-			this.EliminarProducto.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-			this.EliminarProducto.Location = new System.Drawing.Point(544, 48);
-			this.EliminarProducto.Margin = new System.Windows.Forms.Padding(2);
-			this.EliminarProducto.Name = "EliminarProducto";
-			this.EliminarProducto.Size = new System.Drawing.Size(191, 39);
-			this.EliminarProducto.TabIndex = 1;
-			this.EliminarProducto.Text = "Eliminar producto";
-			this.EliminarProducto.UseVisualStyleBackColor = true;
-			this.EliminarProducto.Click += new System.EventHandler(this.EliminarProducto_Click);
 			// 
 			// label1
 			// 
@@ -287,8 +260,6 @@
 			this.Controls.Add(this.textBox8);
 			this.Controls.Add(this.label17);
 			this.Controls.Add(this.label18);
-			this.Controls.Add(this.btnUpdateProduct);
-			this.Controls.Add(this.EliminarProducto);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.btnBack);
 			this.Controls.Add(this.menuStrip2);
@@ -308,9 +279,7 @@
 
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnUpdateProduct;
         private System.Windows.Forms.MenuStrip menuStrip2;
-        private System.Windows.Forms.Button EliminarProducto;
 		private System.Windows.Forms.OpenFileDialog openFileDialog1;
 		private System.Windows.Forms.ComboBox comboBox2;
 		private System.Windows.Forms.PictureBox pictureBox1;

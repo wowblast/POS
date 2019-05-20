@@ -51,6 +51,7 @@ namespace POS.FmsProductsCategory
 
 				FrmUpdateProduct updateproduct = new FrmUpdateProduct(idProducto,descripcion,nombre,precio,cantidad);
 				updateproduct.Show();
+				this.Close();
 			}
 			else
 			{

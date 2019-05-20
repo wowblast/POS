@@ -34,75 +34,8 @@ namespace POS
 			frmMainMenu.Show();
 			Close();
 		}
-
-		private void btnUpdateProduct_Click(object sender, EventArgs e)
-		{
-			FrmUpdateProduct frmUpdateProduct = new FrmUpdateProduct();
-			frmUpdateProduct.Show();
-		}
-
-
-		public void Listar()
-		{
-			ProductoControl productoControl = new ProductoControl();
-			//dataGridView1.DataSource = productoControl.ListarProductos();
-			//dataGridView2.DataSource = productoControl.ListarProductos();
-		}
-
-		private void RegistrarProducto_Click(object sender, EventArgs e)
-		{
-			if (imageAdded)
-			{
-
-
-				ProductoControl productoControl = new ProductoControl();
-				/*string idProducto = productoControl.InsertarProducto(1, textBox3.Text, textBox4.Text, Convert.ToInt32(textBox5.Text), Convert.ToInt32(textBox6.Text));
-				ImagenProducto image = new ImagenProducto();
-				image.InsertarImagen(Convert.ToInt32(idProducto), binaryImage);
-				textBox3.Text = "";
-				textBox4.Text = "";
-				textBox5.Text = "";
-				textBox6.Text = "";
-				Listar();
-				imageAdded = false;*/
-			}
-			else
-			{
-				MessageBox.Show("seleccione imagen");
-			}
-
-
-
-		}
-
-		private void EliminarProducto_Click(object sender, EventArgs e)
-		{
-			/*if (dataGridView2.SelectedRows.Count == 1)
-			{
-				DialogResult result = MessageBox.Show("¿Esta seguro que desea eliminar el producto?", "Importante", MessageBoxButtons.YesNo);
-
-				if (result == DialogResult.Yes)
-				{
-					int idProducto = Convert.ToInt32(dataGridView2.SelectedCells[0].Value);
-					ProductoControl producto = new ProductoControl();
-					producto.EliminarProducto(idProducto);
-					Listar();
-				}
-			}
-			else
-			{
-				MessageBox.Show("¡Debe seleccionar a un proveedor!", "Error");
-			}*/
-		}
-
-		private void tabPage1_Click(object sender, EventArgs e)
-		{
-			Listar();
-		}
-
 		private void FrmProducts_Load(object sender, EventArgs e)
 		{
-			Listar();
 			TiendaControl tienda = new TiendaControl();
 			DataTable estantes = tienda.ListarEstantes();
 			comboBox2.DataSource = estantes;
@@ -127,7 +60,7 @@ namespace POS
 				textBox8.Text = "";
 				textBox2.Text = "";
 				textBox1.Text = "";
-				Listar();
+				
 				imageAdded = false;
 			}
 			else

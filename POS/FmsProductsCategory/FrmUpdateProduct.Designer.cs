@@ -46,6 +46,7 @@
 			this.textBox8 = new System.Windows.Forms.TextBox();
 			this.label17 = new System.Windows.Forms.Label();
 			this.label18 = new System.Windows.Forms.Label();
+			this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -122,6 +123,7 @@
 			this.button1.TabIndex = 70;
 			this.button1.Text = "...";
 			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// label12
 			// 
@@ -226,6 +228,10 @@
 			this.label18.TabIndex = 59;
 			this.label18.Text = "Id estante:";
 			// 
+			// openFileDialog1
+			// 
+			this.openFileDialog1.FileName = "openFileDialog1";
+			// 
 			// FrmUpdateProduct
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -275,5 +281,6 @@
 		private System.Windows.Forms.TextBox textBox8;
 		private System.Windows.Forms.Label label17;
 		private System.Windows.Forms.Label label18;
+		private System.Windows.Forms.OpenFileDialog openFileDialog1;
 	}
 }
