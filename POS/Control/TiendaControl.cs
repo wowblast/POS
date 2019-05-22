@@ -17,18 +17,21 @@ namespace POS.Control
             connection = new Connection();
         }
 
-        public void AñadirEstantería(string nombre, string niveles)
+        public void AñadirEstantería(string nombre, int niveles)
         {
-            string sql = "INSERT INTO ESTANTES (numero, nivel) VALUES ('" + nombre + "', '" + niveles +"')";
-            try
+            for (int i = 0; i < niveles; i++)
             {
-                connection.ExecuteSQL(sql);
-                MessageBox.Show("¡Estantería añadida exitosamente!", "Completado");
-                Log.Print("Query executed correctly \n" + sql);
-            }
-            catch (Exception e)
-            {
-                Log.Print("An exception has occurred. " + e.Message);
+                string sql = "INSERT INTO ESTANTES (numero, nivel) VALUES ('" + nombre + "', '" + (i+1) + "')";
+                try
+                {
+                    connection.ExecuteSQL(sql);
+                    MessageBox.Show("¡Estantería añadida exitosamente!", "Completado");
+                    Log.Print("Query executed correctly \n" + sql);
+                }
+                catch (Exception e)
+                {
+                    Log.Print("An exception has occurred. " + e.Message);
+                }
             }
         }
         public void EliminarEstantería(int idEstante)
@@ -62,7 +65,7 @@ namespace POS.Control
         }
         public DataTable ListarEstantes()
         {
-            string sql = "SELECT idEstante AS 'ID ESTANTE', numero AS 'ESTANTE', nivel AS 'NIVELES' FROM ESTANTES";
+            string sql = "SELECT idEstante AS 'ID ESTANTE', numero AS 'ESTANTE', nivel AS 'NIVEL' FROM ESTANTES";
 
             try
             {

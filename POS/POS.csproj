@@ -52,6 +52,8 @@
   <ItemGroup>
     <Compile Include="Control\CategoriaControl.cs" />
     <Compile Include="Control\CargoControl.cs" />
+    <Compile Include="Control\CompraControl.cs" />
+    <Compile Include="Control\DetalleCompraControl.cs" />
     <Compile Include="Control\DetalleVentaControl.cs" />
     <Compile Include="Control\EmpleadoControl.cs" />
     <Compile Include="Control\EmpresaControl.cs" />
@@ -133,6 +135,12 @@
     <Compile Include="FrmMainMenu.Designer.cs">
       <DependentUpon>FrmMainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmMakePurchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMakePurchase.Designer.cs">
+      <DependentUpon>FrmMakePurchase.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +182,12 @@
     </Compile>
     <Compile Include="FrmRegisterProvider.Designer.cs">
       <DependentUpon>FrmRegisterProvider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegisterShelves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegisterShelves.Designer.cs">
+      <DependentUpon>FrmRegisterShelves.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmReport.cs">
       <SubType>Form</SubType>
@@ -235,6 +249,12 @@
     <Compile Include="FrmUpdateShelve.Designer.cs">
       <DependentUpon>FrmUpdateShelve.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmUpdateShelves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpdateShelves.Designer.cs">
+      <DependentUpon>FrmUpdateShelves.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FrmReportEmployee.cs">
@@ -277,6 +297,9 @@
     <EmbeddedResource Include="FrmMainMenu.resx">
       <DependentUpon>FrmMainMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmMakePurchase.resx">
+      <DependentUpon>FrmMakePurchase.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -297,6 +320,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRegisterProvider.resx">
       <DependentUpon>FrmRegisterProvider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegisterShelves.resx">
+      <DependentUpon>FrmRegisterShelves.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmReport.resx">
       <DependentUpon>FrmReport.cs</DependentUpon>
@@ -327,6 +353,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmUpdateShelve.resx">
       <DependentUpon>FrmUpdateShelve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpdateShelves.resx">
+      <DependentUpon>FrmUpdateShelves.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
