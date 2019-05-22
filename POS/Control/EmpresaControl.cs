@@ -24,7 +24,6 @@ namespace POS.Control
             try
             {
                 conexion.ExecuteSQL(sql);
-                MessageBox.Show("¡Registro exitoso de la empresa!", "Completado");
                 Log.Print("Query executed correctly \n" + sql);
 
             }

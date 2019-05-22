@@ -108,5 +108,10 @@ namespace POS
         {
             Listar();
         }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            Listar();
+        }
     }
 }

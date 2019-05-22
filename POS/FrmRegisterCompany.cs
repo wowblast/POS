@@ -33,7 +33,7 @@ namespace POS
             empresaControl.RegistrarEmpresa(nombre, ubicacion, descripcion);
 
             MessageBox.Show("Se ha registrado a la empresa exitosamente", "Registro exitoso");
-
+            Close();
         }
     }
 }
