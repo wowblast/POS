@@ -17,7 +17,14 @@ namespace POS
             InitializeComponent();
         }
 
-        private void btnBack_Click(object sender, EventArgs e)
+        private void btnBack_Click_1(object sender, EventArgs e)
+        {
+            FrmMainMenu frmMainMenu = new FrmMainMenu();
+            frmMainMenu.Show();
+            Close();
+        }
+
+        private void btnMenuPrincipal_Click(object sender, EventArgs e)
         {
             FrmMainMenu frmMainMenu = new FrmMainMenu();
             frmMainMenu.Show();

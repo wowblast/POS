@@ -21,9 +21,7 @@ namespace POS
 
         private void btnExit_Click_1(object sender, EventArgs e)
         {
-            FrmInicioSesion frmInicioSesion = new FrmInicioSesion();
-            frmInicioSesion.Show();
-            Close();
+            Application.Exit();
         }
 
         private void btnSales_Click_1(object sender, EventArgs e)

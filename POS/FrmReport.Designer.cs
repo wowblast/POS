@@ -39,13 +39,13 @@
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.lbTexto = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnReporteGeneral = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnMenuPrincipal = new System.Windows.Forms.Button();
             this.btnReporteGeneralProductos = new System.Windows.Forms.Button();
             this.btnAtras = new System.Windows.Forms.Button();
             this.btnReportePorEmpleado = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnReporteGeneral = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -170,6 +170,24 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Opciones";
             // 
+            // btnReporteGeneral
+            // 
+            this.btnReporteGeneral.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnReporteGeneral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(112)))), ((int)(((byte)(156)))));
+            this.btnReporteGeneral.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(112)))), ((int)(((byte)(156)))));
+            this.btnReporteGeneral.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
+            this.btnReporteGeneral.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
+            this.btnReporteGeneral.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReporteGeneral.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnReporteGeneral.Location = new System.Drawing.Point(73, 226);
+            this.btnReporteGeneral.Name = "btnReporteGeneral";
+            this.btnReporteGeneral.Size = new System.Drawing.Size(288, 69);
+            this.btnReporteGeneral.TabIndex = 12;
+            this.btnReporteGeneral.Text = "Reporte general de ventas diario";
+            this.btnReporteGeneral.UseVisualStyleBackColor = false;
+            this.btnReporteGeneral.Click += new System.EventHandler(this.btnReporteGeneral_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -260,24 +278,6 @@
             this.label1.Size = new System.Drawing.Size(138, 32);
             this.label1.TabIndex = 14;
             this.label1.Text = "Reportes";
-            // 
-            // btnReporteGeneral
-            // 
-            this.btnReporteGeneral.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnReporteGeneral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(112)))), ((int)(((byte)(156)))));
-            this.btnReporteGeneral.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(112)))), ((int)(((byte)(156)))));
-            this.btnReporteGeneral.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
-            this.btnReporteGeneral.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
-            this.btnReporteGeneral.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReporteGeneral.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnReporteGeneral.Location = new System.Drawing.Point(73, 226);
-            this.btnReporteGeneral.Name = "btnReporteGeneral";
-            this.btnReporteGeneral.Size = new System.Drawing.Size(288, 69);
-            this.btnReporteGeneral.TabIndex = 12;
-            this.btnReporteGeneral.Text = "Reporte general de ventas diario";
-            this.btnReporteGeneral.UseVisualStyleBackColor = false;
-            this.btnReporteGeneral.Click += new System.EventHandler(this.btnReporteGeneral_Click);
             // 
             // FrmReport
             // 

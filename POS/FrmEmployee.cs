@@ -31,13 +31,20 @@ namespace POS
         private void Listar()
         {
             EmpleadoControl empleadoControl = new EmpleadoControl();
-            dgvEmpleados.DataSource = empleadoControl.Listar();
+            // dgvEmpleados.DataSource = empleadoControl.Listar();
         }
 
         private void BtnInsertar_Click(object sender, EventArgs e)
         {
             FrmEmployeeRegister frmEmployeeRegister = new FrmEmployeeRegister();
             frmEmployeeRegister.Show();
+        }
+
+        private void btnMenuPrincipal_Click(object sender, EventArgs e)
+        {
+            FrmMainMenu frmMainMenu = new FrmMainMenu();
+            frmMainMenu.Show();
+            Close();
         }
     }
 }
