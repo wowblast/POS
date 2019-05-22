@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>POS</RootNamespace>
     <AssemblyName>POS</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -37,6 +37,9 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="itextsharp, Version=5.5.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13\lib\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -59,6 +62,7 @@
     <Compile Include="Control\EmpresaControl.cs" />
     <Compile Include="Control\EmpresaProveedorControl.cs" />
     <Compile Include="Control\ImagenProducto.cs" />
+    <Compile Include="Control\InventarioControl.cs" />
     <Compile Include="Control\ProductoCategoriaControl.cs" />
     <Compile Include="Control\ProductoControl.cs" />
     <Compile Include="Control\ProveedorControl.cs" />
@@ -371,6 +375,7 @@
       <DependentUpon>FrmReportEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="bin\Debug\POS.exe.config" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
