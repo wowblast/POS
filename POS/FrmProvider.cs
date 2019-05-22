@@ -82,6 +82,10 @@ namespace POS
 
                 if (result == DialogResult.Yes)
                 {
+                    int idEmpresaProveedor = Convert.ToInt32(dataGridView3.SelectedCells[6].Value);
+                    EmpresaProveedorControl empresaProveedorControl = new EmpresaProveedorControl();
+                    empresaProveedorControl.EliminarEmpresaProveedor(idEmpresaProveedor);
+
                     int idProveedor = Convert.ToInt32(dataGridView3.SelectedCells[0].Value);
                     ProveedorControl providerController = new ProveedorControl();
                     providerController.EliminarProveedor(idProveedor);
@@ -92,6 +96,11 @@ namespace POS
             {
                 MessageBox.Show("¡Debe seleccionar a un proveedor!", "Error");
             }
+        }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            Listar();
         }
     }
 }

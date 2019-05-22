@@ -42,6 +42,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnListar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -77,6 +78,7 @@
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.btnListar);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.btnMenuPrincipal);
             this.groupBox1.Controls.Add(this.btnEliminar);
@@ -113,7 +115,7 @@
             this.btnMenuPrincipal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SeaGreen;
             this.btnMenuPrincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenuPrincipal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnMenuPrincipal.Location = new System.Drawing.Point(34, 296);
+            this.btnMenuPrincipal.Location = new System.Drawing.Point(32, 372);
             this.btnMenuPrincipal.Name = "btnMenuPrincipal";
             this.btnMenuPrincipal.Size = new System.Drawing.Size(349, 56);
             this.btnMenuPrincipal.TabIndex = 10;
@@ -131,7 +133,7 @@
             this.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SeaGreen;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnEliminar.Location = new System.Drawing.Point(34, 206);
+            this.btnEliminar.Location = new System.Drawing.Point(32, 282);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(349, 56);
             this.btnEliminar.TabIndex = 3;
@@ -149,7 +151,7 @@
             this.btnActualizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SeaGreen;
             this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActualizar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnActualizar.Location = new System.Drawing.Point(34, 122);
+            this.btnActualizar.Location = new System.Drawing.Point(32, 198);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(349, 56);
             this.btnActualizar.TabIndex = 1;
@@ -167,7 +169,7 @@
             this.btnRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SeaGreen;
             this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnRegistrar.Location = new System.Drawing.Point(34, 45);
+            this.btnRegistrar.Location = new System.Drawing.Point(32, 121);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(349, 56);
             this.btnRegistrar.TabIndex = 0;
@@ -224,6 +226,24 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Lista de proveedores actuales:";
             // 
+            // btnListar
+            // 
+            this.btnListar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnListar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(112)))), ((int)(((byte)(100)))));
+            this.btnListar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(112)))), ((int)(((byte)(100)))));
+            this.btnListar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SeaGreen;
+            this.btnListar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SeaGreen;
+            this.btnListar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnListar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnListar.Location = new System.Drawing.Point(32, 42);
+            this.btnListar.Name = "btnListar";
+            this.btnListar.Size = new System.Drawing.Size(349, 56);
+            this.btnListar.TabIndex = 12;
+            this.btnListar.Text = "Listar";
+            this.btnListar.UseVisualStyleBackColor = false;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
+            // 
             // FrmProvider
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -261,5 +281,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnListar;
     }
 }

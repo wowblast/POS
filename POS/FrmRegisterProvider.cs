@@ -36,6 +36,7 @@ namespace POS
             empresaProveedorControl.RegistrarEmpresaProveedor(idEmpresa, idProveedor);
 
             MessageBox.Show("Se ha registrado al proveedor exitosamente", "Registro exitoso");
+            Close();
         }
 
         public void CargarDatosEmpresa()

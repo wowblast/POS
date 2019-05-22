@@ -72,9 +72,8 @@ namespace POS.Control
 
             try
             {
-                DataTable listProvider = connection.QuerySQL(sql);
                 Log.Print("Successful listing");
-                return listProvider;
+                return (connection.QuerySQL(sql));
             }
             catch (Exception e)
             {

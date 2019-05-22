@@ -60,5 +60,19 @@ namespace POS.Control
                 Log.Print("Ha ocurrido un error. " + e.Message);
             }
         }
+
+        public void EliminarEmpresaProveedor(int idEmpresaProveedor)
+        {
+            string sql = "DELETE FROM EMPRESA_PROVEEDOR WHERE idEmpresaProveedor = " + idEmpresaProveedor;
+            try
+            {
+                conexion.ExecuteSQL(sql);
+                Log.Print("¡Se ha eliminado la empresa_proveedor correctamente!");
+            }
+            catch (Exception e)
+            {
+                Log.Print("Ha ocurrido un error: " + e.Message);
+            }
+        }
     }
 }

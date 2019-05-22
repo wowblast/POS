@@ -28,52 +28,53 @@
         /// </summary>
         private void InitializeComponent()
         {
-			this.cbEmpresa = new System.Windows.Forms.ComboBox();
-			this.label4 = new System.Windows.Forms.Label();
-			this.txtUbicacion = new System.Windows.Forms.TextBox();
-			this.txtNombre = new System.Windows.Forms.TextBox();
-			this.label3 = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
-			this.btnCancelar = new System.Windows.Forms.Button();
-			this.btnRegistrar = new System.Windows.Forms.Button();
-			this.label1 = new System.Windows.Forms.Label();
-			this.SuspendLayout();
-			// 
-			// cbEmpresa
-			// 
-			this.cbEmpresa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.cbEmpresa = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtUbicacion = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnRegistrar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // cbEmpresa
+            // 
+            this.cbEmpresa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.cbEmpresa.FormattingEnabled = true;
-			this.cbEmpresa.Location = new System.Drawing.Point(321, 314);
-			this.cbEmpresa.Margin = new System.Windows.Forms.Padding(4);
-			this.cbEmpresa.Name = "cbEmpresa";
-			this.cbEmpresa.Size = new System.Drawing.Size(510, 25);
-			this.cbEmpresa.TabIndex = 12;
-			// 
-			// label4
-			// 
-			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(193, 314);
-			this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(72, 18);
-			this.label4.TabIndex = 11;
-			this.label4.Text = "Empresa:";
-			// 
-			// txtUbicacion
-			// 
-			this.txtUbicacion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.cbEmpresa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbEmpresa.FormattingEnabled = true;
+            this.cbEmpresa.Location = new System.Drawing.Point(321, 314);
+            this.cbEmpresa.Margin = new System.Windows.Forms.Padding(4);
+            this.cbEmpresa.Name = "cbEmpresa";
+            this.cbEmpresa.Size = new System.Drawing.Size(510, 30);
+            this.cbEmpresa.TabIndex = 12;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(193, 314);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(91, 24);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Empresa:";
+            // 
+            // txtUbicacion
+            // 
+            this.txtUbicacion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.txtUbicacion.Location = new System.Drawing.Point(321, 159);
-			this.txtUbicacion.Margin = new System.Windows.Forms.Padding(4);
-			this.txtUbicacion.Multiline = true;
-			this.txtUbicacion.Name = "txtUbicacion";
-			this.txtUbicacion.Size = new System.Drawing.Size(510, 119);
-			this.txtUbicacion.TabIndex = 10;
-			// 
-			// txtNombre
-			// 
-			this.txtNombre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtUbicacion.Location = new System.Drawing.Point(321, 159);
+            this.txtUbicacion.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUbicacion.Multiline = true;
+            this.txtUbicacion.Name = "txtUbicacion";
+            this.txtUbicacion.Size = new System.Drawing.Size(510, 119);
+            this.txtUbicacion.TabIndex = 10;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNombre.Location = new System.Drawing.Point(321, 95);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
