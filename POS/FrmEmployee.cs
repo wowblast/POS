@@ -23,21 +23,10 @@ namespace POS
             Listar();
         }
 
-        private void btnListar_Click(object sender, EventArgs e)
-        {
-            Listar();
-        }
-
         private void Listar()
         {
             EmpleadoControl empleadoControl = new EmpleadoControl();
-            // dgvEmpleados.DataSource = empleadoControl.Listar();
-        }
-
-        private void BtnInsertar_Click(object sender, EventArgs e)
-        {
-            FrmEmployeeRegister frmEmployeeRegister = new FrmEmployeeRegister();
-            frmEmployeeRegister.Show();
+            dgvEmpleados.DataSource = empleadoControl.Listar();
         }
 
         private void btnMenuPrincipal_Click(object sender, EventArgs e)
@@ -45,6 +34,17 @@ namespace POS
             FrmMainMenu frmMainMenu = new FrmMainMenu();
             frmMainMenu.Show();
             Close();
+        }
+
+        private void BtnRegistrar_Click(object sender, EventArgs e)
+        {
+            FrmEmployeeRegister frmEmployeeRegister = new FrmEmployeeRegister();
+            frmEmployeeRegister.Show();
+        }
+
+        private void BtnListar_Click(object sender, EventArgs e)
+        {
+            Listar();
         }
     }
 }

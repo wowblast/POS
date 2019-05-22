@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace POS
 {
@@ -21,7 +22,7 @@ namespace POS
 
         public DataTable Listar()
         {
-            string sql = "SELECT * FROM EMPLEADOS";
+            string sql = "SELECT idEmpleado AS 'ID empleado', idCargo AS 'ID cargo', usuario AS 'Usuario', clave AS 'Clave', nombres AS 'Nombres', apellidoPaterno AS 'Apellido paterno', apellidoMaterno AS 'Apellido materno', direccion AS 'Dirección', fechaNacimiento AS 'Fecha nacimiento', fechaContratacion AS 'Fecha contratación' FROM EMPLEADOS";
 
             try
             {
@@ -43,6 +44,7 @@ namespace POS
             try
             {
                 connection.ExecuteSQL(sql);
+                MessageBox.Show("Se ingresó el empleado exitosamente.");
                 Log.Print("Successful insert");
             }
             catch (Exception e)
