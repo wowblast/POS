@@ -15,7 +15,7 @@ namespace POS.Control
         {
             connection = new Connection();
         }
-        public void RealizarCompra(int idProducto, int idProveedor, int idEmpleado)
+        public void RealizarCompra(int idProveedor, int idEmpleado)
         {
             int numeroRecibido = 0;
             DateTime fechaActual = DateTime.Today;
@@ -29,6 +29,21 @@ namespace POS.Control
             catch (Exception e)
             {
                 Log.Print("An exception has occurred. " + e.Message);
+            }
+        }
+        public DataTable ObtenerUltimaCompra()
+        {
+            string sql = "SELECT MAX(idCompra) FROM COMPRAS";
+            try
+            {
+                DataTable idCompra = connection.QuerySQL(sql);
+                Log.Print("Successful listing");
+                return idCompra;
+            }
+            catch (Exception e)
+            {
+                Log.Print("An exception has ocurred. " + e.Message);
+                return null;
             }
         }
     }
