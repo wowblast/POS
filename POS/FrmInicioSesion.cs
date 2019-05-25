@@ -31,6 +31,9 @@ namespace POS
 
             if (login)
             {
+                // Comentar esta linea para poder utilizar la cuenta actual
+                CuentaActual.Cargo = "ADMINISTRADOR";
+
                 if (CuentaActual.Cargo == "ADMINISTRADOR")
                 {
                     FrmMainMenu frmMainMenu = new FrmMainMenu();

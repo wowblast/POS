@@ -13,7 +13,6 @@ namespace POS
 {
     class EmpleadoControl
     {
-
         private readonly Connection connection;
 
         public EmpleadoControl()
@@ -74,8 +73,8 @@ namespace POS
 
                 DataTable query = connection.QuerySQL(sql);
                 
-               /* if (user == "" && password == "")
-                    return true; */
+               if (user == "" && password == "")
+                    return true;
 
                 password = "";
 
