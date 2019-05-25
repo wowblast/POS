@@ -1,4 +1,5 @@
 ﻿using POS.Control;
+using POS.Singleton;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,6 +21,7 @@ namespace POS
             lbFecha.Text = "Fecha actual: " + DateTime.Now.ToString("dd/MM/yyyy");
             txtNombreEmpleado.Text = "Usuario";
             txtMontoTotal.Text = "0";
+            txtNombreEmpleado.Text = CuentaActual.Nombre + " " + CuentaActual.ApellidoPaterno; 
         }
 
         private void btnAtras_Click(object sender, EventArgs e)

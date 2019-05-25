@@ -84,16 +84,17 @@
             // 
             this.txtNombreUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNombreUsuario.Enabled = false;
-            this.txtNombreUsuario.Location = new System.Drawing.Point(395, 469);
+            this.txtNombreUsuario.Location = new System.Drawing.Point(347, 469);
             this.txtNombreUsuario.Name = "txtNombreUsuario";
-            this.txtNombreUsuario.Size = new System.Drawing.Size(205, 28);
+            this.txtNombreUsuario.ReadOnly = true;
+            this.txtNombreUsuario.Size = new System.Drawing.Size(253, 28);
             this.txtNombreUsuario.TabIndex = 6;
             // 
             // label5
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(280, 469);
+            this.label5.Location = new System.Drawing.Point(225, 469);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(84, 24);
             this.label5.TabIndex = 5;
@@ -113,16 +114,17 @@
             // 
             this.txtMontoTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtMontoTotal.Enabled = false;
-            this.txtMontoTotal.Location = new System.Drawing.Point(395, 513);
+            this.txtMontoTotal.Location = new System.Drawing.Point(347, 513);
             this.txtMontoTotal.Name = "txtMontoTotal";
-            this.txtMontoTotal.Size = new System.Drawing.Size(163, 28);
+            this.txtMontoTotal.ReadOnly = true;
+            this.txtMontoTotal.Size = new System.Drawing.Size(211, 28);
             this.txtMontoTotal.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(280, 513);
+            this.label2.Location = new System.Drawing.Point(225, 513);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(106, 24);
             this.label2.TabIndex = 2;

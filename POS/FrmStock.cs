@@ -1,6 +1,8 @@
 ﻿using iTextSharp.text;
 using iTextSharp.text.pdf;
 using POS.Control;
+using POS.Singleton;
+using POS.Tools;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,24 +18,48 @@ namespace POS
 {
     public partial class FrmStock : Form
     {
+        /* private Document documento;
+        private FileStream archivo;
+        private PdfWriter writer; */
+
         public FrmStock()
         {
             InitializeComponent();
             Stock();
+
+           
         }
 
         private void btnBack_Click_1(object sender, EventArgs e)
         {
-            FrmMainMenu frmMainMenu = new FrmMainMenu();
-            frmMainMenu.Show();
-            Close();
+            if (CuentaActual.Cargo == "ADMINISTRADOR")
+            {
+                FrmMainMenu frmMainMenu = new FrmMainMenu();
+                frmMainMenu.Show();
+                Close();
+            }
+            else
+            {
+                FrmMainMenuEmployee frmMainMenuEmployee = new FrmMainMenuEmployee();
+                frmMainMenuEmployee.Show();
+                Close();
+            }
         }
 
         private void btnMenuPrincipal_Click(object sender, EventArgs e)
         {
-            FrmMainMenu frmMainMenu = new FrmMainMenu();
-            frmMainMenu.Show();
-            Close();
+            if (CuentaActual.Cargo == "ADMINISTRADOR")
+            {
+                FrmMainMenu frmMainMenu = new FrmMainMenu();
+                frmMainMenu.Show();
+                Close();
+            }
+            else
+            {
+                FrmMainMenuEmployee frmMainMenuEmployee = new FrmMainMenuEmployee();
+                frmMainMenuEmployee.Show();
+                Close();
+            }
         }
 
         private void Stock()
@@ -45,21 +71,46 @@ namespace POS
         private void btnGuardarReporte_Click(object sender, EventArgs e)
         {
             Stock();
-            GenerarPDF(); 
+            /* PDF pdf = new PDF();
+            pdf.SetCabecera("Empresa de electricidad /n Dueño: Mauricio");
+            pdf.SetCuerpo("El inventario disponible es..."); */ 
+            GenerarCabecera();
         }
 
-        private void GenerarPDF()
+        public void GenerarCabecera()
         {
-            Document doc = new Document(PageSize.LETTER,0,0,0,0);
-            // Indicamos donde vamos a guardar el documento
-            PdfWriter writer = PdfWriter.GetInstance(doc,
-                                        new FileStream(@"C:\Users\Adriana Orellana\source\repos\POS\POS\prueba.pdf", FileMode.Create));
+            Document documento = new Document(PageSize.LETTER, 0, 0, 0, 0);
+            FileStream archivo = new FileStream(@"C:\Users\Adriana Orellana\source\repos\POS\POS\prueba.pdf", FileMode.Create);
+            PdfWriter writer = PdfWriter.GetInstance(documento, archivo);
 
-            doc.Open();
-            doc.Add(new Paragraph("Prueba"));
-            doc.Close();
+            documento.Open();
 
-            MessageBox.Show("¡Archivo de inventario generado correctamente!");
+            documento.Add(new Paragraph("Prueba"));
+
+            PdfPTable table = new PdfPTable(dataGridView.Columns.Count);
+
+            for (int j = 0; j < dataGridView.Columns.Count; j++)
+            {
+                table.AddCell(new Phrase(dataGridView.Columns[j].HeaderText));
+            }
+
+            table.HeaderRows = 1;
+
+            for (int i = 0; i < dataGridView.Rows.Count; i++)
+            {
+                for (int k = 0; k < dataGridView.Columns.Count; k++)
+                {
+                    if (dataGridView[k, i].Value != null)
+                    {
+                        table.AddCell(new Phrase(dataGridView[k, i].Value.ToString()));
+                    } 
+                }
+            }
+
+            documento.Add(table);
+            documento.Close();
+
+            MessageBox.Show("Prueba!");
         }
     }
 }
