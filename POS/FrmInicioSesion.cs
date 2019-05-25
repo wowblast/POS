@@ -1,4 +1,5 @@
-﻿using System;
+﻿using POS.Singleton;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,9 +31,18 @@ namespace POS
 
             if (login)
             {
-                FrmMainMenu frmMainMenu = new FrmMainMenu();
-                frmMainMenu.Show();
-                Hide();
+                if (CuentaActual.Cargo == "ADMINISTRADOR")
+                {
+                    FrmMainMenu frmMainMenu = new FrmMainMenu();
+                    frmMainMenu.Show();
+                    Hide();
+                }
+                else
+                {
+                    FrmMainMenuEmployee frmMainMenuEmployee = new FrmMainMenuEmployee();
+                    frmMainMenuEmployee.Show();
+                    Hide();
+                } 
             }
             else
             {

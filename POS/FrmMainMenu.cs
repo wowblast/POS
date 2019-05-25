@@ -1,5 +1,6 @@
 ﻿using POS.FmsProductsCategory;
 using POS.FrmsCategoria;
+using POS.Singleton;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,6 +18,7 @@ namespace POS
         public FrmMainMenu()
         {
             InitializeComponent();
+            lbCargo.Text = CuentaActual.Nombre + " " + CuentaActual.ApellidoPaterno;
         }
 
         private void btnExit_Click_1(object sender, EventArgs e)

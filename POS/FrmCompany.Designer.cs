@@ -35,6 +35,7 @@
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnListar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnMenuPrincipal = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
@@ -42,7 +43,6 @@
             this.brnAtras = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.btnListar = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -115,6 +115,24 @@
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Opciones";
+            // 
+            // btnListar
+            // 
+            this.btnListar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnListar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(112)))), ((int)(((byte)(100)))));
+            this.btnListar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(112)))), ((int)(((byte)(100)))));
+            this.btnListar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SeaGreen;
+            this.btnListar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SeaGreen;
+            this.btnListar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnListar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnListar.Location = new System.Drawing.Point(36, 50);
+            this.btnListar.Name = "btnListar";
+            this.btnListar.Size = new System.Drawing.Size(349, 56);
+            this.btnListar.TabIndex = 12;
+            this.btnListar.Text = "Listar";
+            this.btnListar.UseVisualStyleBackColor = false;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // pictureBox1
             // 
@@ -189,7 +207,7 @@
             this.brnAtras.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.brnAtras.FlatAppearance.BorderSize = 0;
             this.brnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.brnAtras.Location = new System.Drawing.Point(10, 551);
+            this.brnAtras.Location = new System.Drawing.Point(6, 545);
             this.brnAtras.Name = "brnAtras";
             this.brnAtras.Size = new System.Drawing.Size(34, 41);
             this.brnAtras.TabIndex = 9;
@@ -224,24 +242,6 @@
             this.label8.Size = new System.Drawing.Size(150, 32);
             this.label8.TabIndex = 14;
             this.label8.Text = "Empresas";
-            // 
-            // btnListar
-            // 
-            this.btnListar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnListar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(112)))), ((int)(((byte)(100)))));
-            this.btnListar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(112)))), ((int)(((byte)(100)))));
-            this.btnListar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SeaGreen;
-            this.btnListar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SeaGreen;
-            this.btnListar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnListar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnListar.Location = new System.Drawing.Point(36, 50);
-            this.btnListar.Name = "btnListar";
-            this.btnListar.Size = new System.Drawing.Size(349, 56);
-            this.btnListar.TabIndex = 12;
-            this.btnListar.Text = "Listar";
-            this.btnListar.UseVisualStyleBackColor = false;
-            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // FrmCompany
             // 

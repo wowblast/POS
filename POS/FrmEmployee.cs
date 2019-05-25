@@ -46,5 +46,12 @@ namespace POS
         {
             Listar();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            FrmMainMenu frmMainMenu = new FrmMainMenu();
+            frmMainMenu.Show();
+            Close();
+        }
     }
 }

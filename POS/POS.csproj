@@ -259,6 +259,12 @@
     <Compile Include="FrmUpdateShelves.Designer.cs">
       <DependentUpon>FrmUpdateShelves.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmMainMenuEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMainMenuEmployee.Designer.cs">
+      <DependentUpon>FrmMainMenuEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FrmReportEmployee.cs">
@@ -267,6 +273,8 @@
     <Compile Include="FrmReportEmployee.Designer.cs">
       <DependentUpon>FrmReportEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Singleton\CuentaActual.cs" />
+    <Compile Include="Tools\PDF.cs" />
     <Compile Include="Tools\Log.cs" />
     <EmbeddedResource Include="FmsProductsCategory\FrmAddCategoryProducts.resx">
       <DependentUpon>FrmAddCategoryProducts.cs</DependentUpon>
@@ -360,6 +368,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmUpdateShelves.resx">
       <DependentUpon>FrmUpdateShelves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMainMenuEmployee.resx">
+      <DependentUpon>FrmMainMenuEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

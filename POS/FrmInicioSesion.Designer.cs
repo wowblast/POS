@@ -114,7 +114,7 @@
             this.txt_password.Multiline = true;
             this.txt_password.Name = "txt_password";
             this.txt_password.PasswordChar = '*';
-            this.txt_password.Size = new System.Drawing.Size(468, 47);
+            this.txt_password.Size = new System.Drawing.Size(468, 33);
             this.txt_password.TabIndex = 9;
             // 
             // txt_user
@@ -124,7 +124,7 @@
             this.txt_user.Location = new System.Drawing.Point(297, 178);
             this.txt_user.Multiline = true;
             this.txt_user.Name = "txt_user";
-            this.txt_user.Size = new System.Drawing.Size(468, 47);
+            this.txt_user.Size = new System.Drawing.Size(468, 33);
             this.txt_user.TabIndex = 8;
             // 
             // label1
