@@ -28,9 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmStock));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView = new System.Windows.Forms.DataGridView();
@@ -73,20 +72,20 @@
             this.dataGridView.Location = new System.Drawing.Point(44, 107);
             this.dataGridView.MultiSelect = false;
             this.dataGridView.Name = "dataGridView";
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.SeaGreen;
-            this.dataGridView.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            this.dataGridView.ReadOnly = true;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SeaGreen;
+            this.dataGridView.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView.RowTemplate.Height = 24;
             this.dataGridView.Size = new System.Drawing.Size(554, 408);
             this.dataGridView.TabIndex = 1;
-
             // 
             // label7
             // 
@@ -135,7 +134,7 @@
             this.btnMenuPrincipal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SeaGreen;
             this.btnMenuPrincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenuPrincipal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnMenuPrincipal.Location = new System.Drawing.Point(34, 129);
+            this.btnMenuPrincipal.Location = new System.Drawing.Point(34, 57);
             this.btnMenuPrincipal.Name = "btnMenuPrincipal";
             this.btnMenuPrincipal.Size = new System.Drawing.Size(349, 56);
             this.btnMenuPrincipal.TabIndex = 10;
@@ -167,7 +166,7 @@
             this.btnGuardarReporte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SeaGreen;
             this.btnGuardarReporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardarReporte.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnGuardarReporte.Location = new System.Drawing.Point(34, 45);
+            this.btnGuardarReporte.Location = new System.Drawing.Point(34, 141);
             this.btnGuardarReporte.Name = "btnGuardarReporte";
             this.btnGuardarReporte.Size = new System.Drawing.Size(349, 56);
             this.btnGuardarReporte.TabIndex = 0;

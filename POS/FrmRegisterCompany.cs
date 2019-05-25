@@ -1,4 +1,5 @@
 ﻿using POS.Control;
+using POS.Entity;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,7 +31,8 @@ namespace POS
             string descripcion = txtDescripcion.Text;
 
             EmpresaControl empresaControl = new EmpresaControl();
-            empresaControl.RegistrarEmpresa(nombre, ubicacion, descripcion);
+            Empresa empresa = new Empresa(nombre, ubicacion, descripcion);
+            empresaControl.RegistrarEmpresa(empresa);
 
             MessageBox.Show("Se ha registrado a la empresa exitosamente", "Registro exitoso");
             Close();

@@ -1,4 +1,5 @@
 ﻿using POS.Control;
+using POS.Entity;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,14 +27,19 @@ namespace POS
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
+            string nombre = txtNombre.Text;
+            string ubicacion = txtUbicacion.Text;
+            Proveedor proveedor = new Proveedor(nombre, ubicacion);
+
             ProveedorControl proveedorControl = new ProveedorControl();
-            proveedorControl.InsertarProveedor(txtNombre.Text, txtUbicacion.Text);
+            proveedorControl.InsertarProveedor(proveedor);
 
             int idProveedor = proveedorControl.SeleccionarId();
             int idEmpresa = Convert.ToInt32(cbEmpresa.SelectedValue);
+            EmpresaProveedor empresaProveedor = new EmpresaProveedor(idEmpresa, idProveedor);
 
             EmpresaProveedorControl empresaProveedorControl = new EmpresaProveedorControl();
-            empresaProveedorControl.RegistrarEmpresaProveedor(idEmpresa, idProveedor);
+            empresaProveedorControl.RegistrarEmpresaProveedor(empresaProveedor);
 
             MessageBox.Show("Se ha registrado al proveedor exitosamente", "Registro exitoso");
             Close();

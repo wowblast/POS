@@ -6,19 +6,28 @@ using System.Threading.Tasks;
 
 namespace POS.Entity
 {
-    class Empresa
+    public class Empresa
     {
-        public int CodigoEmpresa { get; set; }
-        public string NombreEmpresa { get; set; }
+        public int IdEmpresa { get; set; }
+        public string Nombre { get; set; }
         public string Ubicacion { get; set; }
         public string Descripcion { get; set; }
 
-        public Empresa(int codigoEmpresa, string nombre, string ubicacion, string descripcion)
+        public Empresa(int idEmpresa, string nombre, string ubicacion, string descripcion)
         {
-            CodigoEmpresa = codigoEmpresa;
-            NombreEmpresa = nombre;
+            IdEmpresa = idEmpresa;
+            Nombre = nombre;
             Ubicacion = ubicacion;
             Descripcion = descripcion;
         }
+
+        public Empresa(string nombre, string ubicacion, string descripcion)
+        {
+            Nombre = nombre;
+            Ubicacion = ubicacion;
+            Descripcion = descripcion;
+        }
+
+        public Empresa() { }
     }
 }

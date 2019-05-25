@@ -18,18 +18,18 @@ namespace POS.Control
             conexion = new Connection();
         }
 
-        public void RegistrarEmpresa(string nombre, string ubicacion, string descripcion)
+        public void RegistrarEmpresa(Empresa empresa)
         {
-            string sql = "INSERT INTO EMPRESAS (nombre, ubicacion, descripcion) VALUES (" + "'" + nombre + "', '" + ubicacion + "','" + descripcion + "')";
+            string sql = "INSERT INTO EMPRESAS (nombre, ubicacion, descripcion) VALUES (" + "'" + empresa.Nombre + "', '" + empresa.Ubicacion + "','" + empresa.Descripcion + "')";
             try
             {
                 conexion.ExecuteSQL(sql);
-                Log.Print("Query executed correctly \n" + sql);
+                Log.Print("Empresa registrada correctamente." + sql);
 
             }
             catch (Exception e)
             {
-                Log.Print("An exception has occurred. " + e.Message);
+                Log.Print("Ha ocurrido una excepcion: " + e.Message);
             }
         }
 
@@ -49,18 +49,16 @@ namespace POS.Control
 
         public void ActualizarEmpresa(Empresa empresa)
         {
-            string sql = "UPDATE EMPRESA SET nombre = '" + empresa.NombreEmpresa + "', ubicacion = '" + empresa.Ubicacion + "', descripcion = '" + empresa.Descripcion + "' WHERE idEmpresa = " + empresa.CodigoEmpresa;
-
+            string sql = "UPDATE EMPRESAS SET nombre = '" + empresa.Nombre + "', ubicacion = '" + empresa.Ubicacion + "', descripcion = '" + empresa.Descripcion + "' WHERE idEmpresa = " + empresa.IdEmpresa;
             try
             {
                 conexion.ExecuteSQL(sql);
-                MessageBox.Show("¡Actualizacion exitosa de la empresa!", "Completado");
-                Log.Print("Query executed correctly \n" + sql);
+                Log.Print("Actualización de empresa ejecutada correctamente." + sql);
 
             }
             catch (Exception e)
             {
-                Log.Print("An exception has occurred. " + e.Message);
+                Log.Print("Ha ocurrido una excepcion: " + e.Message);
             }
         }
 

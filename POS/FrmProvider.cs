@@ -17,6 +17,7 @@ namespace POS
         public FrmProvider()
         {
             InitializeComponent();
+            Listar();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -46,26 +47,21 @@ namespace POS
                 int idProveedor = Convert.ToInt32(dataGridView3.SelectedCells[0].Value);
                 string nombre = dataGridView3.SelectedCells[1].Value.ToString();
                 string ubicacion = dataGridView3.SelectedCells[2].Value.ToString();
+                Proveedor proveedor = new Proveedor(idProveedor, nombre, ubicacion);
 
                 int idEmpresa = Convert.ToInt32(dataGridView3.SelectedCells[3].Value);
                 int idEmpresaProveedor = Convert.ToInt32(dataGridView3.SelectedCells[6].Value);
-               
-                Proveedor proveedor = new Proveedor(idProveedor, nombre, ubicacion);
+                EmpresaProveedor empresaProveedor = new EmpresaProveedor(idEmpresaProveedor, idEmpresa, idProveedor);
 
                 FrmUpdateProvider frmUpdateProvider = new FrmUpdateProvider();
                 frmUpdateProvider.Show();
-                frmUpdateProvider.RellenarDatos(proveedor, idEmpresa, idEmpresaProveedor);
+                frmUpdateProvider.RellenarDatos(proveedor, empresaProveedor);
             }
             else
             {
                 MessageBox.Show("¡Debe seleccionar a un proveedor!", "Error");
             }
 
-        }
-
-        private void FrmProvider_Load(object sender, EventArgs e)
-        {
-            Listar();
         }
 
         public void Listar()

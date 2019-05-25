@@ -8,16 +8,23 @@ namespace POS.Entity
 {
     public class Proveedor
     {
-		//t
-        public int CodigoProveedor { get; set; }
-        public string NombreProveedor { get; set; }
+        public int IdProveedor { get; set; }
+        public string Nombre { get; set; }
         public string Ubicacion { get; set; }
 
         public Proveedor(int idProveedor, string nombre, string ubicacion)
         {
-            CodigoProveedor = idProveedor;
-            NombreProveedor = nombre;
+            IdProveedor = idProveedor;
+            Nombre = nombre;
             Ubicacion = ubicacion;
         }
+
+        public Proveedor(string nombre, string ubicacion)
+        {
+            Nombre = nombre;
+            Ubicacion = ubicacion;
+        }
+
+        public Proveedor() { }
     }
 }

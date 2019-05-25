@@ -70,6 +70,7 @@
     <Compile Include="Database\Connection.cs" />
     <Compile Include="Entity\Empleado.cs" />
     <Compile Include="Entity\Empresa.cs" />
+    <Compile Include="Entity\EmpresaProveedor.cs" />
     <Compile Include="Entity\Estante.cs" />
     <Compile Include="Entity\Producto.cs" />
     <Compile Include="Entity\Proveedor.cs" />

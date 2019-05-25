@@ -26,8 +26,7 @@ namespace POS
         {
             InitializeComponent();
             Stock();
-
-           
+            ActivarPrivilegios();
         }
 
         private void btnBack_Click_1(object sender, EventArgs e)
@@ -66,6 +65,14 @@ namespace POS
         {
             InventarioControl inventarioControl = new InventarioControl();
             dataGridView.DataSource = inventarioControl.ConsultarProductosExistentes();
+        }
+
+        private void ActivarPrivilegios()
+        {
+            if (CuentaActual.Cargo != "ADMINISTRADOR")
+            {
+                btnGuardarReporte.Visible = false;
+            }
         }
 
         private void btnGuardarReporte_Click(object sender, EventArgs e)
