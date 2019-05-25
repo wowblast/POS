@@ -1,4 +1,5 @@
 ﻿using POS.Control;
+using POS.Entity;
 using POS.Singleton;
 using System;
 using System.Collections.Generic;
@@ -28,10 +29,11 @@ namespace POS
                 string nombre = dataGridView3.SelectedCells[1].Value.ToString();
                 string ubicacion = dataGridView3.SelectedCells[2].Value.ToString();
                 string descripcion = dataGridView3.SelectedCells[3].Value.ToString();
+                Empresa empresa = new Empresa(idEmpresa, nombre, ubicacion, descripcion);
 
                 FrmUpdateCompany frmUpdateCompany = new FrmUpdateCompany();
                 frmUpdateCompany.Show();
-                frmUpdateCompany.RellenarDatos(idEmpresa, nombre, ubicacion, descripcion);
+                frmUpdateCompany.RellenarDatos(empresa);
             }
             else
             {
@@ -63,7 +65,9 @@ namespace POS
 
                 FrmUpdateCompany frmUpdateCompany = new FrmUpdateCompany();
                 frmUpdateCompany.Show();
-                frmUpdateCompany.RellenarDatos(idEmpresa, nombre, ubicacion, descripcion);
+
+                Empresa empresa = new Empresa(idEmpresa, nombre, ubicacion, descripcion);
+                frmUpdateCompany.RellenarDatos(empresa);
             }
             else
             {
@@ -103,11 +107,6 @@ namespace POS
             EmpresaControl empresaControl = new EmpresaControl();
             DataTable listaEmpresas = empresaControl.ListarEmpresas();
             dataGridView3.DataSource = listaEmpresas;
-        }
-
-        private void FrmCompany_Load(object sender, EventArgs e)
-        {
-            Listar();
         }
 
         private void btnListar_Click(object sender, EventArgs e)

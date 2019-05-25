@@ -1,4 +1,5 @@
-﻿using System;
+﻿using POS.Entity;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -36,9 +37,9 @@ namespace POS.Control
             }
         }
 
-        public void InsertarProveedor(string nombre, string ubicacion)
+        public void InsertarProveedor(Proveedor proveedor)
         {
-            string sql = "INSERT INTO PROVEEDORES (nombre, ubicacion) VALUES ('" + nombre + "','" + ubicacion + "')";
+            string sql = "INSERT INTO PROVEEDORES (nombre, ubicacion) VALUES ('" + proveedor.Nombre + "','" + proveedor.Ubicacion + "')";
             try
             {
                 connection.ExecuteSQL(sql);
@@ -82,9 +83,9 @@ namespace POS.Control
             }
         }
 
-        public void ActualizarProveedor(int idProveedor, string nombreProveedor, string ubicacion)
+        public void ActualizarProveedor(Proveedor proveedor)
         {
-            string sql = "UPDATE PROVEEDORES SET nombre = '" + nombreProveedor + "', ubicacion = '" + ubicacion + "' WHERE idProveedor = " + idProveedor;
+            string sql = "UPDATE PROVEEDORES SET nombre = '" + proveedor.Nombre + "', ubicacion = '" + proveedor.Ubicacion + "' WHERE idProveedor = " + proveedor.IdProveedor;
             try
             {
                 connection.ExecuteSQL(sql);

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using POS.Entity;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -16,9 +17,9 @@ namespace POS.Control
             conexion = new Connection();
         }
 
-        public void RegistrarEmpresaProveedor(int idEmpresa, int idProveedor)
+        public void RegistrarEmpresaProveedor(EmpresaProveedor empresaProveedor)
         {
-            string sql = "INSERT INTO EMPRESA_PROVEEDOR (idEmpresa, idProveedor) VALUES(" + idEmpresa + "," + idProveedor + ")";
+            string sql = "INSERT INTO EMPRESA_PROVEEDOR (idEmpresa, idProveedor) VALUES(" + empresaProveedor.IdEmpresa + "," + empresaProveedor.IdProveedor + ")";
             try
             {
                 conexion.ExecuteSQL(sql);
@@ -47,9 +48,9 @@ namespace POS.Control
             return null;
         }
 
-        public void ActualizarEmpresaProveedor(int idEmpresaProveedor, int idEmpresa, int idProveedor)
+        public void ActualizarEmpresaProveedor(EmpresaProveedor empresaProveedor)
         {
-            string sql = "UPDATE EMPRESA_PROVEEDOR SET idEmpresa = " + idEmpresa +  ", idProveedor = " + idProveedor + " WHERE idEmpresaProveedor =" + idEmpresaProveedor;
+            string sql = "UPDATE EMPRESA_PROVEEDOR SET idEmpresa = " + empresaProveedor.IdEmpresa +  ", idProveedor = " + empresaProveedor.IdProveedor + " WHERE idEmpresaProveedor = " + empresaProveedor.IdEmpresaProveedor;
             try
             {
                 conexion.ExecuteSQL(sql);

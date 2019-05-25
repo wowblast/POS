@@ -73,6 +73,7 @@ namespace POS
 
                 DataTable query = connection.QuerySQL(sql);
                 
+                // Para activar la cuenta actual desactivar la siguiente condición
                if (user == "" && password == "")
                     return true;
 

@@ -19,6 +19,7 @@ namespace POS
         public FrmUpdateCompany()
         {
             InitializeComponent();
+            empresa = new Empresa();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -28,19 +29,22 @@ namespace POS
 
         private void btnActualzarDatos_Click(object sender, EventArgs e)
         {
+            empresa.Nombre = txtNombreEmpresa.Text;
+            empresa.Ubicacion = txtUbicacion.Text;
+            empresa.Descripcion = txtDescripcion.Text;
+
             EmpresaControl empresaControl = new EmpresaControl();
             empresaControl.ActualizarEmpresa(empresa);
             MessageBox.Show("Se ha actualizado correctamente", "Terminado");
             Close();
         }
 
-        public void RellenarDatos(int idEmpresa, string nombre, string ubicacion, string descripcion)
+        public void RellenarDatos(Empresa datosEmpresa)
         {
-            empresa = new Empresa(idEmpresa, nombre, ubicacion, descripcion);
-
-            txtNombreEmpresa.Text = empresa.NombreEmpresa;
-            txtUbicacion.Text = empresa.Ubicacion;
-            txtDescripcion.Text = empresa.Descripcion;
+            empresa.IdEmpresa = datosEmpresa.IdEmpresa;
+            txtNombreEmpresa.Text = datosEmpresa.Nombre;
+            txtUbicacion.Text = datosEmpresa.Ubicacion;
+            txtDescripcion.Text = datosEmpresa.Descripcion;
         }
     }
 }
