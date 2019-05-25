@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace POS.Entity
 {
-    class Empleado
+    public class Empleado
     {
         public int IDEmpleado { get; set; }
         public int IDCargo { get; set; }

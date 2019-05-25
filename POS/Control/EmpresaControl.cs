@@ -50,6 +50,7 @@ namespace POS.Control
         public void ActualizarEmpresa(Empresa empresa)
         {
             string sql = "UPDATE EMPRESA SET nombre = '" + empresa.NombreEmpresa + "', ubicacion = '" + empresa.Ubicacion + "', descripcion = '" + empresa.Descripcion + "' WHERE idEmpresa = " + empresa.CodigoEmpresa;
+
             try
             {
                 conexion.ExecuteSQL(sql);
