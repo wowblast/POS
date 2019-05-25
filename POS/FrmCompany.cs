@@ -1,4 +1,5 @@
 ﻿using POS.Control;
+using POS.Singleton;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

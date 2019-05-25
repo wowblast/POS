@@ -95,5 +95,10 @@ namespace POS
                 MessageBox.Show("¡Debes seleccionar a un empleado!", "Error");
             }
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

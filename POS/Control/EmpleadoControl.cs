@@ -1,4 +1,5 @@
 ﻿using POS.Entity;
+using POS.Singleton;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -12,7 +13,6 @@ namespace POS
 {
     class EmpleadoControl
     {
-
         private readonly Connection connection;
 
         public EmpleadoControl()
@@ -104,10 +104,17 @@ namespace POS
 
                 DataTable query = connection.QuerySQL(sql);
                 
-                if (user == "" && password == "")
+               if (user == "" && password == "")
                     return true;
 
                 password = "";
+
+                DataTable datosUsuario = CargarDatos(user);
+                CuentaActual.idUsuario = Convert.ToInt32(datosUsuario.Rows[0]["idEmpleado"].ToString());
+                CuentaActual.Nombre = datosUsuario.Rows[0]["nombres"].ToString();
+                CuentaActual.ApellidoPaterno = datosUsuario.Rows[0]["apellidoPaterno"].ToString();
+                CuentaActual.ApellidoMaterno = datosUsuario.Rows[0]["apellidoMaterno"].ToString();
+                CuentaActual.Cargo = datosUsuario.Rows[0]["nombre"].ToString().ToUpper();
 
                 return query.Rows.Count == 1;
             }
@@ -117,6 +124,23 @@ namespace POS
             }
 
             return false;
+        }
+
+        public DataTable CargarDatos(string usuario)
+        {
+            string sql = "SELECT EMPLEADOS.idEmpleado, EMPLEADOS.nombres, EMPLEADOS.apellidoPaterno, EMPLEADOS.apellidoMaterno, CARGOS.nombre FROM EMPLEADOS INNER JOIN CARGOS ON EMPLEADOS.idCargo = CARGOS.IdCargo WHERE EMPLEADOS.usuario LIKE '" + usuario + "'";
+
+            try
+            {
+                Log.Print("Los datos del usuario se han cargado correctamente.");
+                return (connection.QuerySQL(sql));
+            }
+            catch (Exception e)
+            {
+                Log.Print("Ha ocurrido un error: " + e.Message);
+            }
+
+            return null;
         }
 
     }

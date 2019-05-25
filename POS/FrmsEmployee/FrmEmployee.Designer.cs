@@ -235,6 +235,7 @@
             this.btnBack.Size = new System.Drawing.Size(26, 33);
             this.btnBack.TabIndex = 9;
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnRegistrar
             // 
