@@ -15,6 +15,7 @@ namespace POS.Control
         {
             connection = new Connection();
         }
+
         public void RealizarCompra(int idProveedor, int idEmpleado)
         {
             int numeroRecibido = 0;
@@ -31,6 +32,7 @@ namespace POS.Control
                 Log.Print("An exception has occurred. " + e.Message);
             }
         }
+
         public DataTable ObtenerUltimaCompra()
         {
             string sql = "SELECT MAX(idCompra) FROM COMPRAS";
@@ -46,5 +48,6 @@ namespace POS.Control
                 return null;
             }
         }
+
     }
 }

@@ -42,7 +42,7 @@ namespace POS.FmsProductsCategory
 			ProductoControl productoControl = new ProductoControl();
 			dataGridView1.DataSource = productoControl.ListarProductos();
 			CategoriaControl categorias = new CategoriaControl();
-			DataTable categoria = categorias.ListarCateogorias();
+			DataTable categoria = categorias.Listar();
 			cbCategoria.DataSource = categoria;
 			cbCategoria.ValueMember = "ID CATEGORIA";
 			cbCategoria.DisplayMember = "NOMBRE CATEGORIA";

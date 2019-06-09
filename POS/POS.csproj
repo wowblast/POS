@@ -68,6 +68,7 @@
     <Compile Include="Control\ProveedorControl.cs" />
     <Compile Include="Control\TiendaControl.cs" />
     <Compile Include="Database\Connection.cs" />
+    <Compile Include="Entity\Categoria.cs" />
     <Compile Include="Entity\Empleado.cs" />
     <Compile Include="Entity\Empresa.cs" />
     <Compile Include="Entity\EmpresaProveedor.cs" />
@@ -109,6 +110,24 @@
     </Compile>
     <Compile Include="FrmCompany.Designer.cs">
       <DependentUpon>FrmCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmsCategory\FrmCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmsCategory\FrmCategory.Designer.cs">
+      <DependentUpon>FrmCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmsCategory\FrmCategoryRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmsCategory\FrmCategoryRegister.Designer.cs">
+      <DependentUpon>FrmCategoryRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmsCategory\FrmCategoryUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmsCategory\FrmCategoryUpdate.Designer.cs">
+      <DependentUpon>FrmCategoryUpdate.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmsEmployee\FrmEmployee.cs">
       <SubType>Form</SubType>
@@ -200,24 +219,6 @@
     <Compile Include="FrmReport.Designer.cs">
       <DependentUpon>FrmReport.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmsCategoria\FrmAddCategory.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmsCategoria\FrmAddCategory.Designer.cs">
-      <DependentUpon>FrmAddCategory.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmsCategoria\FrmCategoryMainMenu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmsCategoria\FrmCategoryMainMenu.Designer.cs">
-      <DependentUpon>FrmCategoryMainMenu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmsCategoria\FrmUpdateCategory.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmsCategoria\FrmUpdateCategory.Designer.cs">
-      <DependentUpon>FrmUpdateCategory.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmsEmployee\FrmEmployeeUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -301,6 +302,15 @@
     <EmbeddedResource Include="FrmCompany.resx">
       <DependentUpon>FrmCompany.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmsCategory\FrmCategory.resx">
+      <DependentUpon>FrmCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmsCategory\FrmCategoryRegister.resx">
+      <DependentUpon>FrmCategoryRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmsCategory\FrmCategoryUpdate.resx">
+      <DependentUpon>FrmCategoryUpdate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmsEmployee\FrmEmployee.resx">
       <DependentUpon>FrmEmployee.cs</DependentUpon>
     </EmbeddedResource>
@@ -345,15 +355,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmReport.resx">
       <DependentUpon>FrmReport.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmsCategoria\FrmAddCategory.resx">
-      <DependentUpon>FrmAddCategory.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmsCategoria\FrmCategoryMainMenu.resx">
-      <DependentUpon>FrmCategoryMainMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmsCategoria\FrmUpdateCategory.resx">
-      <DependentUpon>FrmUpdateCategory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmsEmployee\FrmEmployeeUpdate.resx">
       <DependentUpon>FrmEmployeeUpdate.cs</DependentUpon>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using POS.Entity;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -17,13 +18,47 @@ namespace POS.Control
 			connection = new Connection();
 		}
 
-		public void AñadirCategoria(string nombre, string descripcion, int subcategoria)
+        public DataTable ListarParcialmente(int idCategoria)
+        {
+            string sql = "SELECT idCategoria AS 'ID CATEGORIA', nombre AS 'NOMBRE', descripcion AS 'DESCRIPCIÓN', subcategoria as 'CATEGORÍA A LA QUE PERTENECE' FROM CATEGORIAS WHERE idCategoria != " + idCategoria;
+
+            try
+            {
+                DataTable dataTable = connection.QuerySQL(sql);
+                Log.Print("Successful listing");
+                return dataTable;
+            }
+            catch (Exception e)
+            {
+                Log.Print("An exception has ocurred. " + e.Message);
+                return null;
+            }
+        }
+
+        public DataTable Listar()
+        {
+            string sql = "SELECT idCategoria AS 'ID CATEGORIA', nombre AS 'NOMBRE', descripcion AS 'DESCRIPCIÓN', subcategoria as 'CATEGORÍA A LA QUE PERTENECE' FROM CATEGORIAS WHERE idCategoria != 1";
+
+            try
+            {
+                DataTable dataTable = connection.QuerySQL(sql);
+                Log.Print("Successful listing");
+                return dataTable;
+            }
+            catch (Exception e)
+            {
+                Log.Print("An exception has ocurred. " + e.Message);
+                return null;
+            }
+        }
+
+        public void Ingresar(Categoria categoria)
 		{
-			string sql = "INSERT INTO CATEGORIAS (nombre, descripcion, subcategoria) VALUES ('" + nombre + "', '" + descripcion + "',' "+ subcategoria +"')";
+			string sql = "INSERT INTO CATEGORIAS (nombre, descripcion, subcategoria) VALUES ('" + categoria.Nombre + "', '" + categoria.Descripcion + "', "+ categoria.Subcategoria +")";
 			try
 			{
 				connection.ExecuteSQL(sql);
-				MessageBox.Show("¡Categoria añadida exitosamente!", "Completado");
+				MessageBox.Show("¡Categoría añadida exitosamente!", "Completado");
 				Log.Print("Query executed correctly \n" + sql);
 			}
 			catch (Exception e)
@@ -31,14 +66,15 @@ namespace POS.Control
 				Log.Print("An exception has occurred. " + e.Message);
 			}
 		}
-		public void EliminarCategoria(int idCategoria)
+
+		public void Eliminar(int idCategoria)
 		{
 			string sql = "DELETE FROM CATEGORIAS WHERE idCategoria = " + idCategoria;
 
 			try
 			{
 				connection.ExecuteSQL(sql);
-				MessageBox.Show("¡categoria eliminada exitosamente!", "Completado");
+				MessageBox.Show("¡Categoría eliminada exitosamente!", "Completado");
 				Log.Print(sql);
 			}
 			catch (Exception e)
@@ -46,9 +82,10 @@ namespace POS.Control
 				Log.Print("An exception has ocurred. " + e.Message);
 			}
 		}
-		public void ModificarCategoria(int idCategoria, string nombre, string descripcion, int subcategoria)
+
+		public void Modificar(Categoria categoria)
 		{
-			string sql = "UPDATE CATEGORIAS SET nombre = '" + nombre + "', descripcion = '" + descripcion + "', subcategoria = '" + subcategoria +"' WHERE idCategoria = " + idCategoria;
+			string sql = "UPDATE CATEGORIAS SET nombre = '" + categoria.Nombre + "', descripcion = '" + categoria.Descripcion + "', subcategoria = " + categoria.Subcategoria +" WHERE idCategoria = " + categoria.IdCategoria;
 			try
 			{
 				connection.ExecuteSQL(sql);
@@ -60,21 +97,6 @@ namespace POS.Control
 				Log.Print("An exception has ocurred. " + e.Message);
 			}
 		}
-		public DataTable ListarCateogorias()
-		{
-			string sql = "SELECT idCategoria AS 'ID CATEGORIA', nombre AS 'NOMBRE CATEGORIA', descripcion AS 'DESCRIPCIÓN', subcategoria as 'SUBCATEGORIA' FROM CATEGORIAS";
 
-			try
-			{
-				DataTable listShelve = connection.QuerySQL(sql);
-				Log.Print("Successful listing");
-				return listShelve;
-			}
-			catch (Exception e)
-			{
-				Log.Print("An exception has ocurred. " + e.Message);
-				return null;
-			}
-		}
 	}
 }

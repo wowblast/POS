@@ -31,7 +31,7 @@ namespace POS.FmsProductsCategory
 		public void Listar()
 		{ 
 			CategoriaControl categorias = new CategoriaControl();
-			DataTable categoria = categorias.ListarCateogorias();
+			DataTable categoria = categorias.Listar();
 			cbCategoria.DataSource = categoria;
 			cbCategoria.ValueMember = "ID CATEGORIA";
 			cbCategoria.DisplayMember = "NOMBRE CATEGORIA";

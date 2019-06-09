@@ -45,8 +45,6 @@ namespace POS.Control
                 Log.Print("Ha ocurrido un error: " + e.Message);
             }
             return null;
-
-            return null;
         }
     }
 }

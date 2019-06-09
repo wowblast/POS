@@ -1,14 +1,7 @@
 ﻿using POS.FmsProductsCategory;
-using POS.FrmsCategoria;
+using POS.FrmsCategory;
 using POS.Singleton;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace POS
@@ -91,7 +84,8 @@ namespace POS
 
 		private void button11_Click(object sender, EventArgs e)
 		{
-			FrmCategoryMainMenu category = new FrmCategoryMainMenu();
+            
+			FrmCategory category = new FrmCategory();
 			category.Show();
 		}
 
