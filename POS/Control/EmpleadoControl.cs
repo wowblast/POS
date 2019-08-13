@@ -108,14 +108,16 @@ namespace POS
                if (user == "" && password == "")
                     return true;
 
+                #pragma warning disable IDE0059 // El valor asignado al símbolo nunca se utiliza.
                 password = "";
+                #pragma warning restore IDE0059 // El valor asignado al símbolo nunca se utiliza.
 
                 DataTable datosUsuario = CargarDatos(user);
-                CuentaActual.idUsuario = Convert.ToInt32(datosUsuario.Rows[0]["idEmpleado"].ToString());
+                /*CuentaActual.idUsuario = Convert.ToInt32(datosUsuario.Rows[0]["idEmpleado"].ToString());
                 CuentaActual.Nombre = datosUsuario.Rows[0]["nombres"].ToString();
                 CuentaActual.ApellidoPaterno = datosUsuario.Rows[0]["apellidoPaterno"].ToString();
                 CuentaActual.ApellidoMaterno = datosUsuario.Rows[0]["apellidoMaterno"].ToString();
-                CuentaActual.Cargo = datosUsuario.Rows[0]["nombre"].ToString().ToUpper();
+                CuentaActual.Cargo = datosUsuario.Rows[0]["nombre"].ToString().ToUpper();*/
 
                 return query.Rows.Count == 1;
             }

@@ -14,13 +14,14 @@ namespace POS
 {
 	public partial class FrmProducts : Form
 	{
-		
-		public FrmProducts()
+        private bool imageAdded = false;
+        private byte[] binaryImage;
+
+        public FrmProducts()
 		{
 			InitializeComponent();
 		}
-		bool imageAdded = false;
-		byte[] binaryImage;
+		
 		private void btnBack_Click(object sender, EventArgs e)
 		{
 			FrmMainMenu frmMainMenu = new FrmMainMenu();
@@ -34,6 +35,7 @@ namespace POS
 			frmMainMenu.Show();
 			Close();
 		}
+
 		private void FrmProducts_Load(object sender, EventArgs e)
 		{
 			TiendaControl tienda = new TiendaControl();
@@ -82,8 +84,7 @@ namespace POS
 
 					imageAdded = true;
 					//image.InsertarImagen(te)
-					
-					
+								
 					MessageBox.Show("imagen cargada");
 				}
 			}
