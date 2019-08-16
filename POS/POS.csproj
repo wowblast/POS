@@ -75,172 +75,166 @@
     <Compile Include="Entity\Estante.cs" />
     <Compile Include="Entity\Producto.cs" />
     <Compile Include="Entity\Proveedor.cs" />
-    <Compile Include="FmsProductsCategory\FrmAddCategoryProducts.cs">
+    <Compile Include="View\FmsProductsCategory\FrmAddCategoryProducts.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FmsProductsCategory\FrmAddCategoryProducts.Designer.cs">
+    <Compile Include="View\FmsProductsCategory\FrmAddCategoryProducts.Designer.cs">
       <DependentUpon>FrmAddCategoryProducts.cs</DependentUpon>
     </Compile>
-    <Compile Include="FmsProductsCategory\FrmProductCategoryMainMenu.cs">
+    <Compile Include="View\FmsProductsCategory\FrmProductCategoryMainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FmsProductsCategory\FrmProductCategoryMainMenu.Designer.cs">
+    <Compile Include="View\FmsProductsCategory\FrmProductCategoryMainMenu.Designer.cs">
       <DependentUpon>FrmProductCategoryMainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="FmsProductsCategory\FrmProductMainmenu.cs">
+    <Compile Include="View\FmsProductsCategory\FrmProductMainmenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FmsProductsCategory\FrmProductMainmenu.Designer.cs">
+    <Compile Include="View\FmsProductsCategory\FrmProductMainmenu.Designer.cs">
       <DependentUpon>FrmProductMainmenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="FmsProductsCategory\FrmUpdateCategoryProduct.cs">
+    <Compile Include="View\FmsProductsCategory\FrmUpdateCategoryProduct.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FmsProductsCategory\FrmUpdateCategoryProduct.Designer.cs">
+    <Compile Include="View\FmsProductsCategory\FrmUpdateCategoryProduct.Designer.cs">
       <DependentUpon>FrmUpdateCategoryProduct.cs</DependentUpon>
     </Compile>
-    <Compile Include="FmsProductsCategory\FrmUpdateProduct.cs">
+    <Compile Include="View\FmsProductsCategory\FrmUpdateProduct.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FmsProductsCategory\FrmUpdateProduct.Designer.cs">
+    <Compile Include="View\FmsProductsCategory\FrmUpdateProduct.Designer.cs">
       <DependentUpon>FrmUpdateProduct.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCompany.cs">
+    <Compile Include="View\FrmsCompany\FrmCompany.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCompany.Designer.cs">
+    <Compile Include="View\FrmsCompany\FrmCompany.Designer.cs">
       <DependentUpon>FrmCompany.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmsCategory\FrmCategory.cs">
+    <Compile Include="View\FrmsCategory\FrmCategory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmsCategory\FrmCategory.Designer.cs">
+    <Compile Include="View\FrmsCategory\FrmCategory.Designer.cs">
       <DependentUpon>FrmCategory.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmsCategory\FrmCategoryRegister.cs">
+    <Compile Include="View\FrmsCategory\FrmCategoryRegister.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmsCategory\FrmCategoryRegister.Designer.cs">
+    <Compile Include="View\FrmsCategory\FrmCategoryRegister.Designer.cs">
       <DependentUpon>FrmCategoryRegister.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmsCategory\FrmCategoryUpdate.cs">
+    <Compile Include="View\FrmsCategory\FrmCategoryUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmsCategory\FrmCategoryUpdate.Designer.cs">
+    <Compile Include="View\FrmsCategory\FrmCategoryUpdate.Designer.cs">
       <DependentUpon>FrmCategoryUpdate.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmsEmployee\FrmEmployee.cs">
+    <Compile Include="View\FrmsEmployee\FrmEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmsEmployee\FrmEmployee.Designer.cs">
+    <Compile Include="View\FrmsEmployee\FrmEmployee.Designer.cs">
       <DependentUpon>FrmEmployee.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmsEmployee\FrmEmployeeRegister.cs">
+    <Compile Include="View\FrmsEmployee\FrmEmployeeRegister.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmsEmployee\FrmEmployeeRegister.Designer.cs">
+    <Compile Include="View\FrmsEmployee\FrmEmployeeRegister.Designer.cs">
       <DependentUpon>FrmEmployeeRegister.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmInicioSesion.cs">
+    <Compile Include="View\FrmLogin\FrmInicioSesion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmInicioSesion.Designer.cs">
+    <Compile Include="View\FrmLogin\FrmInicioSesion.Designer.cs">
       <DependentUpon>FrmInicioSesion.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmInvoice.cs">
+    <Compile Include="View\FrmMenu\FrmMainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmInvoice.Designer.cs">
-      <DependentUpon>FrmInvoice.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmMainMenu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmMainMenu.Designer.cs">
+    <Compile Include="View\FrmMenu\FrmMainMenu.Designer.cs">
       <DependentUpon>FrmMainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmMakePurchase.cs">
+    <Compile Include="View\FrmsPurchase\FrmMakePurchase.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMakePurchase.Designer.cs">
+    <Compile Include="View\FrmsPurchase\FrmMakePurchase.Designer.cs">
       <DependentUpon>FrmMakePurchase.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPrincipal.cs">
+    <Compile Include="View\FrmSale\FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPrincipal.Designer.cs">
+    <Compile Include="View\FrmSale\FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmProducts.cs">
+    <Compile Include="View\FmsProductsCategory\FrmProducts.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmProducts.Designer.cs">
+    <Compile Include="View\FmsProductsCategory\FrmProducts.Designer.cs">
       <DependentUpon>FrmProducts.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmProvider.cs">
+    <Compile Include="View\FrmsProvider\FrmProvider.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmProvider.Designer.cs">
+    <Compile Include="View\FrmsProvider\FrmProvider.Designer.cs">
       <DependentUpon>FrmProvider.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPurchaseAmount.cs">
+    <Compile Include="View\FrmsPurchase\FrmPurchaseAmount.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPurchaseAmount.Designer.cs">
+    <Compile Include="View\FrmsPurchase\FrmPurchaseAmount.Designer.cs">
       <DependentUpon>FrmPurchaseAmount.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPurchases.cs">
+    <Compile Include="View\FrmsPurchase\FrmPurchases.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPurchases.Designer.cs">
+    <Compile Include="View\FrmsPurchase\FrmPurchases.Designer.cs">
       <DependentUpon>FrmPurchases.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmRegisterCompany.cs">
+    <Compile Include="View\FrmsCompany\FrmRegisterCompany.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmRegisterCompany.Designer.cs">
+    <Compile Include="View\FrmsCompany\FrmRegisterCompany.Designer.cs">
       <DependentUpon>FrmRegisterCompany.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmRegisterProvider.cs">
+    <Compile Include="View\FrmsProvider\FrmRegisterProvider.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmRegisterProvider.Designer.cs">
+    <Compile Include="View\FrmsProvider\FrmRegisterProvider.Designer.cs">
       <DependentUpon>FrmRegisterProvider.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmRegisterShelves.cs">
+    <Compile Include="View\FrmsStoreConfiguration\FrmRegisterShelves.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmRegisterShelves.Designer.cs">
+    <Compile Include="View\FrmsStoreConfiguration\FrmRegisterShelves.Designer.cs">
       <DependentUpon>FrmRegisterShelves.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmReport.cs">
+    <Compile Include="View\FrmsReports\FrmReport.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmReport.Designer.cs">
+    <Compile Include="View\FrmsReports\FrmReport.Designer.cs">
       <DependentUpon>FrmReport.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmsEmployee\FrmEmployeeUpdate.cs">
+    <Compile Include="View\FrmsEmployee\FrmEmployeeUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmsEmployee\FrmEmployeeUpdate.Designer.cs">
+    <Compile Include="View\FrmsEmployee\FrmEmployeeUpdate.Designer.cs">
       <DependentUpon>FrmEmployeeUpdate.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmStock.cs">
+    <Compile Include="View\FrmStock\FrmStock.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmStock.Designer.cs">
+    <Compile Include="View\FrmStock\FrmStock.Designer.cs">
       <DependentUpon>FrmStock.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmStoreConfiguration.cs">
+    <Compile Include="View\FrmsStoreConfiguration\FrmStoreConfiguration.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmStoreConfiguration.Designer.cs">
+    <Compile Include="View\FrmsStoreConfiguration\FrmStoreConfiguration.Designer.cs">
       <DependentUpon>FrmStoreConfiguration.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmUpdateCompany.cs">
+    <Compile Include="View\FrmsCompany\FrmUpdateCompany.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmUpdateCompany.Designer.cs">
+    <Compile Include="View\FrmsCompany\FrmUpdateCompany.Designer.cs">
       <DependentUpon>FrmUpdateCompany.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmUpdateProduct.cs">
@@ -249,138 +243,134 @@
     <Compile Include="FrmUpdateProduct.Designer.cs">
       <DependentUpon>FrmUpdateProduct.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmUpdateProvider.cs">
+    <Compile Include="View\FrmsProvider\FrmUpdateProvider.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmUpdateProvider.Designer.cs">
+    <Compile Include="View\FrmsProvider\FrmUpdateProvider.Designer.cs">
       <DependentUpon>FrmUpdateProvider.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmUpdateShelve.cs">
+    <Compile Include="View\FrmsStoreConfiguration\FrmUpdateShelve.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmUpdateShelve.Designer.cs">
+    <Compile Include="View\FrmsStoreConfiguration\FrmUpdateShelve.Designer.cs">
       <DependentUpon>FrmUpdateShelve.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmUpdateShelves.cs">
+    <Compile Include="View\FrmsStoreConfiguration\FrmUpdateShelves.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmUpdateShelves.Designer.cs">
+    <Compile Include="View\FrmsStoreConfiguration\FrmUpdateShelves.Designer.cs">
       <DependentUpon>FrmUpdateShelves.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmMainMenuEmployee.cs">
+    <Compile Include="View\FrmsEmployee\FrmMainMenuEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMainMenuEmployee.Designer.cs">
+    <Compile Include="View\FrmsEmployee\FrmMainMenuEmployee.Designer.cs">
       <DependentUpon>FrmMainMenuEmployee.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="FrmReportEmployee.cs">
+    <Compile Include="View\FrmsReports\FrmReportEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmReportEmployee.Designer.cs">
+    <Compile Include="View\FrmsReports\FrmReportEmployee.Designer.cs">
       <DependentUpon>FrmReportEmployee.cs</DependentUpon>
     </Compile>
     <Compile Include="Singleton\CuentaActual.cs" />
-    <Compile Include="Tools\PDF.cs" />
     <Compile Include="Tools\Log.cs" />
-    <EmbeddedResource Include="FmsProductsCategory\FrmAddCategoryProducts.resx">
+    <EmbeddedResource Include="View\FmsProductsCategory\FrmAddCategoryProducts.resx">
       <DependentUpon>FrmAddCategoryProducts.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FmsProductsCategory\FrmProductCategoryMainMenu.resx">
+    <EmbeddedResource Include="View\FmsProductsCategory\FrmProductCategoryMainMenu.resx">
       <DependentUpon>FrmProductCategoryMainMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FmsProductsCategory\FrmProductMainmenu.resx">
+    <EmbeddedResource Include="View\FmsProductsCategory\FrmProductMainmenu.resx">
       <DependentUpon>FrmProductMainmenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FmsProductsCategory\FrmUpdateCategoryProduct.resx">
+    <EmbeddedResource Include="View\FmsProductsCategory\FrmUpdateCategoryProduct.resx">
       <DependentUpon>FrmUpdateCategoryProduct.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FmsProductsCategory\FrmUpdateProduct.resx">
+    <EmbeddedResource Include="View\FmsProductsCategory\FrmUpdateProduct.resx">
       <DependentUpon>FrmUpdateProduct.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCompany.resx">
+    <EmbeddedResource Include="View\FrmsCompany\FrmCompany.resx">
       <DependentUpon>FrmCompany.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmsCategory\FrmCategory.resx">
+    <EmbeddedResource Include="View\FrmsCategory\FrmCategory.resx">
       <DependentUpon>FrmCategory.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmsCategory\FrmCategoryRegister.resx">
+    <EmbeddedResource Include="View\FrmsCategory\FrmCategoryRegister.resx">
       <DependentUpon>FrmCategoryRegister.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmsCategory\FrmCategoryUpdate.resx">
+    <EmbeddedResource Include="View\FrmsCategory\FrmCategoryUpdate.resx">
       <DependentUpon>FrmCategoryUpdate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmsEmployee\FrmEmployee.resx">
+    <EmbeddedResource Include="View\FrmsEmployee\FrmEmployee.resx">
       <DependentUpon>FrmEmployee.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmsEmployee\FrmEmployeeRegister.resx">
+    <EmbeddedResource Include="View\FrmsEmployee\FrmEmployeeRegister.resx">
       <DependentUpon>FrmEmployeeRegister.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmInicioSesion.resx">
+    <EmbeddedResource Include="View\FrmLogin\FrmInicioSesion.resx">
       <DependentUpon>FrmInicioSesion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmInvoice.resx">
-      <DependentUpon>FrmInvoice.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmMainMenu.resx">
+    <EmbeddedResource Include="View\FrmMenu\FrmMainMenu.resx">
       <DependentUpon>FrmMainMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmMakePurchase.resx">
+    <EmbeddedResource Include="View\FrmsPurchase\FrmMakePurchase.resx">
       <DependentUpon>FrmMakePurchase.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPrincipal.resx">
+    <EmbeddedResource Include="View\FrmSale\FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmProducts.resx">
+    <EmbeddedResource Include="View\FmsProductsCategory\FrmProducts.resx">
       <DependentUpon>FrmProducts.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmProvider.resx">
+    <EmbeddedResource Include="View\FrmsProvider\FrmProvider.resx">
       <DependentUpon>FrmProvider.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPurchaseAmount.resx">
+    <EmbeddedResource Include="View\FrmsPurchase\FrmPurchaseAmount.resx">
       <DependentUpon>FrmPurchaseAmount.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPurchases.resx">
+    <EmbeddedResource Include="View\FrmsPurchase\FrmPurchases.resx">
       <DependentUpon>FrmPurchases.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmRegisterCompany.resx">
+    <EmbeddedResource Include="View\FrmsCompany\FrmRegisterCompany.resx">
       <DependentUpon>FrmRegisterCompany.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmRegisterProvider.resx">
+    <EmbeddedResource Include="View\FrmsProvider\FrmRegisterProvider.resx">
       <DependentUpon>FrmRegisterProvider.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmRegisterShelves.resx">
+    <EmbeddedResource Include="View\FrmsStoreConfiguration\FrmRegisterShelves.resx">
       <DependentUpon>FrmRegisterShelves.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmReport.resx">
+    <EmbeddedResource Include="View\FrmsReports\FrmReport.resx">
       <DependentUpon>FrmReport.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmsEmployee\FrmEmployeeUpdate.resx">
+    <EmbeddedResource Include="View\FrmsEmployee\FrmEmployeeUpdate.resx">
       <DependentUpon>FrmEmployeeUpdate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmStock.resx">
+    <EmbeddedResource Include="View\FrmStock\FrmStock.resx">
       <DependentUpon>FrmStock.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmStoreConfiguration.resx">
+    <EmbeddedResource Include="View\FrmsStoreConfiguration\FrmStoreConfiguration.resx">
       <DependentUpon>FrmStoreConfiguration.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmUpdateCompany.resx">
+    <EmbeddedResource Include="View\FrmsCompany\FrmUpdateCompany.resx">
       <DependentUpon>FrmUpdateCompany.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmUpdateProduct.resx">
       <DependentUpon>FrmUpdateProduct.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmUpdateProvider.resx">
+    <EmbeddedResource Include="View\FrmsProvider\FrmUpdateProvider.resx">
       <DependentUpon>FrmUpdateProvider.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmUpdateShelve.resx">
+    <EmbeddedResource Include="View\FrmsStoreConfiguration\FrmUpdateShelve.resx">
       <DependentUpon>FrmUpdateShelve.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmUpdateShelves.resx">
+    <EmbeddedResource Include="View\FrmsStoreConfiguration\FrmUpdateShelves.resx">
       <DependentUpon>FrmUpdateShelves.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmMainMenuEmployee.resx">
+    <EmbeddedResource Include="View\FrmsEmployee\FrmMainMenuEmployee.resx">
       <DependentUpon>FrmMainMenuEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -393,7 +383,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="FrmReportEmployee.resx">
+    <EmbeddedResource Include="View\FrmsReports\FrmReportEmployee.resx">
       <DependentUpon>FrmReportEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="bin\Debug\POS.exe.config" />

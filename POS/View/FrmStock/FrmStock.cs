@@ -2,7 +2,6 @@
 using iTextSharp.text.pdf;
 using POS.Control;
 using POS.Singleton;
-using POS.Tools;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

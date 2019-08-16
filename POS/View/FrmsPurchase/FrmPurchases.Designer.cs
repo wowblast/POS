@@ -1,6 +1,6 @@
 ﻿namespace POS
 {
-    partial class FrmStock
+    partial class FrmPurchases
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmStock));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPurchases));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.label7 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnMenuPrincipal = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
-            this.btnGuardarReporte = new System.Windows.Forms.Button();
+            this.btnCompra = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -52,49 +51,43 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.Controls.Add(this.dataGridView);
-            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.dataGridView1);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(86, 118);
+            this.groupBox2.Location = new System.Drawing.Point(117, 105);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(641, 563);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Size = new System.Drawing.Size(608, 569);
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
             // 
-            // dataGridView
+            // dataGridView1
             // 
-            this.dataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Location = new System.Drawing.Point(44, 107);
-            this.dataGridView.MultiSelect = false;
-            this.dataGridView.Name = "dataGridView";
-            this.dataGridView.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SeaGreen;
-            this.dataGridView.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridView.RowTemplate.Height = 24;
-            this.dataGridView.Size = new System.Drawing.Size(554, 408);
-            this.dataGridView.TabIndex = 1;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(40, 45);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(242, 24);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Lista de productos actuales:";
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(21, 26);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView1.MultiSelect = false;
+            this.dataGridView1.Name = "dataGridView1";
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.RowHeadersWidth = 51;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SeaGreen;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(555, 521);
+            this.dataGridView1.TabIndex = 1;
             // 
             // groupBox1
             // 
@@ -103,11 +96,13 @@
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.btnMenuPrincipal);
             this.groupBox1.Controls.Add(this.btnBack);
-            this.groupBox1.Controls.Add(this.btnGuardarReporte);
+            this.groupBox1.Controls.Add(this.btnCompra);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(761, 118);
+            this.groupBox1.Location = new System.Drawing.Point(759, 105);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(417, 563);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(417, 569);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Opciones";
@@ -118,6 +113,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(125, 466);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(155, 68);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -134,9 +130,10 @@
             this.btnMenuPrincipal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SeaGreen;
             this.btnMenuPrincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenuPrincipal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnMenuPrincipal.Location = new System.Drawing.Point(34, 57);
+            this.btnMenuPrincipal.Location = new System.Drawing.Point(35, 295);
+            this.btnMenuPrincipal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMenuPrincipal.Name = "btnMenuPrincipal";
-            this.btnMenuPrincipal.Size = new System.Drawing.Size(349, 56);
+            this.btnMenuPrincipal.Size = new System.Drawing.Size(349, 57);
             this.btnMenuPrincipal.TabIndex = 10;
             this.btnMenuPrincipal.Text = "Menú principal";
             this.btnMenuPrincipal.UseVisualStyleBackColor = false;
@@ -149,58 +146,60 @@
             this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnBack.FlatAppearance.BorderSize = 0;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Location = new System.Drawing.Point(6, 516);
+            this.btnBack.Location = new System.Drawing.Point(11, 528);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(34, 41);
+            this.btnBack.Size = new System.Drawing.Size(35, 41);
             this.btnBack.TabIndex = 9;
             this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click_1);
             // 
-            // btnGuardarReporte
+            // btnCompra
             // 
-            this.btnGuardarReporte.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnCompra.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGuardarReporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(112)))), ((int)(((byte)(100)))));
-            this.btnGuardarReporte.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(112)))), ((int)(((byte)(100)))));
-            this.btnGuardarReporte.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SeaGreen;
-            this.btnGuardarReporte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SeaGreen;
-            this.btnGuardarReporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardarReporte.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnGuardarReporte.Location = new System.Drawing.Point(34, 141);
-            this.btnGuardarReporte.Name = "btnGuardarReporte";
-            this.btnGuardarReporte.Size = new System.Drawing.Size(349, 56);
-            this.btnGuardarReporte.TabIndex = 0;
-            this.btnGuardarReporte.Text = "Guardar reporte";
-            this.btnGuardarReporte.UseVisualStyleBackColor = false;
-            this.btnGuardarReporte.Click += new System.EventHandler(this.btnGuardarReporte_Click);
+            this.btnCompra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(112)))), ((int)(((byte)(100)))));
+            this.btnCompra.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(112)))), ((int)(((byte)(100)))));
+            this.btnCompra.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SeaGreen;
+            this.btnCompra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SeaGreen;
+            this.btnCompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCompra.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCompra.Location = new System.Drawing.Point(35, 46);
+            this.btnCompra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCompra.Name = "btnCompra";
+            this.btnCompra.Size = new System.Drawing.Size(349, 57);
+            this.btnCompra.TabIndex = 0;
+            this.btnCompra.Text = "Realizar compra";
+            this.btnCompra.UseVisualStyleBackColor = false;
+            this.btnCompra.Click += new System.EventHandler(this.btnCompra_Click);
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(520, 58);
+            this.label1.Location = new System.Drawing.Point(535, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 32);
+            this.label1.Size = new System.Drawing.Size(136, 32);
             this.label1.TabIndex = 14;
-            this.label1.Text = "Inventario";
+            this.label1.Text = "Compras";
             // 
-            // FrmStock
+            // FrmPurchases
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 738);
+            this.ClientSize = new System.Drawing.Size(1293, 718);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmStock";
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "FrmPurchases";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmStock";
+            this.Text = "FrmPurchases";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FrmPurchases_Load);
             this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -211,13 +210,12 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DataGridView dataGridView;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnMenuPrincipal;
         private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.Button btnGuardarReporte;
+        private System.Windows.Forms.Button btnCompra;
         private System.Windows.Forms.Label label1;
     }
 }

@@ -42,9 +42,7 @@ namespace POS
 
         private void btnInvoice_Click_1(object sender, EventArgs e)
         {
-            FrmInvoice frmInvoice = new FrmInvoice();
-            frmInvoice.Show();
-            Close();
+            
         }
 
         private void btnPurchases_Click_1(object sender, EventArgs e)
