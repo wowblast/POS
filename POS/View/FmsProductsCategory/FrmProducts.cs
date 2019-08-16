@@ -52,22 +52,27 @@ namespace POS
 
 		private void button3_Click(object sender, EventArgs e)
 		{
-			if (imageAdded)
+			try{
+				if (imageAdded)
+				{
+					ProductoControl productoControl = new ProductoControl();
+					string idProducto = productoControl.InsertarProducto(Convert.ToInt32(comboBox2.SelectedValue), textBox8.Text, textBox7.Text, Convert.ToDouble(textBox2.Text), Convert.ToInt32(textBox1.Text));
+					ImagenProducto image = new ImagenProducto();
+					image.InsertarImagen(Convert.ToInt32(idProducto), binaryImage);
+					textBox7.Text = "";
+					textBox8.Text = "";
+					textBox2.Text = "";
+					textBox1.Text = "";
+
+					imageAdded = false;
+				}
+				else
+				{
+					MessageBox.Show("seleccione imagen");
+				}
+			}catch(Exception)
 			{
-				ProductoControl productoControl = new ProductoControl();
-				string idProducto = productoControl.InsertarProducto(Convert.ToInt32(comboBox2.SelectedValue), textBox8.Text, textBox7.Text, Convert.ToInt32(textBox2.Text), Convert.ToInt32(textBox1.Text));
-				ImagenProducto image = new ImagenProducto();
-				image.InsertarImagen(Convert.ToInt32(idProducto), binaryImage);
-				textBox7.Text = "";
-				textBox8.Text = "";
-				textBox2.Text = "";
-				textBox1.Text = "";
-				
-				imageAdded = false;
-			}
-			else
-			{
-				MessageBox.Show("seleccione imagen");
+				MessageBox.Show("datos incorrectos");
 			}
 		}
 
@@ -100,6 +105,11 @@ namespace POS
 				imageIn.Save(ms, imageIn.RawFormat);
 				return ms.ToArray();
 			}
+		}
+
+		private void TextBox2_TextChanged(object sender, EventArgs e)
+		{
+
 		}
 	}
 }

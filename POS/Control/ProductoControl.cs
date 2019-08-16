@@ -16,7 +16,7 @@ namespace POS.Control
 		{
 			connection = new Connection();
 		}
-		public string InsertarProducto(int idEstante, string nombre, string descripcion , int precionUnitarioVenta, int cantidad)
+		public string InsertarProducto(int idEstante, string nombre, string descripcion , double precionUnitarioVenta, int cantidad)
 		{
 			string sql = "INSERT INTO PRODUCTOS (idEstante, nombre,descripcion,precioUnitarioVenta,cantidad) VALUES ('" + idEstante + "','" + nombre + "','" + descripcion + "','" + precionUnitarioVenta + "','" + cantidad + "'); SELECT SCOPE_IDENTITY()";
 			try
