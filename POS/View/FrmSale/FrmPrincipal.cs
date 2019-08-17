@@ -1,17 +1,13 @@
 ﻿using POS.Control;
+using POS.Entity;
 using POS.Singleton;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
-using System.IO;
 using System.Linq;
-using System.Runtime.Serialization.Formatters.Binary;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace POS
@@ -62,6 +58,9 @@ namespace POS
 
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {
+            ListCategories();
+            UpdateUserData();
+
             ProductoControl productoControl = new ProductoControl();
             ImagenProducto imagenProducto = new ImagenProducto();
 
@@ -90,7 +89,7 @@ namespace POS
                                 Size = new Size(imageSize, imageSize),
                             };
 
-                            object image = imagenProducto.SelectImage((int)productList.Rows[index].ItemArray[0]);
+                            /*object image = imagenProducto.SelectImage((int)productList.Rows[index].ItemArray[0]);
                             BinaryFormatter bf = new BinaryFormatter();
                             MemoryStream ms = new MemoryStream();
                             bf.Serialize(ms, image);
@@ -100,7 +99,7 @@ namespace POS
                             
                             button.BackgroundImage = ResizeImage(img, imageSize, imageSize);
 
-                            tableLayout.Controls.Add(button, j, i);
+                            tableLayout.Controls.Add(button, j, i);*/
                         }
                     }
                 }
@@ -130,6 +129,30 @@ namespace POS
             }
 
             return destImage;
+        }
+
+        public void ListCategories()
+        {
+            CategoriaControl categoriaControl = new CategoriaControl();
+            DataTable dataTable = categoriaControl.Listar();
+
+            List<Categoria> listCategories = dataTable.AsEnumerable().Select(m => new Categoria()
+            {
+                IdCategoria = m.Field<int>("ID CATEGORIA"),
+                Nombre = m.Field<string>("NOMBRE"),
+                Descripcion = m.Field<string>("DESCRIPCION"),
+                Subcategoria = m.Field<int>("CATEGORIA A LA QUE PERTENECE"),
+            }).ToList();
+
+            listBox.DataSource = listCategories;
+            listBox.DisplayMember = "Nombre";
+            listBox.ValueMember = "IdCategoria";
+        }
+
+        private void UpdateUserData()
+        {
+            label1.Text = User.GetInstance().usuario.Cargo;
+            label2.Text = User.GetInstance().usuario.Nombre + " " + User.GetInstance().usuario.ApellidoPaterno;
         }
 
     }
