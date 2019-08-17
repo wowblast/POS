@@ -72,7 +72,7 @@ namespace POS.Control
 			}
 		}
 
-		public void ActualizarProducto(int idProducto,int idEstante, string nombre, string descripcion, int precionUnitarioVenta, int cantidad)
+		public void ActualizarProducto(int idProducto,int idEstante, string nombre, string descripcion, double precionUnitarioVenta, int cantidad)
 		{
 			string sql = "UPDATE PRODUCTOS SET idEstante = '" + idEstante + "', nombre = '" + nombre+ "', descripcion = '" + descripcion + "', precioUnitarioVenta = '" + precionUnitarioVenta +"', cantidad = '" + cantidad + " WHERE idProducto = " + idProducto;
 			try

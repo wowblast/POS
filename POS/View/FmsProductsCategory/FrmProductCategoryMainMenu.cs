@@ -41,23 +41,29 @@ namespace POS.FmsProductsCategory
 
 		private void btnActualizar_Click(object sender, EventArgs e)
 		{
-			if (dataGridView1.SelectedRows.Count == 1)
+			try
 			{
-				int idProducto = Convert.ToInt32(dataGridView1.SelectedCells[0].Value);
-				string nombre = dataGridView1.SelectedCells[2].Value.ToString();
-				string descripcion = dataGridView1.SelectedCells[3].Value.ToString();
-				float precio = Convert.ToSingle(dataGridView1.SelectedCells[4].Value.ToString());
-				int cantidad = Convert.ToInt32(dataGridView1.SelectedCells[5].Value.ToString());
+				if (dataGridView1.SelectedRows.Count == 1)
+				{
+					int idProducto = Convert.ToInt32(dataGridView1.SelectedCells[0].Value);
+					string nombre = dataGridView1.SelectedCells[2].Value.ToString();
+					string descripcion = dataGridView1.SelectedCells[3].Value.ToString();
+					float precio = Convert.ToSingle(dataGridView1.SelectedCells[4].Value.ToString());
+					int cantidad = Convert.ToInt32(dataGridView1.SelectedCells[5].Value.ToString());
 
-				FrmUpdateProduct updateproduct = new FrmUpdateProduct(idProducto,descripcion,nombre,precio,cantidad);
-				updateproduct.Show();
-				this.Close();
-			}
-			else
+					FrmUpdateProduct updateproduct = new FrmUpdateProduct(idProducto, descripcion, nombre, precio, cantidad);
+					updateproduct.Show();
+					this.Close();
+				}
+				else
+				{
+					MessageBox.Show("¡Debe seleccionar a un proveedor!", "Error");
+				}
+			}catch(Exception)
 			{
 				MessageBox.Show("¡Debe seleccionar a un proveedor!", "Error");
 			}
-			
+
 		}
 
 		private void btnRegistrar_Click(object sender, EventArgs e)
@@ -90,7 +96,6 @@ namespace POS.FmsProductsCategory
 
 		private void btnMenuPrincipal_Click(object sender, EventArgs e)
 		{
-
 			FrmMainMenu frmMainMenu = new FrmMainMenu();
 			frmMainMenu.Show();
 			Close();
