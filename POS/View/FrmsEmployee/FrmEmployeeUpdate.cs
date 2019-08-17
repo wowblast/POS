@@ -44,6 +44,7 @@ namespace POS.FrmsEmployee
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
+
             string nombres = tbNombres.Text;
             string apellidoPaterno = tbApellidoPaterno.Text;
             string apellidoMaterno = tbApellidoMaterno.Text;
