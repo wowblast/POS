@@ -75,6 +75,8 @@
     <Compile Include="Entity\Estante.cs" />
     <Compile Include="Entity\Producto.cs" />
     <Compile Include="Entity\Proveedor.cs" />
+    <Compile Include="Entity\Usuario.cs" />
+    <Compile Include="Singleton\User.cs" />
     <Compile Include="View\FmsProductsCategory\FrmAddCategoryProducts.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -275,7 +277,6 @@
     <Compile Include="View\FrmsReports\FrmReportEmployee.Designer.cs">
       <DependentUpon>FrmReportEmployee.cs</DependentUpon>
     </Compile>
-    <Compile Include="Singleton\CuentaActual.cs" />
     <Compile Include="Tools\Log.cs" />
     <EmbeddedResource Include="View\FmsProductsCategory\FrmAddCategoryProducts.resx">
       <DependentUpon>FrmAddCategoryProducts.cs</DependentUpon>

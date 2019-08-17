@@ -158,7 +158,7 @@ namespace POS
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            if (CuentaActual.Cargo == "ADMINISTRADOR")
+            if (User.GetInstance().usuario.Cargo == "ADMINISTRADOR")
             {
                 FrmMainMenu frmMainMenu = new FrmMainMenu();
                 frmMainMenu.Show();

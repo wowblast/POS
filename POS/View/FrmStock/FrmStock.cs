@@ -30,7 +30,7 @@ namespace POS
 
         private void btnBack_Click_1(object sender, EventArgs e)
         {
-            if (CuentaActual.Cargo == "ADMINISTRADOR")
+            if (User.GetInstance().usuario.Cargo == "ADMINISTRADOR")
             {
                 FrmMainMenu frmMainMenu = new FrmMainMenu();
                 frmMainMenu.Show();
@@ -46,7 +46,7 @@ namespace POS
 
         private void btnMenuPrincipal_Click(object sender, EventArgs e)
         {
-            if (CuentaActual.Cargo == "ADMINISTRADOR")
+            if (User.GetInstance().usuario.Cargo == "ADMINISTRADOR")
             {
                 FrmMainMenu frmMainMenu = new FrmMainMenu();
                 frmMainMenu.Show();
@@ -68,7 +68,7 @@ namespace POS
 
         private void ActivarPrivilegios()
         {
-            if (CuentaActual.Cargo != "ADMINISTRADOR")
+            if (User.GetInstance().usuario.Cargo != "ADMINISTRADOR")
             {
                 btnGuardarReporte.Visible = false;
             }

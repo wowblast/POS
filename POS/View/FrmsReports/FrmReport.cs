@@ -21,7 +21,7 @@ namespace POS
             lbFecha.Text = "Fecha actual: " + DateTime.Now.ToString("dd/MM/yyyy");
             txtNombreEmpleado.Text = "Usuario";
             txtMontoTotal.Text = "0";
-            txtNombreEmpleado.Text = CuentaActual.Nombre + " " + CuentaActual.ApellidoPaterno; 
+            txtNombreEmpleado.Text = User.GetInstance().usuario.Nombre + " " + User.GetInstance().usuario.ApellidoPaterno; 
         }
 
         private void btnAtras_Click(object sender, EventArgs e)

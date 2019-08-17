@@ -16,7 +16,7 @@ namespace POS
         public FrmMainMenuEmployee()
         {
             InitializeComponent();
-            lbCargo.Text = CuentaActual.Nombre + " " + CuentaActual.ApellidoPaterno; 
+            lbCargo.Text = User.GetInstance().usuario.Nombre + " " + User.GetInstance().usuario.ApellidoPaterno; 
         }
 
         private void btnExit_Click(object sender, EventArgs e)
