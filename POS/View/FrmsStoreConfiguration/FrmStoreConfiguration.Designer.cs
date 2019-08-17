@@ -50,10 +50,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(444, 52);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(333, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(253, 29);
+            this.label1.Size = new System.Drawing.Size(199, 25);
             this.label1.TabIndex = 10;
             this.label1.Text = "Configuración Tienda";
             // 
@@ -61,14 +60,17 @@
             // 
             this.UpdateShelveBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.UpdateShelveBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(180)))), ((int)(((byte)(97)))));
-            this.UpdateShelveBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(180)))), ((int)(((byte)(97)))));
+            this.UpdateShelveBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.UpdateShelveBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.UpdateShelveBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.UpdateShelveBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.UpdateShelveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UpdateShelveBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UpdateShelveBtn.Location = new System.Drawing.Point(20, 118);
-            this.UpdateShelveBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.UpdateShelveBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.UpdateShelveBtn.Location = new System.Drawing.Point(15, 96);
+            this.UpdateShelveBtn.Margin = new System.Windows.Forms.Padding(2);
             this.UpdateShelveBtn.Name = "UpdateShelveBtn";
-            this.UpdateShelveBtn.Size = new System.Drawing.Size(349, 57);
+            this.UpdateShelveBtn.Size = new System.Drawing.Size(262, 46);
             this.UpdateShelveBtn.TabIndex = 1;
             this.UpdateShelveBtn.Text = "Actualizar estanteria";
             this.UpdateShelveBtn.UseVisualStyleBackColor = false;
@@ -78,15 +80,17 @@
             // 
             this.delShelveBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.delShelveBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(180)))), ((int)(((byte)(97)))));
-            this.delShelveBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(180)))), ((int)(((byte)(97)))));
+            this.delShelveBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.delShelveBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.delShelveBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.delShelveBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.delShelveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.delShelveBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.delShelveBtn.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.delShelveBtn.Location = new System.Drawing.Point(20, 199);
-            this.delShelveBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.delShelveBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.delShelveBtn.Location = new System.Drawing.Point(15, 162);
+            this.delShelveBtn.Margin = new System.Windows.Forms.Padding(2);
             this.delShelveBtn.Name = "delShelveBtn";
-            this.delShelveBtn.Size = new System.Drawing.Size(349, 57);
+            this.delShelveBtn.Size = new System.Drawing.Size(262, 46);
             this.delShelveBtn.TabIndex = 2;
             this.delShelveBtn.Text = "Eliminar estanteria";
             this.delShelveBtn.UseVisualStyleBackColor = false;
@@ -96,10 +100,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(132, 91);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(99, 74);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 25);
+            this.label4.Size = new System.Drawing.Size(73, 20);
             this.label4.TabIndex = 12;
             this.label4.Text = "Estantes";
             // 
@@ -107,15 +110,17 @@
             // 
             this.insShelveBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.insShelveBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(180)))), ((int)(((byte)(97)))));
-            this.insShelveBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(180)))), ((int)(((byte)(97)))));
+            this.insShelveBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.insShelveBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.insShelveBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.insShelveBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.insShelveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.insShelveBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.insShelveBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.insShelveBtn.Location = new System.Drawing.Point(20, 38);
-            this.insShelveBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.insShelveBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.insShelveBtn.Location = new System.Drawing.Point(15, 31);
+            this.insShelveBtn.Margin = new System.Windows.Forms.Padding(2);
             this.insShelveBtn.Name = "insShelveBtn";
-            this.insShelveBtn.Size = new System.Drawing.Size(349, 57);
+            this.insShelveBtn.Size = new System.Drawing.Size(262, 46);
             this.insShelveBtn.TabIndex = 14;
             this.insShelveBtn.Text = "Insertar nueva estanteria";
             this.insShelveBtn.UseVisualStyleBackColor = false;
@@ -130,11 +135,10 @@
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(8, 27);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.Location = new System.Drawing.Point(6, 22);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(649, 498);
+            this.dataGridView1.Size = new System.Drawing.Size(487, 405);
             this.dataGridView1.TabIndex = 0;
             // 
             // groupBox1
@@ -147,11 +151,9 @@
             this.groupBox1.Controls.Add(this.delShelveBtn);
             this.groupBox1.Controls.Add(this.insShelveBtn);
             this.groupBox1.Controls.Add(this.UpdateShelveBtn);
-            this.groupBox1.Location = new System.Drawing.Point(795, 132);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Location = new System.Drawing.Point(596, 107);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(396, 517);
+            this.groupBox1.Size = new System.Drawing.Size(297, 420);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Opciones";
@@ -160,15 +162,17 @@
             // 
             this.btnMenuPrincipal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMenuPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(180)))), ((int)(((byte)(97)))));
-            this.btnMenuPrincipal.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(180)))), ((int)(((byte)(97)))));
+            this.btnMenuPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnMenuPrincipal.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnMenuPrincipal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnMenuPrincipal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnMenuPrincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenuPrincipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuPrincipal.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnMenuPrincipal.Location = new System.Drawing.Point(20, 281);
-            this.btnMenuPrincipal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMenuPrincipal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnMenuPrincipal.Location = new System.Drawing.Point(15, 228);
+            this.btnMenuPrincipal.Margin = new System.Windows.Forms.Padding(2);
             this.btnMenuPrincipal.Name = "btnMenuPrincipal";
-            this.btnMenuPrincipal.Size = new System.Drawing.Size(349, 57);
+            this.btnMenuPrincipal.Size = new System.Drawing.Size(262, 46);
             this.btnMenuPrincipal.TabIndex = 17;
             this.btnMenuPrincipal.Text = "Menú principal";
             this.btnMenuPrincipal.UseVisualStyleBackColor = false;
@@ -181,10 +185,10 @@
             this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnBack.FlatAppearance.BorderSize = 0;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Location = new System.Drawing.Point(7, 476);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBack.Location = new System.Drawing.Point(5, 387);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(2);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(35, 41);
+            this.btnBack.Size = new System.Drawing.Size(26, 33);
             this.btnBack.TabIndex = 16;
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click_1);
@@ -194,10 +198,10 @@
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(116, 378);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(87, 307);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(155, 68);
+            this.pictureBox1.Size = new System.Drawing.Size(116, 55);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
@@ -208,25 +212,23 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.Controls.Add(this.dataGridView1);
-            this.groupBox2.Location = new System.Drawing.Point(76, 132);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Location = new System.Drawing.Point(57, 107);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(683, 533);
+            this.groupBox2.Size = new System.Drawing.Size(512, 433);
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
             // 
             // FrmStoreConfiguration
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 732);
+            this.ClientSize = new System.Drawing.Size(948, 595);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmStoreConfiguration";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmStoreConfiguration";
