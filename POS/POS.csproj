@@ -386,7 +386,6 @@
     <EmbeddedResource Include="View\FrmsReports\FrmReportEmployee.resx">
       <DependentUpon>FrmReportEmployee.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="bin\Debug\POS.exe.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -401,12 +400,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="bin\Debug\POS.exe" />
-    <Content Include="bin\Debug\POS.pdb" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="bin\Release\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
