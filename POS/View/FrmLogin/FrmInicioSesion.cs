@@ -1,18 +1,11 @@
-﻿using POS.Singleton;
+﻿using POS.Entity;
+using POS.Singleton;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace POS
 {
-	public partial class FrmInicioSesion : Form
+    public partial class FrmInicioSesion : Form
 	{
 		public FrmInicioSesion()
 		{
@@ -32,9 +25,9 @@ namespace POS
             if (login)
             {
                 // Comentar esta linea para poder utilizar la cuenta actual
-                CuentaActual.Cargo = "ADMINISTRADOR";
+                User.GetInstance().usuario.Cargo = "ADMINISTRADOR";
 
-                if (CuentaActual.Cargo == "ADMINISTRADOR")
+                if (User.GetInstance().usuario.Cargo == "ADMINISTRADOR")
                 {
                     FrmMainMenu frmMainMenu = new FrmMainMenu();
                     frmMainMenu.Show();

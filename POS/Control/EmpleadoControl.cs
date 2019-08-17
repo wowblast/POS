@@ -1,12 +1,8 @@
 ﻿using POS.Entity;
 using POS.Singleton;
 using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace POS
@@ -113,11 +109,14 @@ namespace POS
                 #pragma warning restore IDE0059 // El valor asignado al símbolo nunca se utiliza.
 
                 DataTable datosUsuario = CargarDatos(user);
-                /*CuentaActual.idUsuario = Convert.ToInt32(datosUsuario.Rows[0]["idEmpleado"].ToString());
-                CuentaActual.Nombre = datosUsuario.Rows[0]["nombres"].ToString();
-                CuentaActual.ApellidoPaterno = datosUsuario.Rows[0]["apellidoPaterno"].ToString();
-                CuentaActual.ApellidoMaterno = datosUsuario.Rows[0]["apellidoMaterno"].ToString();
-                CuentaActual.Cargo = datosUsuario.Rows[0]["nombre"].ToString().ToUpper();*/
+                int idUsuario = Convert.ToInt32(datosUsuario.Rows[0]["idEmpleado"].ToString());
+                string nombre = datosUsuario.Rows[0]["nombres"].ToString();
+                string apellidoPaterno = datosUsuario.Rows[0]["apellidoPaterno"].ToString();
+                string apellidoMaterno = datosUsuario.Rows[0]["apellidoMaterno"].ToString();
+                string cargo = datosUsuario.Rows[0]["nombre"].ToString().ToUpper();
+
+                Usuario usuario = new Usuario(idUsuario, nombre, apellidoPaterno, apellidoMaterno, cargo);
+                User.GetInstance(usuario);
 
                 return query.Rows.Count == 1;
             }

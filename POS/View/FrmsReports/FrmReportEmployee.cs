@@ -19,12 +19,12 @@ namespace POS
             InitializeComponent();
             lbTexto.Text = "";
             lbFecha.Text = "Fecha actual: " + DateTime.Now.ToString("dd/MM/yyyy");
-            txtNombreUsuario.Text = CuentaActual.Nombre + " " + CuentaActual.ApellidoPaterno; 
+            txtNombreUsuario.Text = User.GetInstance().usuario.Nombre + " " + User.GetInstance().usuario.ApellidoPaterno; 
         }
 
         private void btnMenuPrincipal_Click(object sender, EventArgs e)
         {
-            if (CuentaActual.Cargo == "ADMINISTRADOR")
+            if (User.GetInstance().usuario.Cargo == "ADMINISTRADOR")
             {
                 FrmMainMenu frmMainMenu = new FrmMainMenu();
                 frmMainMenu.Show();
@@ -40,7 +40,7 @@ namespace POS
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
-            if (CuentaActual.Cargo == "ADMINISTRADOR")
+            if (User.GetInstance().usuario.Cargo == "ADMINISTRADOR")
             {
                 FrmMainMenu frmMainMenu = new FrmMainMenu();
                 frmMainMenu.Show();
@@ -57,7 +57,7 @@ namespace POS
         private void btnReporteGeneralEmpleado_Click(object sender, EventArgs e)
         {
             DetalleVentaControl detalleVentaControl = new DetalleVentaControl();
-            dataGridView3.DataSource = detalleVentaControl.ReporteVentasPorEmpleado(CuentaActual.idUsuario);
+            dataGridView3.DataSource = detalleVentaControl.ReporteVentasPorEmpleado(User.GetInstance().usuario.IdUsuario);
 
             if (dataGridView3.Rows.Count > 0)
             {
