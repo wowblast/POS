@@ -15,7 +15,7 @@ namespace POS.Control
         {
             connection = new Connection();
         }
-        public void InsertarDetalleCompra(int idCompra, int idProducto, int cantidadCompra, int precioCompra)
+        public void InsertarDetalleCompra(int idCompra, int idProducto, int cantidadCompra, double precioCompra)
         {
             string sql = "INSERT INTO DETALLE_COMPRA (idCompra, idProducto, cantidad, precioUnitarioCompra) VALUES ('" + idCompra +
                 "','" + idProducto + "','" + cantidadCompra + "','" + precioCompra + "')";

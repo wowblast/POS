@@ -16,6 +16,8 @@ namespace POS
         public FrmMakePurchase()
         {
             InitializeComponent();
+            valPrecioCompra.DecimalPlaces = 2;
+            valPrecioCompra.Increment = 0.01M;
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -25,15 +27,16 @@ namespace POS
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            int cantidad = Convert.ToInt32(txtCantidad.Text);
-            int precio = Convert.ToInt32(txtPrecioCompra.Text);
+
+            int cantidad = Convert.ToInt32(valCantidad.Text);
+            double precio = Convert.ToDouble(valPrecioCompra.Text);
             int idempleado = Convert.ToInt32(txtIDEmpleado.Text);
             int idproveedor = Convert.ToInt32(cbProveedores.SelectedValue);
             int idproducto = Convert.ToInt32(cbProductos.SelectedValue);
-
+            
             CompraControl compraControl = new CompraControl();
             compraControl.RealizarCompra(idproveedor, idempleado);
-
+     
             DataTable ultimaCompra = compraControl.ObtenerUltimaCompra();
             int idcompra = ultimaCompra.Rows[0].Field<int>(0);
 
@@ -41,6 +44,7 @@ namespace POS
             detalleCompraControl.InsertarDetalleCompra(idcompra, idproducto, cantidad, precio);
 
             MessageBox.Show("Compra realizada exitosamente", "Compra exitosa!");
+        
         }
 
         private void FrmMakePurchase_Load(object sender, EventArgs e)
