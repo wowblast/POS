@@ -17,8 +17,9 @@ namespace POS
     public partial class FrmPrincipal : Form
     {
         private int imageSize = 0;
+		private List<string[]> compras = new List<string[]>();
 
-        public FrmPrincipal()
+		public FrmPrincipal()
         {
             InitializeComponent();
         }
@@ -166,5 +167,37 @@ namespace POS
             label2.Text = User.GetInstance().usuario.Nombre + " " + User.GetInstance().usuario.ApellidoPaterno;
         }
 
-    }
+    
+		
+		private void addItem(string id,string name , string price, string quantoty)
+		{
+			string[] row = { id, name, price, quantoty };
+			actualizar_compras(row);
+			/*dataGridView1.Rows.Clear();
+			dataGridView1.Refresh();
+			for(int x = 0; x < compras.Count; x++)
+			{
+				dataGridView1.Rows.Add(compras.ElementAt(x));
+			}	*/		
+		}
+		private void actualizar_compras(string[] row)
+		{
+			bool newImtem = true;
+			for(int x = 0; x < compras.Count; x++)
+			{
+				if (compras.ElementAt(x)[0] == row[0])
+				{
+					double newQuantity = Convert.ToDouble(compras.ElementAt(x)[3]) + Convert.ToDouble(row[3]);
+					compras.ElementAt(x)[3] = newQuantity.ToString();
+					newImtem = false;
+					break;
+				}
+			}
+			if (newImtem)
+			{
+				compras.Add(row);				
+			}
+
+		}
+	}
 }
