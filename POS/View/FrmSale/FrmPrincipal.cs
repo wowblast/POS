@@ -67,16 +67,15 @@ namespace POS
 
             DataTable productList = productoControl.ListarProductos();
             
-            
             if (productList.Rows.Count > 0)
             {
                 const int COLUMNS = 5;
 
-                imageSize = tableLayout.Size.Width / COLUMNS;
+                imageSize = Convert.ToInt32((tableLayout.Size.Width * 0.95f) / COLUMNS);
 
                 tableLayout.ColumnCount = COLUMNS;
-                tableLayout.RowCount = Convert.ToInt32((float)productList.Rows.Count / COLUMNS) + 1;
-
+                tableLayout.RowCount = Convert.ToInt32(Math.Ceiling((float)productList.Rows.Count / COLUMNS));
+                
                 for (int i = 0; i < tableLayout.RowCount; i++)
                 {
                     for (int j = 0; j < tableLayout.ColumnCount; j++)
@@ -90,21 +89,31 @@ namespace POS
                                 Size = new Size(imageSize, imageSize),
                             };
 
-                            object image = imagenProducto.SelectImage((int)productList.Rows[index].ItemArray[0]);
-                            BinaryFormatter bf = new BinaryFormatter();
-                            MemoryStream ms = new MemoryStream();
-                            bf.Serialize(ms, image);
-                            byte[] aux = (byte[])image;
-                            ImageConverter ic = new ImageConverter();
-                            Image img = (Image)ic.ConvertFrom(aux);
+                            Image image = ObjectToImage(imagenProducto.SelectImage((int)productList.Rows[index].ItemArray[0]));
                             
-                            button.BackgroundImage = ResizeImage(img, imageSize, imageSize);
+                            if (image != null)
+                                button.BackgroundImage = ResizeImage(image, imageSize, imageSize);
 
                             tableLayout.Controls.Add(button, j, i);
                         }
                     }
                 }
             }
+        }
+
+        public static Image ObjectToImage(object image)
+        {
+            if (image == null)
+                return null;
+
+            BinaryFormatter bf = new BinaryFormatter();
+            MemoryStream ms = new MemoryStream();
+            bf.Serialize(ms, image);
+            byte[] aux = (byte[])image;
+            ImageConverter ic = new ImageConverter();
+            Image img = (Image)ic.ConvertFrom(aux);
+
+            return img;
         }
 
         public static Bitmap ResizeImage(Image image, int width, int height)
