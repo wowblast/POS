@@ -23,5 +23,6 @@
             Subcategoria = subcategoria;
         }
 
+        public Categoria() { }
     }
 }

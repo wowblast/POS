@@ -37,7 +37,7 @@ namespace POS.Control
 
         public DataTable Listar()
         {
-            string sql = "SELECT idCategoria AS 'ID CATEGORIA', nombre AS 'NOMBRE', descripcion AS 'DESCRIPCIÓN', subcategoria as 'CATEGORÍA A LA QUE PERTENECE' FROM CATEGORIAS WHERE idCategoria != 1";
+            string sql = "SELECT idCategoria AS 'ID CATEGORIA', nombre AS 'NOMBRE', descripcion AS 'DESCRIPCION', subcategoria as 'CATEGORIA A LA QUE PERTENECE' FROM CATEGORIAS WHERE idCategoria != 1";
 
             try
             {
