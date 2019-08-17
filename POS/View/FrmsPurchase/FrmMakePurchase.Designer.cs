@@ -29,18 +29,20 @@
         private void InitializeComponent()
         {
             this.label2 = new System.Windows.Forms.Label();
-            this.txtCantidad = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.cbProductos = new System.Windows.Forms.ComboBox();
             this.txtIDEmpleado = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtPrecioCompra = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.cbProveedores = new System.Windows.Forms.ComboBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.valCantidad = new System.Windows.Forms.NumericUpDown();
+            this.valPrecioCompra = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.valCantidad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.valPrecioCompra)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -54,15 +56,6 @@
             this.label2.Size = new System.Drawing.Size(116, 31);
             this.label2.TabIndex = 21;
             this.label2.Text = "Compra";
-            // 
-            // txtCantidad
-            // 
-            this.txtCantidad.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtCantidad.Location = new System.Drawing.Point(237, 257);
-            this.txtCantidad.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(126, 20);
-            this.txtCantidad.TabIndex = 34;
             // 
             // label6
             // 
@@ -125,15 +118,6 @@
             this.label1.TabIndex = 36;
             this.label1.Text = "ID Empleado:";
             // 
-            // txtPrecioCompra
-            // 
-            this.txtPrecioCompra.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtPrecioCompra.Location = new System.Drawing.Point(627, 257);
-            this.txtPrecioCompra.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtPrecioCompra.Name = "txtPrecioCompra";
-            this.txtPrecioCompra.Size = new System.Drawing.Size(126, 20);
-            this.txtPrecioCompra.TabIndex = 39;
-            // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -193,20 +177,34 @@
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
+            // valCantidad
+            // 
+            this.valCantidad.Location = new System.Drawing.Point(237, 257);
+            this.valCantidad.Name = "valCantidad";
+            this.valCantidad.Size = new System.Drawing.Size(120, 20);
+            this.valCantidad.TabIndex = 43;
+            // 
+            // valPrecioCompra
+            // 
+            this.valPrecioCompra.Location = new System.Drawing.Point(642, 257);
+            this.valPrecioCompra.Name = "valPrecioCompra";
+            this.valPrecioCompra.Size = new System.Drawing.Size(120, 20);
+            this.valPrecioCompra.TabIndex = 44;
+            // 
             // FrmMakePurchase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(908, 543);
+            this.Controls.Add(this.valPrecioCompra);
+            this.Controls.Add(this.valCantidad);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.cbProveedores);
-            this.Controls.Add(this.txtPrecioCompra);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtIDEmpleado);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbProductos);
-            this.Controls.Add(this.txtCantidad);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -214,6 +212,8 @@
             this.Name = "FrmMakePurchase";
             this.Text = "FrmMakePurchase";
             this.Load += new System.EventHandler(this.FrmMakePurchase_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.valCantidad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.valPrecioCompra)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -222,17 +222,17 @@
         #endregion
 
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtCantidad;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cbProductos;
         private System.Windows.Forms.TextBox txtIDEmpleado;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtPrecioCompra;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cbProveedores;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.NumericUpDown valCantidad;
+        private System.Windows.Forms.NumericUpDown valPrecioCompra;
     }
 }
