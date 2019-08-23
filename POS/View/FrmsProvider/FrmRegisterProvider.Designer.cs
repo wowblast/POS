@@ -44,6 +44,7 @@
             this.cbEmpresa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cbEmpresa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cbEmpresa.FormattingEnabled = true;
             this.cbEmpresa.Location = new System.Drawing.Point(321, 314);
             this.cbEmpresa.Margin = new System.Windows.Forms.Padding(4);

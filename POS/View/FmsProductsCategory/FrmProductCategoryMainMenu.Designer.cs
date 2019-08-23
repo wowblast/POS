@@ -28,247 +28,247 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProductCategoryMainMenu));
-			this.groupBox2 = new System.Windows.Forms.GroupBox();
-			this.dataGridView1 = new System.Windows.Forms.DataGridView();
-			this.label3 = new System.Windows.Forms.Label();
-			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.btnVerproductocategoria = new System.Windows.Forms.Button();
-			this.label2 = new System.Windows.Forms.Label();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			this.btnMenuPrincipal = new System.Windows.Forms.Button();
-			this.btnEliminar = new System.Windows.Forms.Button();
-			this.btnActualizar = new System.Windows.Forms.Button();
-			this.btnBack = new System.Windows.Forms.Button();
-			this.btnRegistrar = new System.Windows.Forms.Button();
-			this.label1 = new System.Windows.Forms.Label();
-			this.groupBox2.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-			this.groupBox1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-			this.SuspendLayout();
-			// 
-			// groupBox2
-			// 
-			this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProductCategoryMainMenu));
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label3 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnVerproductocategoria = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnMenuPrincipal = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.btnRegistrar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-			this.groupBox2.Controls.Add(this.dataGridView1);
-			this.groupBox2.Controls.Add(this.label3);
-			this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.groupBox2.Location = new System.Drawing.Point(88, 156);
-			this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-			this.groupBox2.Name = "groupBox2";
-			this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-			this.groupBox2.Size = new System.Drawing.Size(791, 510);
-			this.groupBox2.TabIndex = 18;
-			this.groupBox2.TabStop = false;
-			// 
-			// dataGridView1
-			// 
-			this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.dataGridView1);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(88, 156);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Size = new System.Drawing.Size(791, 510);
+            this.groupBox2.TabIndex = 18;
+            this.groupBox2.TabStop = false;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-			this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-			this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Location = new System.Drawing.Point(79, 105);
-			this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.RowHeadersWidth = 51;
-			this.dataGridView1.RowTemplate.Height = 24;
-			this.dataGridView1.Size = new System.Drawing.Size(623, 304);
-			this.dataGridView1.TabIndex = 1;
-			// 
-			// label3
-			// 
-			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(40, 46);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(244, 24);
-			this.label3.TabIndex = 0;
-			this.label3.Text = "Lista de categorias actuales:";
-			// 
-			// groupBox1
-			// 
-			this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(44, 90);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(707, 386);
+            this.dataGridView1.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(40, 46);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(244, 24);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Lista de categorias actuales:";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.groupBox1.Controls.Add(this.btnVerproductocategoria);
-			this.groupBox1.Controls.Add(this.label2);
-			this.groupBox1.Controls.Add(this.pictureBox1);
-			this.groupBox1.Controls.Add(this.btnMenuPrincipal);
-			this.groupBox1.Controls.Add(this.btnEliminar);
-			this.groupBox1.Controls.Add(this.btnActualizar);
-			this.groupBox1.Controls.Add(this.btnBack);
-			this.groupBox1.Controls.Add(this.btnRegistrar);
-			this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.groupBox1.Location = new System.Drawing.Point(913, 156);
-			this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-			this.groupBox1.Size = new System.Drawing.Size(417, 599);
-			this.groupBox1.TabIndex = 17;
-			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "Opciones";
-			// 
-			// btnVerproductocategoria
-			// 
-			this.btnVerproductocategoria.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.groupBox1.Controls.Add(this.btnVerproductocategoria);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.pictureBox1);
+            this.groupBox1.Controls.Add(this.btnMenuPrincipal);
+            this.groupBox1.Controls.Add(this.btnEliminar);
+            this.groupBox1.Controls.Add(this.btnActualizar);
+            this.groupBox1.Controls.Add(this.btnBack);
+            this.groupBox1.Controls.Add(this.btnRegistrar);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(913, 156);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(417, 599);
+            this.groupBox1.TabIndex = 17;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Opciones";
+            // 
+            // btnVerproductocategoria
+            // 
+            this.btnVerproductocategoria.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnVerproductocategoria.BackColor = System.Drawing.SystemColors.Highlight;
-			this.btnVerproductocategoria.FlatAppearance.BorderSize = 0;
-			this.btnVerproductocategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnVerproductocategoria.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.btnVerproductocategoria.Location = new System.Drawing.Point(35, 278);
-			this.btnVerproductocategoria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-			this.btnVerproductocategoria.Name = "btnVerproductocategoria";
-			this.btnVerproductocategoria.Size = new System.Drawing.Size(349, 57);
-			this.btnVerproductocategoria.TabIndex = 16;
-			this.btnVerproductocategoria.Text = "Ver categorias de producto";
-			this.btnVerproductocategoria.UseVisualStyleBackColor = false;
-			this.btnVerproductocategoria.Click += new System.EventHandler(this.btnVerproductocategoria_Click);
-			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(7, 228);
-			this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(211, 24);
-			this.label2.TabIndex = 15;
-			this.label2.Text = "Opciones con categoria";
-			// 
-			// pictureBox1
-			// 
-			this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnVerproductocategoria.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnVerproductocategoria.FlatAppearance.BorderSize = 0;
+            this.btnVerproductocategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVerproductocategoria.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnVerproductocategoria.Location = new System.Drawing.Point(35, 321);
+            this.btnVerproductocategoria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnVerproductocategoria.Name = "btnVerproductocategoria";
+            this.btnVerproductocategoria.Size = new System.Drawing.Size(349, 57);
+            this.btnVerproductocategoria.TabIndex = 16;
+            this.btnVerproductocategoria.Text = "Ver categorias de producto";
+            this.btnVerproductocategoria.UseVisualStyleBackColor = false;
+            this.btnVerproductocategoria.Click += new System.EventHandler(this.btnVerproductocategoria_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(-4, 281);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(211, 24);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Opciones con categoria";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-			this.pictureBox1.Location = new System.Drawing.Point(133, 482);
-			this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(155, 68);
-			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox1.TabIndex = 11;
-			this.pictureBox1.TabStop = false;
-			this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-			// 
-			// btnMenuPrincipal
-			// 
-			this.btnMenuPrincipal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(132, 512);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(155, 68);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // btnMenuPrincipal
+            // 
+            this.btnMenuPrincipal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnMenuPrincipal.BackColor = System.Drawing.SystemColors.Highlight;
-			this.btnMenuPrincipal.FlatAppearance.BorderSize = 0;
-			this.btnMenuPrincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnMenuPrincipal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.btnMenuPrincipal.Location = new System.Drawing.Point(35, 391);
-			this.btnMenuPrincipal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-			this.btnMenuPrincipal.Name = "btnMenuPrincipal";
-			this.btnMenuPrincipal.Size = new System.Drawing.Size(349, 57);
-			this.btnMenuPrincipal.TabIndex = 10;
-			this.btnMenuPrincipal.Text = "Menú principal";
-			this.btnMenuPrincipal.UseVisualStyleBackColor = false;
-			this.btnMenuPrincipal.Click += new System.EventHandler(this.btnMenuPrincipal_Click);
-			// 
-			// btnEliminar
-			// 
-			this.btnEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnMenuPrincipal.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnMenuPrincipal.FlatAppearance.BorderSize = 0;
+            this.btnMenuPrincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenuPrincipal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnMenuPrincipal.Location = new System.Drawing.Point(35, 400);
+            this.btnMenuPrincipal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMenuPrincipal.Name = "btnMenuPrincipal";
+            this.btnMenuPrincipal.Size = new System.Drawing.Size(349, 57);
+            this.btnMenuPrincipal.TabIndex = 10;
+            this.btnMenuPrincipal.Text = "Menú principal";
+            this.btnMenuPrincipal.UseVisualStyleBackColor = false;
+            this.btnMenuPrincipal.Click += new System.EventHandler(this.btnMenuPrincipal_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnEliminar.BackColor = System.Drawing.SystemColors.Highlight;
-			this.btnEliminar.FlatAppearance.BorderSize = 0;
-			this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.btnEliminar.Location = new System.Drawing.Point(35, 169);
-			this.btnEliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-			this.btnEliminar.Name = "btnEliminar";
-			this.btnEliminar.Size = new System.Drawing.Size(349, 57);
-			this.btnEliminar.TabIndex = 3;
-			this.btnEliminar.Text = "Eliminar producto";
-			this.btnEliminar.UseVisualStyleBackColor = false;
-			this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
-			// 
-			// btnActualizar
-			// 
-			this.btnActualizar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnEliminar.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnEliminar.FlatAppearance.BorderSize = 0;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEliminar.Location = new System.Drawing.Point(35, 203);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(349, 57);
+            this.btnEliminar.TabIndex = 3;
+            this.btnEliminar.Text = "Eliminar producto";
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // btnActualizar
+            // 
+            this.btnActualizar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnActualizar.BackColor = System.Drawing.SystemColors.Highlight;
-			this.btnActualizar.FlatAppearance.BorderSize = 0;
-			this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnActualizar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.btnActualizar.Location = new System.Drawing.Point(35, 107);
-			this.btnActualizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-			this.btnActualizar.Name = "btnActualizar";
-			this.btnActualizar.Size = new System.Drawing.Size(349, 57);
-			this.btnActualizar.TabIndex = 1;
-			this.btnActualizar.Text = "Actualizar producto";
-			this.btnActualizar.UseVisualStyleBackColor = false;
-			this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
-			// 
-			// btnBack
-			// 
-			this.btnBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.btnBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBack.BackgroundImage")));
-			this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-			this.btnBack.FlatAppearance.BorderSize = 0;
-			this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnBack.Location = new System.Drawing.Point(11, 512);
-			this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-			this.btnBack.Name = "btnBack";
-			this.btnBack.Size = new System.Drawing.Size(35, 41);
-			this.btnBack.TabIndex = 9;
-			this.btnBack.UseVisualStyleBackColor = true;
-			// 
-			// btnRegistrar
-			// 
-			this.btnRegistrar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnActualizar.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnActualizar.FlatAppearance.BorderSize = 0;
+            this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActualizar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnActualizar.Location = new System.Drawing.Point(35, 122);
+            this.btnActualizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(349, 57);
+            this.btnActualizar.TabIndex = 1;
+            this.btnActualizar.Text = "Actualizar producto";
+            this.btnActualizar.UseVisualStyleBackColor = false;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            // 
+            // btnBack
+            // 
+            this.btnBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBack.BackgroundImage")));
+            this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBack.FlatAppearance.BorderSize = 0;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Location = new System.Drawing.Point(11, 512);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(35, 41);
+            this.btnBack.TabIndex = 9;
+            this.btnBack.UseVisualStyleBackColor = true;
+            // 
+            // btnRegistrar
+            // 
+            this.btnRegistrar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnRegistrar.BackColor = System.Drawing.SystemColors.Highlight;
-			this.btnRegistrar.FlatAppearance.BorderSize = 0;
-			this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnRegistrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.btnRegistrar.Location = new System.Drawing.Point(35, 46);
-			this.btnRegistrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-			this.btnRegistrar.Name = "btnRegistrar";
-			this.btnRegistrar.Size = new System.Drawing.Size(349, 57);
-			this.btnRegistrar.TabIndex = 0;
-			this.btnRegistrar.Text = "Añadir nuevo producto";
-			this.btnRegistrar.UseVisualStyleBackColor = false;
-			this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
-			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(673, 42);
-			this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(266, 42);
-			this.label1.TabIndex = 19;
-			this.label1.Text = "PRODUCTOS";
-			// 
-			// FrmProductCategoryMainMenu
-			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1419, 821);
-			this.Controls.Add(this.label1);
-			this.Controls.Add(this.groupBox2);
-			this.Controls.Add(this.groupBox1);
-			this.Margin = new System.Windows.Forms.Padding(4);
-			this.Name = "FrmProductCategoryMainMenu";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Registrar productos";
-			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-			this.Load += new System.EventHandler(this.FrmProductCategoryMainMenu_Load);
-			this.groupBox2.ResumeLayout(false);
-			this.groupBox2.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-			this.groupBox1.ResumeLayout(false);
-			this.groupBox1.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-			this.ResumeLayout(false);
-			this.PerformLayout();
+            this.btnRegistrar.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnRegistrar.FlatAppearance.BorderSize = 0;
+            this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnRegistrar.Location = new System.Drawing.Point(35, 46);
+            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(349, 57);
+            this.btnRegistrar.TabIndex = 0;
+            this.btnRegistrar.Text = "Añadir nuevo producto";
+            this.btnRegistrar.UseVisualStyleBackColor = false;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(673, 42);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(266, 42);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "PRODUCTOS";
+            // 
+            // FrmProductCategoryMainMenu
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1419, 821);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "FrmProductCategoryMainMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Registrar productos";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FrmProductCategoryMainMenu_Load);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 

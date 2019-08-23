@@ -76,28 +76,6 @@ namespace POS
 			}
 		}
 
-		private void button1_Click(object sender, EventArgs e)
-		{
-			try
-			{
-				if (openFileDialog1.ShowDialog() == DialogResult.OK)
-				{
-					string imagen = openFileDialog1.FileName;
-					pictureBox1.Image = Image.FromFile(imagen);
-
-					binaryImage = ImageToByteArray(Image.FromFile(imagen));
-
-					imageAdded = true;
-					//image.InsertarImagen(te)
-								
-					MessageBox.Show("imagen cargada");
-				}
-			}
-			catch (Exception ex)
-			{
-				MessageBox.Show("El archivo seleccionado no es un tipo de imagen válido");
-			}
-		}
 		public byte[] ImageToByteArray(System.Drawing.Image imageIn)
 		{
 			using (var ms = new MemoryStream())
@@ -107,9 +85,27 @@ namespace POS
 			}
 		}
 
-		private void TextBox2_TextChanged(object sender, EventArgs e)
-		{
+        private void BtnRegistrar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (openFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    string imagen = openFileDialog1.FileName;
+                    pictureBox1.Image = Image.FromFile(imagen);
 
-		}
-	}
+                    binaryImage = ImageToByteArray(Image.FromFile(imagen));
+
+                    imageAdded = true;
+                    //image.InsertarImagen(te)
+
+                    MessageBox.Show("imagen cargada");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("El archivo seleccionado no es un tipo de imagen válido");
+            }
+        }
+    }
 }

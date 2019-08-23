@@ -133,6 +133,7 @@
             // cbEmpresa
             // 
             this.cbEmpresa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cbEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbEmpresa.FormattingEnabled = true;
             this.cbEmpresa.Location = new System.Drawing.Point(307, 344);

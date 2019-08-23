@@ -41,10 +41,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(345, 42);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(225, 49);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(229, 20);
+            this.label1.Size = new System.Drawing.Size(279, 25);
             this.label1.TabIndex = 16;
             this.label1.Text = "REGISTRO DE ESTANTES";
             // 
@@ -57,10 +57,10 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCancelar.Location = new System.Drawing.Point(150, 233);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCancelar.Location = new System.Drawing.Point(108, 244);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(284, 51);
+            this.btnCancelar.Size = new System.Drawing.Size(244, 54);
             this.btnCancelar.TabIndex = 24;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -75,10 +75,10 @@
             this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnRegistrar.Location = new System.Drawing.Point(501, 233);
-            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRegistrar.Location = new System.Drawing.Point(390, 244);
+            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(284, 51);
+            this.btnRegistrar.Size = new System.Drawing.Size(286, 54);
             this.btnRegistrar.TabIndex = 23;
             this.btnRegistrar.Text = "REGISTRAR";
             this.btnRegistrar.UseVisualStyleBackColor = false;
@@ -88,29 +88,32 @@
             // 
             this.txtNombre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNombre.Location = new System.Drawing.Point(275, 87);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Location = new System.Drawing.Point(264, 102);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(486, 20);
+            this.txtNombre.Size = new System.Drawing.Size(412, 28);
             this.txtNombre.TabIndex = 19;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(147, 154);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(93, 156);
+            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 13);
+            this.label3.Size = new System.Drawing.Size(128, 24);
             this.label3.TabIndex = 18;
             this.label3.Text = "Num. Niveles:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(147, 87);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(93, 102);
+            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 13);
+            this.label2.Size = new System.Drawing.Size(84, 24);
             this.label2.TabIndex = 17;
             this.label2.Text = "Nombre:";
             // 
@@ -118,17 +121,19 @@
             // 
             this.txtNiveles.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNiveles.Location = new System.Drawing.Point(275, 151);
-            this.txtNiveles.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNiveles.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNiveles.Location = new System.Drawing.Point(264, 156);
+            this.txtNiveles.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtNiveles.Name = "txtNiveles";
-            this.txtNiveles.Size = new System.Drawing.Size(486, 20);
+            this.txtNiveles.Size = new System.Drawing.Size(412, 28);
             this.txtNiveles.TabIndex = 25;
             // 
             // FrmRegisterShelves
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(899, 352);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(772, 348);
             this.Controls.Add(this.txtNiveles);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnRegistrar);
@@ -136,8 +141,11 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmRegisterShelves";
-            this.Text = "FrmRegisterShelves";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Registro de estantes";
             this.ResumeLayout(false);
             this.PerformLayout();
 

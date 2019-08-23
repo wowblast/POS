@@ -60,10 +60,10 @@
             this.btnRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnRegistrar.Location = new System.Drawing.Point(381, 605);
+            this.btnRegistrar.Location = new System.Drawing.Point(414, 516);
             this.btnRegistrar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(211, 66);
+            this.btnRegistrar.Size = new System.Drawing.Size(295, 60);
             this.btnRegistrar.TabIndex = 39;
             this.btnRegistrar.Text = "REGISTRAR";
             this.btnRegistrar.UseVisualStyleBackColor = false;
@@ -73,10 +73,10 @@
             // 
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(44, 441);
+            this.label11.Location = new System.Drawing.Point(82, 399);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(159, 18);
+            this.label11.Size = new System.Drawing.Size(203, 24);
             this.label11.TabIndex = 38;
             this.label11.Text = "Fecha de contratación:";
             // 
@@ -84,127 +84,127 @@
             // 
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(49, 334);
+            this.label10.Location = new System.Drawing.Point(87, 292);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(149, 18);
+            this.label10.Size = new System.Drawing.Size(193, 24);
             this.label10.TabIndex = 37;
             this.label10.Text = "Fecha de nacimiento:";
             // 
             // dtpContratacion
             // 
             this.dtpContratacion.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.dtpContratacion.Location = new System.Drawing.Point(48, 492);
+            this.dtpContratacion.Location = new System.Drawing.Point(86, 450);
             this.dtpContratacion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtpContratacion.Name = "dtpContratacion";
-            this.dtpContratacion.Size = new System.Drawing.Size(422, 24);
+            this.dtpContratacion.Size = new System.Drawing.Size(422, 28);
             this.dtpContratacion.TabIndex = 36;
             // 
             // dtpNacimiento
             // 
             this.dtpNacimiento.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.dtpNacimiento.Location = new System.Drawing.Point(48, 383);
+            this.dtpNacimiento.Location = new System.Drawing.Point(86, 341);
             this.dtpNacimiento.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtpNacimiento.Name = "dtpNacimiento";
-            this.dtpNacimiento.Size = new System.Drawing.Size(422, 24);
+            this.dtpNacimiento.Size = new System.Drawing.Size(422, 28);
             this.dtpNacimiento.TabIndex = 35;
             // 
             // label9
             // 
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(524, 350);
+            this.label9.Location = new System.Drawing.Point(630, 292);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(75, 18);
+            this.label9.Size = new System.Drawing.Size(95, 24);
             this.label9.TabIndex = 34;
             this.label9.Text = "Dirección:";
             // 
             // tbDireccion
             // 
             this.tbDireccion.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.tbDireccion.Location = new System.Drawing.Point(527, 386);
+            this.tbDireccion.Location = new System.Drawing.Point(628, 341);
             this.tbDireccion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbDireccion.Name = "tbDireccion";
-            this.tbDireccion.Size = new System.Drawing.Size(322, 195);
+            this.tbDireccion.Size = new System.Drawing.Size(375, 137);
             this.tbDireccion.TabIndex = 33;
             this.tbDireccion.Text = "";
             // 
             // tbClave
             // 
             this.tbClave.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.tbClave.Location = new System.Drawing.Point(615, 172);
+            this.tbClave.Location = new System.Drawing.Point(751, 166);
             this.tbClave.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbClave.Name = "tbClave";
-            this.tbClave.Size = new System.Drawing.Size(252, 24);
+            this.tbClave.Size = new System.Drawing.Size(252, 28);
             this.tbClave.TabIndex = 32;
             // 
             // label8
             // 
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(520, 174);
+            this.label8.Location = new System.Drawing.Point(624, 170);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(89, 18);
+            this.label8.Size = new System.Drawing.Size(111, 24);
             this.label8.TabIndex = 31;
             this.label8.Text = "Contraseña:";
             // 
             // tbUsuario
             // 
             this.tbUsuario.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.tbUsuario.Location = new System.Drawing.Point(617, 104);
+            this.tbUsuario.Location = new System.Drawing.Point(753, 98);
             this.tbUsuario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbUsuario.Name = "tbUsuario";
-            this.tbUsuario.Size = new System.Drawing.Size(250, 24);
+            this.tbUsuario.Size = new System.Drawing.Size(250, 28);
             this.tbUsuario.TabIndex = 30;
             // 
             // label7
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(545, 107);
+            this.label7.Location = new System.Drawing.Point(630, 105);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(64, 18);
+            this.label7.Size = new System.Drawing.Size(79, 24);
             this.label7.TabIndex = 29;
             this.label7.Text = "Usuario:";
             // 
             // tbApellidoMaterno
             // 
             this.tbApellidoMaterno.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.tbApellidoMaterno.Location = new System.Drawing.Point(210, 228);
+            this.tbApellidoMaterno.Location = new System.Drawing.Point(262, 222);
             this.tbApellidoMaterno.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbApellidoMaterno.Name = "tbApellidoMaterno";
-            this.tbApellidoMaterno.Size = new System.Drawing.Size(260, 24);
+            this.tbApellidoMaterno.Size = new System.Drawing.Size(283, 28);
             this.tbApellidoMaterno.TabIndex = 28;
             // 
             // tbApellidoPaterno
             // 
             this.tbApellidoPaterno.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.tbApellidoPaterno.Location = new System.Drawing.Point(210, 168);
+            this.tbApellidoPaterno.Location = new System.Drawing.Point(262, 162);
             this.tbApellidoPaterno.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbApellidoPaterno.Name = "tbApellidoPaterno";
-            this.tbApellidoPaterno.Size = new System.Drawing.Size(260, 24);
+            this.tbApellidoPaterno.Size = new System.Drawing.Size(283, 28);
             this.tbApellidoPaterno.TabIndex = 27;
             // 
             // tbNombres
             // 
             this.tbNombres.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.tbNombres.Location = new System.Drawing.Point(210, 107);
+            this.tbNombres.Location = new System.Drawing.Point(262, 101);
             this.tbNombres.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbNombres.Name = "tbNombres";
-            this.tbNombres.Size = new System.Drawing.Size(260, 24);
+            this.tbNombres.Size = new System.Drawing.Size(283, 28);
             this.tbNombres.TabIndex = 26;
             // 
             // label6
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(44, 228);
+            this.label6.Location = new System.Drawing.Point(82, 222);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(122, 18);
+            this.label6.Size = new System.Drawing.Size(158, 24);
             this.label6.TabIndex = 25;
             this.label6.Text = "Apellido materno:";
             // 
@@ -212,10 +212,10 @@
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(49, 168);
+            this.label5.Location = new System.Drawing.Point(87, 162);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(117, 18);
+            this.label5.Size = new System.Drawing.Size(153, 24);
             this.label5.TabIndex = 24;
             this.label5.Text = "Apellido paterno:";
             // 
@@ -223,10 +223,10 @@
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(109, 106);
+            this.label4.Location = new System.Drawing.Point(147, 98);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 18);
+            this.label4.Size = new System.Drawing.Size(93, 24);
             this.label4.TabIndex = 23;
             this.label4.Text = "Nombres:";
             // 
@@ -234,10 +234,10 @@
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(556, 234);
+            this.label3.Location = new System.Drawing.Point(630, 234);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 18);
+            this.label3.Size = new System.Drawing.Size(66, 24);
             this.label3.TabIndex = 22;
             this.label3.Text = "Cargo:";
             // 
@@ -245,10 +245,10 @@
             // 
             this.cbCargo.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.cbCargo.FormattingEnabled = true;
-            this.cbCargo.Location = new System.Drawing.Point(615, 234);
+            this.cbCargo.Location = new System.Drawing.Point(751, 228);
             this.cbCargo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbCargo.Name = "cbCargo";
-            this.cbCargo.Size = new System.Drawing.Size(252, 25);
+            this.cbCargo.Size = new System.Drawing.Size(252, 30);
             this.cbCargo.TabIndex = 21;
             // 
             // label2
@@ -256,18 +256,18 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(445, 9);
+            this.label2.Location = new System.Drawing.Point(472, 38);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 25);
+            this.label2.Size = new System.Drawing.Size(124, 31);
             this.label2.TabIndex = 20;
             this.label2.Text = "Registro";
             // 
             // FrmEmployeeRegister
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(917, 696);
+            this.ClientSize = new System.Drawing.Size(1066, 616);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -293,7 +293,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FrmEmployeeRegister";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmEmployeeRegister";
+            this.Text = "Registrar datos de empleado";
             this.Load += new System.EventHandler(this.FrmEmployeeRegister_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
