@@ -29,19 +29,6 @@ namespace POS
             frmPurchaseAmount.Show();
         }
 
-        public Button CreateButton(int height, int width, string name, string text, string filename)
-        {
-            Button button = new Button();
-            button.Height = height;
-            button.Width = width;
-            button.Name = name;
-            button.Text = text;
-            button.BackgroundImage = Image.FromFile(filename);
-            button.BackgroundImageLayout = ImageLayout.Center;
-
-            return button;
-        }
-
         private void btnBack_Click(object sender, EventArgs e)
         {
             if (User.GetInstance().usuario.Cargo == "ADMINISTRADOR")
@@ -70,7 +57,7 @@ namespace POS
             
             if (productList.Rows.Count > 0)
             {
-                const int COLUMNS = 5;
+                const int COLUMNS = 6;
 
                 imageSize = Convert.ToInt32((tableLayout.Size.Width * 0.95f) / COLUMNS);
 
@@ -88,12 +75,17 @@ namespace POS
                             Button button = new Button
                             {
                                 Size = new Size(imageSize, imageSize),
+                                Text = (string)productList.Rows[index].ItemArray[2] + ", " + (double)productList.Rows[index].ItemArray[4] + " bs",
+                                TextAlign = ContentAlignment.BottomCenter,
+                                Font = new Font(Font.FontFamily, 10),
+                                BackColor = Color.White,
+                                BackgroundImageLayout = ImageLayout.Center,
                             };
 
                             Image image = ObjectToImage(imagenProducto.SelectImage((int)productList.Rows[index].ItemArray[0]));
                             
                             if (image != null)
-                                button.BackgroundImage = ResizeImage(image, imageSize, imageSize);
+                                button.BackgroundImage = ResizeImage(image, imageSize, imageSize - 40);
 
                             tableLayout.Controls.Add(button, j, i);
                         }
