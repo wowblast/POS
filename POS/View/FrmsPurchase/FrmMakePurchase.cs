@@ -18,6 +18,8 @@ namespace POS
             InitializeComponent();
             valPrecioCompra.DecimalPlaces = 2;
             valPrecioCompra.Increment = 0.01M;
+            valPrecioCompra.Minimum = 0;
+            valCantidad.Minimum = 0;
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -27,24 +29,32 @@ namespace POS
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
+            if (cbProductos.Text == "" || cbProveedores.Text == "")
+            {
+                MessageBox.Show("no existen productos y/o proveedores", "Conflecto detectado");
+               
+            }
+            else
+            {
+                int cantidad = Convert.ToInt32(valCantidad.Text);
+                double precio = Convert.ToDouble(valPrecioCompra.Text);
+                int idempleado = Convert.ToInt32(txtIDEmpleado.Text);
+                int idproveedor = Convert.ToInt32(cbProveedores.SelectedValue);
+                int idproducto = Convert.ToInt32(cbProductos.SelectedValue);
 
-            int cantidad = Convert.ToInt32(valCantidad.Text);
-            double precio = Convert.ToDouble(valPrecioCompra.Text);
-            int idempleado = Convert.ToInt32(txtIDEmpleado.Text);
-            int idproveedor = Convert.ToInt32(cbProveedores.SelectedValue);
-            int idproducto = Convert.ToInt32(cbProductos.SelectedValue);
-            
-            CompraControl compraControl = new CompraControl();
-            compraControl.RealizarCompra(idproveedor, idempleado);
-     
-            DataTable ultimaCompra = compraControl.ObtenerUltimaCompra();
-            int idcompra = ultimaCompra.Rows[0].Field<int>(0);
+                CompraControl compraControl = new CompraControl();
+                compraControl.RealizarCompra(idproveedor, idempleado);
 
-            DetalleCompraControl detalleCompraControl = new DetalleCompraControl();
-            detalleCompraControl.InsertarDetalleCompra(idcompra, idproducto, cantidad, precio);
+                DataTable ultimaCompra = compraControl.ObtenerUltimaCompra();
+                int idcompra = ultimaCompra.Rows[0].Field<int>(0);
 
-            MessageBox.Show("Compra realizada exitosamente", "Compra exitosa!");
-        
+                DetalleCompraControl detalleCompraControl = new DetalleCompraControl();
+                detalleCompraControl.InsertarDetalleCompra(idcompra, idproducto, cantidad, precio);
+
+                MessageBox.Show("Compra realizada exitosamente", "Compra exitosa!");
+
+            }
+
         }
 
         private void FrmMakePurchase_Load(object sender, EventArgs e)

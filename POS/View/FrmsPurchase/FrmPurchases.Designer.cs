@@ -130,7 +130,7 @@
             this.btnMenuPrincipal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SeaGreen;
             this.btnMenuPrincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenuPrincipal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnMenuPrincipal.Location = new System.Drawing.Point(35, 295);
+            this.btnMenuPrincipal.Location = new System.Drawing.Point(35, 127);
             this.btnMenuPrincipal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMenuPrincipal.Name = "btnMenuPrincipal";
             this.btnMenuPrincipal.Size = new System.Drawing.Size(349, 57);
