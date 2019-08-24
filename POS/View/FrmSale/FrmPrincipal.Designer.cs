@@ -178,10 +178,10 @@
 			this.button2.Text = "REGISTRAR VENTA";
 			this.button2.UseVisualStyleBackColor = false;
 			this.button2.Click += new System.EventHandler(this.Button2_Click);
-			// 
-			// tableLayout
-			// 
-			this.tableLayout.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            // 
+            // tableLayout
+            // 
+            this.tableLayout.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.tableLayout.AutoScroll = true;
