@@ -1,6 +1,8 @@
-﻿using POS.Control;
+﻿using Microsoft.VisualBasic;
+using POS.Control;
 using POS.Entity;
 using POS.Singleton;
+using POS.Tools;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -191,5 +193,26 @@ namespace POS
 			}
 
 		}
-	}
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            string nombreQuienPaga = Interaction.InputBox("Ingrese el nombre de la persona que pago:", "Datos del recibo", "Sin nombre", -1, -1);
+
+            if (nombreQuienPaga.Length > 0)
+            {
+                int numeroRecibo = FileUtil.Read();
+                float precioUnitario = 10;
+                int cantidad = 1;
+                float descuento = 0;
+                float montoTotal = (precioUnitario * cantidad) - descuento;
+                string concepto = "Venta";
+                DateTime fecha = DateTime.Now;
+
+                Recibo recibo = new Recibo(numeroRecibo, nombreQuienPaga, concepto, montoTotal, fecha);
+                Receipt.GenerateReceipt(recibo);
+
+                FileUtil.Write();
+            }         
+        }
+    }
 }

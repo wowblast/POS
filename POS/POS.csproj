@@ -40,6 +40,7 @@
     <Reference Include="itextsharp, Version=5.5.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
       <HintPath>..\packages\iTextSharp.5.5.13\lib\itextsharp.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -75,8 +76,14 @@
     <Compile Include="Entity\Estante.cs" />
     <Compile Include="Entity\Producto.cs" />
     <Compile Include="Entity\Proveedor.cs" />
+    <Compile Include="Entity\Recibo.cs" />
     <Compile Include="Entity\Usuario.cs" />
     <Compile Include="Singleton\User.cs" />
+    <Compile Include="Tools\ConvertNumberToFormat.cs" />
+    <Compile Include="Tools\ConvertNumberToWords.cs" />
+    <Compile Include="Tools\DateUtils.cs" />
+    <Compile Include="Tools\FileUtil.cs" />
+    <Compile Include="Tools\Receipt.cs" />
     <Compile Include="View\FmsProductsCategory\FrmAddCategoryProducts.cs">
       <SubType>Form</SubType>
     </Compile>
