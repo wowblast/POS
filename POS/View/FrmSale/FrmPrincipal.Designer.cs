@@ -177,6 +177,7 @@
 			this.button2.TabIndex = 37;
 			this.button2.Text = "REGISTRAR VENTA";
 			this.button2.UseVisualStyleBackColor = false;
+			this.button2.Click += new System.EventHandler(this.Button2_Click);
 			// 
 			// tableLayout
 			// 

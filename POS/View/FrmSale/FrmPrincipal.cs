@@ -19,6 +19,8 @@ namespace POS
         private int imageSize = 0;
 		private List<string[]> compras = new List<string[]>();
 		public static int cantidad = 0;
+		FrmPurchaseAmount purchaseAmount = new FrmPurchaseAmount();
+
 		public FrmPrincipal()
         {
             InitializeComponent();
@@ -169,9 +171,9 @@ namespace POS
 
     
 		
-		private void addItem(string id,string name , string price, string quantoty)
+		private void addItem(string id,string name , string price, string quantoty,string limitquantity)
 		{
-			string[] row = { id, name, price, quantoty };
+			string[] row = { id, name, price, quantoty, limitquantity };
 			actualizar_compras(row);
 			dataGridView1.Rows.Clear();
 			dataGridView1.Refresh();
@@ -213,11 +215,16 @@ namespace POS
 
 		private void Button4_Click(object sender, EventArgs e)
 		{
-			int id = 1010;
-			string nombre = "tornillo 3/4";
-			float precio = 15.7F;
-			int cantidad = 10;
-			addItem(id.ToString(), nombre, precio.ToString(), cantidad.ToString());
+			  SelectQuantity();
+			
+				int id = 1010;
+				string nombre = "tornillo 3/4";
+				float precio = 15.7F;
+				int totalCantidad = 50;
+				addItem(id.ToString(), nombre, precio.ToString(), cantidad.ToString(),totalCantidad.ToString());
+				cantidad = 0;
+			
+			
 		}
 
 		private void Button1_Click_1(object sender, EventArgs e)
@@ -259,7 +266,16 @@ namespace POS
 
 		private void SelectQuantity()
 		{
+			purchaseAmount.ShowDialog();
+		}
 
+		private void Button2_Click(object sender, EventArgs e)
+		{
+			ProductoControl productoControl = new ProductoControl();
+			foreach(string [] items in compras)
+			{
+				productoControl.ActualizarCantidad(Convert.ToInt32(items[0]), Convert.ToInt32(items[3]), Convert.ToInt32(items[4]));
+			}
 		}
 	}
 }
