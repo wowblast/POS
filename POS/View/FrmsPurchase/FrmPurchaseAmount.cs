@@ -24,7 +24,9 @@ namespace POS
 
         private void btnAccept_Click(object sender, EventArgs e)
         {
-            Close();
+			 FrmPrincipal.cantidad = ( Convert.ToInt32(txtAmount.Text));
+
+			Close();
         }
     }
 }

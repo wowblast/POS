@@ -18,6 +18,8 @@ namespace POS
     {
         private int imageSize = 0;
 		private List<string[]> compras = new List<string[]>();
+		public static int cantidad = 0;
+		FrmPurchaseAmount purchaseAmount = new FrmPurchaseAmount();
 
 		public FrmPrincipal()
         {
@@ -161,16 +163,16 @@ namespace POS
 
     
 		
-		private void addItem(string id,string name , string price, string quantoty)
+		private void addItem(string id,string name , string price, string quantoty,string limitquantity)
 		{
-			string[] row = { id, name, price, quantoty };
+			string[] row = { id, name, price, quantoty, limitquantity };
 			actualizar_compras(row);
-			/*dataGridView1.Rows.Clear();
+			dataGridView1.Rows.Clear();
 			dataGridView1.Refresh();
 			for(int x = 0; x < compras.Count; x++)
 			{
 				dataGridView1.Rows.Add(compras.ElementAt(x));
-			}	*/		
+			}			
 		}
 		private void actualizar_compras(string[] row)
 		{
@@ -190,6 +192,82 @@ namespace POS
 				compras.Add(row);				
 			}
 
+		}
+
+		private void ClearAllItems()
+		{
+			DialogResult dialogResult = MessageBox.Show("Estas seguro de Borras todos los productos", "Borrar Productos", MessageBoxButtons.YesNo);
+			if (dialogResult == DialogResult.Yes)
+			{
+				dataGridView1.Rows.Clear();
+				dataGridView1.Refresh();
+			}
+			
+		}
+
+		private void Button4_Click(object sender, EventArgs e)
+		{
+			  SelectQuantity();
+			
+				int id = 1010;
+				string nombre = "tornillo 3/4";
+				float precio = 15.7F;
+				int totalCantidad = 50;
+				addItem(id.ToString(), nombre, precio.ToString(), cantidad.ToString(),totalCantidad.ToString());
+				cantidad = 0;
+			
+			
+		}
+
+		private void Button1_Click_1(object sender, EventArgs e)
+		{
+			ClearAllItems();
+		}
+
+		private void ClearItem(int id)
+		{
+			for (int x = 0; x < compras.Count; x++)
+			{
+				if (compras.ElementAt(x)[0] == id.ToString())
+				{
+					compras.RemoveAt(x);
+					break;
+				}
+			}
+
+		}
+		private void Button3_Click(object sender, EventArgs e)
+		{
+			if (dataGridView1.SelectedRows.Count == 1)
+			{
+				DialogResult result = MessageBox.Show("¿Esta seguro que desea eliminar este producto?", "Importante", MessageBoxButtons.YesNo);
+
+				if (result == DialogResult.Yes)
+				{
+					int id = Convert.ToInt32(dataGridView1.SelectedCells[0].Value);
+					ClearItem(id);
+					dataGridView1.Rows.Clear();
+					dataGridView1.Refresh();
+				}
+			}
+			else
+			{
+				MessageBox.Show("Debe seleccionar una fila", "¡Error!");
+			}
+		}
+
+		private void SelectQuantity()
+		{
+			purchaseAmount.ShowDialog();
+		}
+
+		private void Button2_Click(object sender, EventArgs e)
+		{
+			ProductoControl productoControl = new ProductoControl();
+			foreach(string [] items in compras)
+			{
+				productoControl.ActualizarCantidad(Convert.ToInt32(items[0]), Convert.ToInt32(items[3]), Convert.ToInt32(items[4]));
+			}
 		}
 	}
 }

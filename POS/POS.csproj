@@ -67,6 +67,7 @@
     <Compile Include="Control\ProductoControl.cs" />
     <Compile Include="Control\ProveedorControl.cs" />
     <Compile Include="Control\TiendaControl.cs" />
+    <Compile Include="Control\VentaFormsControl.cs" />
     <Compile Include="Database\Connection.cs" />
     <Compile Include="Entity\Categoria.cs" />
     <Compile Include="Entity\Empleado.cs" />

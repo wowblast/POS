@@ -102,5 +102,20 @@ namespace POS.Control
 				return null;
 			}
 		}
+		public void ActualizarCantidad(int idProducto,int cantidad,int totalCantidad)
+		{
+			string sql = "UPDATE PRODUCTOS SET  cantidad = " + (totalCantidad-cantidad) + " WHERE idProducto = " + idProducto;
+			try
+			{
+				connection.ExecuteSQL(sql);
+				Log.Print(sql);
+			}
+			catch (Exception e)
+			{
+				Log.Print("An exception has ocurred. " + e.Message);
+			}
+		}
+
+		
 	}
 }
